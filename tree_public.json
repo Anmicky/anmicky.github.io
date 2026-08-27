@@ -1,0 +1,276 @@
+{
+  "meta": {
+    "title": "Yuang Cao — Research Map",
+    "version": "0.1.0",
+    "updated": "2026-08-23",
+    "note": "Public tree. Only de-identified, publishable content."
+  },
+  "root": {
+    "id": "root",
+    "type": "root",
+    "label": { "en": "Yuang Cao · Research Map", "zh": "曹宇昂 · 科研地图" },
+    "summary": { "en": "AI × Cognitive Science × Biomedical Engineering", "zh": "人工智能 × 认知科学 × 生物医学工程" },
+    "children": [
+      {
+        "id": "line-ai-cog",
+        "type": "research_line",
+        "label": { "en": "AI × Cognitive Science", "zh": "AI × 认知科学" },
+        "summary": {
+          "en": "Using generative AI and representation learning to study human perception, memory and decision-making — and what intelligent systems can learn from them.",
+          "zh": "用生成式 AI 与表征学习研究人类感知、记忆与决策，并思考智能系统如何模拟、偏离或对齐人类认知。"
+        },
+        "children": [
+          {
+            "id": "proj-vwm",
+            "type": "project",
+            "label": { "en": "Dimensions of Vulnerability in Visual Working Memory", "zh": "视觉工作记忆的脆弱性维度" },
+            "summary": {
+              "en": "First-author work (CogSci 2025): controllable naturalistic stimuli show that abstract dimension similarity — not just image similarity — drives memory distortion, and visual dimensions are more fragile than semantic ones.",
+              "zh": "一作工作（CogSci 2025）：用可控自然主义刺激证明，抽象维度相似性本身就足以诱发记忆扭曲，且视觉维度比语义维度更脆弱。"
+            },
+            "status": { "en": "Published · CogSci 2025", "zh": "已接收 · CogSci 2025" },
+            "children": [
+              {
+                "id": "paper-cogsci",
+                "type": "paper",
+                "label": { "en": "CogSci 2025 paper · first author", "zh": "CogSci 2025 论文 · 一作" },
+                "summary": {
+                  "en": "Yuang Cao*, Jiachen Zou*, Chen Wei†, Quanying Liu†. Accepted for presentation at the Cognitive Science Society Annual Conference 2025, San Francisco.",
+                  "zh": "Yuang Cao*, Jiachen Zou*, Chen Wei†, Quanying Liu†。Cognitive Science Society 2025 接收，旧金山。"
+                },
+                "links": [
+                  { "label": "GitHub repo", "url": "https://github.com/Anmicky/Dimensions-of-Vulnerability-in-Visual-Working-Memory" },
+                  { "label": "PDF (to be added)", "url": "#" }
+                ]
+              },
+              {
+                "id": "method-cocog",
+                "type": "method",
+                "label": { "en": "CoCoG-2 · concept-based controllable generation", "zh": "CoCoG-2 · 概念可控生成" },
+                "summary": {
+                  "en": "Two-stage generation (p(h|e) → p(x|h)) with training-free guidance; precise dimension editing in CLIP embedding space.",
+                  "zh": "两阶段生成（p(h|e) → p(x|h)）+ 免训练引导；在 CLIP 嵌入空间做精确维度编辑。"
+                }
+              },
+              {
+                "id": "method-wheels",
+                "type": "method",
+                "label": { "en": "Image Wheels & Dimension Wheels", "zh": "图像轮与维度轮" },
+                "summary": {
+                  "en": "Stimuli arranged on circular manifolds in concept space — decoupling image similarity from dimension similarity so each can be tested alone.",
+                  "zh": "在概念空间圆形流形上排布的刺激体系——把图像相似性与维度相似性解耦，可单独检验各自贡献。"
+                }
+              },
+              {
+                "id": "exp1",
+                "type": "experiment",
+                "label": { "en": "Exp. 1 · Image Wheels · N=100", "zh": "实验一 · 图像轮 · N=100" },
+                "summary": {
+                  "en": "Image similarity drives distortion. Accuracy 0.372 (visual) vs 0.503 (semantic); bias 13.2° vs 10.1°.",
+                  "zh": "图像相似诱发扭曲。视觉准确率 0.372 vs 语义 0.503；偏差 13.2° vs 10.1°。"
+                }
+              },
+              {
+                "id": "exp2",
+                "type": "experiment",
+                "label": { "en": "Exp. 2 · Dimension Wheels · N=146", "zh": "实验二 · 维度轮 · N=146" },
+                "summary": {
+                  "en": "Dimension similarity alone still distorts; visual–semantic gap widens (3.8°). Confirms the effect lives in the dimension structure.",
+                  "zh": "仅维度相似仍诱发扭曲，且视觉-语义差距反而更大（3.8°）。确认效应根植于维度结构本身。"
+                }
+              },
+              {
+                "id": "find-1",
+                "type": "finding",
+                "label": { "en": "Similar dimensions bias memory like similar images", "zh": "相似维度与相似图像一样诱发记忆扭曲" },
+                "summary": {
+                  "en": "First validation of similarity-induced memory bias with naturalistic real-object stimuli.",
+                  "zh": "首次在自然主义真实物体刺激上验证相似性诱发记忆偏差。"
+                }
+              },
+              {
+                "id": "find-2",
+                "type": "finding",
+                "label": { "en": "Visual dimensions are more fragile than semantic ones", "zh": "视觉维度比语义维度更脆弱" },
+                "summary": {
+                  "en": "Consistent across both experiments; supports schema-based semantic representation (Brady & Störmer, 2022).",
+                  "zh": "两个实验一致；支持语义表征受益于图式化深层加工（Brady & Störmer, 2022）。"
+                }
+              }
+            ]
+          },
+          {
+            "id": "proj-emotion",
+            "type": "project",
+            "label": { "en": "Emotion Dimension Discovery · ongoing", "zh": "情绪维度发现 · 进行中" },
+            "summary": {
+              "en": "Lab project: can open-ended emotion descriptions be compressed into a stable low-dimensional structure? LLM word sampling → human validation → SPoSE.",
+              "zh": "实验室项目：开放式情绪描述能否被压缩为稳定低维结构？大模型采词 → 人类验证 → SPoSE 降维。"
+            },
+            "status": { "en": "Ongoing · NCC Lab", "zh": "进行中 · NCC 实验室" },
+            "children": [
+              {
+                "id": "em-pipe",
+                "type": "method",
+                "label": { "en": "Four-layer pipeline", "zh": "四层研究链路" },
+                "summary": {
+                  "en": "Word generation → human validation (quality gate) → SPoSE unsupervised dimension discovery → cross-source / cross-culture comparison.",
+                  "zh": "词生成 → 人类验证（质量闸门）→ SPoSE 无监督降维 → 跨来源/跨文化比较。"
+                }
+              },
+              {
+                "id": "em-tools",
+                "type": "method",
+                "label": { "en": "Qwen VL / Qwen 3.7 word sets · SPoSE", "zh": "Qwen VL / Qwen3.7 词集 · SPoSE" },
+                "summary": {
+                  "en": "1,965/2,000 clips word set (avg 2.8 words/clip, 66.9% human retention, 4.90 appropriateness).",
+                  "zh": "1965/2000 片段词集（平均 2.8 词/片段，66.9% 人类保留率，4.90 适宜度）。"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "line-robust",
+        "type": "research_line",
+        "label": { "en": "Robust, Human-Aligned AI", "zh": "更稳健、更贴近人的 AI" },
+        "summary": {
+          "en": "Feeding cognitive vulnerability research back into AI system design: robustness, representation bias, human-in-the-loop.",
+          "zh": "把认知脆弱性的研究反哺给 AI 设计：鲁棒性、表征偏差、人机协同。"
+        },
+        "children": [
+          {
+            "id": "rob-1",
+            "type": "direction",
+            "label": { "en": "Representation bias & robustness", "zh": "表征偏差与鲁棒性" },
+            "summary": {
+              "en": "How intelligent systems encode, distort and align with human cognitive boundaries.",
+              "zh": "智能系统如何编码、偏离并对齐人类认知边界。"
+            }
+          },
+          {
+            "id": "rob-2",
+            "type": "direction",
+            "label": { "en": "Human-in-the-loop & alignment", "zh": "人机协同与对齐" },
+            "summary": {
+              "en": "Systems that understand perceptual limits — not just benchmark scores.",
+              "zh": "理解人类感知边界的系统，而不只是追求指标。"
+            }
+          }
+        ]
+      },
+      {
+        "id": "line-biomed",
+        "type": "research_line",
+        "label": { "en": "Biomedical & Health Applications", "zh": "生物医学与健康应用" },
+        "summary": {
+          "en": "From cognitive mechanisms to clinical assistance and health systems.",
+          "zh": "从认知机制走向临床辅助与健康系统。"
+        },
+        "children": [
+          {
+            "id": "bio-1",
+            "type": "direction",
+            "label": { "en": "Medical imaging & high-dim bio data", "zh": "医学影像与高维生物数据" },
+            "summary": {
+              "en": "Applying AI to medical imaging and biomedical data; trained in intelligent medical engineering.",
+              "zh": "将 AI 方法用于医学影像与生物医学数据；接受智能医学工程系统训练。"
+            }
+          },
+          {
+            "id": "bio-2",
+            "type": "direction",
+            "label": { "en": "Health monitoring & intelligent systems", "zh": "健康监测与智能系统" },
+            "summary": {
+              "en": "Cognitive insights for rehabilitation systems and more natural human-machine collaboration.",
+              "zh": "认知机制启发康复系统与更自然的人机协作。"
+            }
+          }
+        ]
+      },
+      {
+        "id": "skills",
+        "type": "research_line",
+        "label": { "en": "Skills & Methods", "zh": "技能与方法" },
+        "summary": { "en": "Toolbox used across projects.", "zh": "跨项目使用的方法工具箱。" },
+        "children": [
+          {
+            "id": "sk-python",
+            "type": "skill",
+            "label": { "en": "Python · PyTorch", "zh": "Python · PyTorch" },
+            "summary": { "en": "Primary programming stack.", "zh": "主力编程栈。" }
+          },
+          {
+            "id": "sk-genai",
+            "type": "skill",
+            "label": { "en": "Generative AI & latent-space control", "zh": "生成式 AI 与潜空间操控" },
+            "summary": {
+              "en": "Controllable generation, multi-loss optimization, concept-based editing.",
+              "zh": "可控生成、多损失联合优化、概念级编辑。"
+            }
+          },
+          {
+            "id": "sk-exp",
+            "type": "skill",
+            "label": { "en": "Cognitive experimental design", "zh": "认知实验设计" },
+            "summary": {
+              "en": "Online platforms (脑岛): 246 participants, 120 trials each, quality screening.",
+              "zh": "在线平台（脑岛）：246 人 × 120 trials，含质量筛选。"
+            }
+          },
+          {
+            "id": "sk-stats",
+            "type": "skill",
+            "label": { "en": "High-dimensional behavioral analysis", "zh": "高维行为数据分析" },
+            "summary": {
+              "en": "Angular bias scores, dimension taxonomy, statistical comparison.",
+              "zh": "角度偏差计算、维度分类、统计比较。"
+            }
+          },
+          {
+            "id": "sk-comm",
+            "type": "skill",
+            "label": { "en": "Cross-disciplinary research communication", "zh": "跨学科研究沟通" },
+            "summary": {
+              "en": "From a research question to a complete, end-to-end pipeline.",
+              "zh": "从研究问题到完整管线的端到端落地。"
+            }
+          }
+        ]
+      },
+      {
+        "id": "achv",
+        "type": "research_line",
+        "label": { "en": "Selected Achievements", "zh": "代表性成就" },
+        "summary": { "en": "A few numbers from recent work.", "zh": "近期工作的几个数字。" },
+        "children": [
+          {
+            "id": "ac-1",
+            "type": "achievement",
+            "label": { "en": "CogSci 2025 · first author", "zh": "CogSci 2025 · 一作" },
+            "summary": {
+              "en": "Accepted for presentation, San Francisco, Jul 30 – Aug 2, 2025.",
+              "zh": "2025-07-30 ~ 08-02 旧金山接收。"
+            }
+          },
+          {
+            "id": "ac-2",
+            "type": "achievement",
+            "label": { "en": "Two online experiments · N = 246", "zh": "两个在线实验 · N = 246" },
+            "summary": { "en": "29,520 trials on the 脑岛 platform.", "zh": "脑岛平台共 29,520 trials。" }
+          },
+          {
+            "id": "ac-3",
+            "type": "achievement",
+            "label": { "en": "42-dimension taxonomy", "zh": "42 维度分类体系" },
+            "summary": {
+              "en": "Visual / semantic / mixed classification of behavior-based object dimensions.",
+              "zh": "行为对象维度的视觉/语义/混合分类。"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
