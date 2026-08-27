@@ -17,4 +17,5 @@ cd ~/personal_work/website-github
 - `index.html` — 公开页（中英双语）
 - `assets/` — 样式/脚本/字体（全本地，无 CDN）
 - `tree_public.json` — 公开科研树数据（脱敏）
+- `paper/` — 论文 PDF（CogSci 2025，来源：本地个人主档案）
 - `.nojekyll` — 禁用 Jekyll 处理

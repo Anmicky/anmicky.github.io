@@ -256,6 +256,7 @@ main { padding: 72px 0 20px; }
   min-height: 32px;
 }
 .btn-abstract:hover { text-decoration: underline; }
+.pdf-link { margin-left: 16px; display: inline-block; }
 
 /* ---------- research tree ---------- */
 .tree-shell {
