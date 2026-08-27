@@ -363,6 +363,20 @@ body[data-page='private'] #hero-rings { opacity: .35; }
 
 ::selection { background: #2f55d4; color: #fff; }
 
+/* ---------- icons & pills (2026-08-27 beautification) ---------- */
+.icon { width: 1em; height: 1em; stroke: currentColor; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; vertical-align: -0.14em; display: inline-block; }
+.cta .icon { margin-left: 6px; }
+.spec-linklist { display: flex; flex-wrap: wrap; gap: 18px; margin: 4px 0 0; }
+.spec-linklist a { display: inline-flex; align-items: center; gap: 6px; font-size: 13.5px; font-family: var(--mono); }
+.pill-row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.pill { font-family: var(--mono); font-size: 11px; letter-spacing: .08em; color: var(--ink); background: var(--card); border: 1px solid var(--line-strong); border-radius: 999px; padding: 4px 11px; white-space: nowrap; }
+.pill.accent { color: #fff; background: var(--accent); border-color: var(--accent); }
+.pill.green { color: #0b7a43; background: #e2f6ea; border-color: #bfe8cd; }
+.pill.violet { color: var(--violet); background: var(--violet-soft); border-color: #e2d3f9; }
+.contact-row { display: flex; flex-direction: column; gap: 9px; margin-top: 2px; }
+.contact-row a { display: inline-flex; align-items: center; gap: 8px; font-size: 14.5px; }
+[data-reveal] { will-change: transform, opacity; }
+
 /* ---------- responsive ---------- */
 @media (max-width: 960px) {
   .grid-3 { grid-template-columns: 1fr; }

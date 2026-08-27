@@ -86,7 +86,7 @@
           if (p) p.children.push(map.get(d.data._id));
         }
       });
-      var h = d3.hierarchy({ id: rootId, children: [map.get(rootId)] }, function (d) {
+      var h = d3.hierarchy(map.get(rootId), function (d) {
         return d.children && d.children.length ? d.children : null;
       });
       var laid = d3.tree().size([2 * Math.PI, RADIUS])(h);
@@ -266,6 +266,7 @@
         showDetail(root);
       })
       .catch(function (e) {
+        console.error('TREE-ERR:', e && (e.stack || e.message) || String(e));
         if (detailEl) detailEl.innerHTML = '<p class="p-empty">' + esc(e.message) + '</p>';
       });
 
