@@ -1,14 +1,14 @@
 #!/usr/bin/env bash
-# 一键同步公开页到 GitHub Pages 仓库
-# 用法: ./deploy_github.sh "commit message"
-set -e
+# Publish only the reviewed public homepage assets. Internal auto-tree and private scripts are excluded.
+set -euo pipefail
 SRC="$HOME/personal_work/website"
 DST="$HOME/personal_work/website-github"
-MSG="${1:-update site $(date +%F)}"
-rsync -az --delete \
-  --exclude='.git/' --exclude='.nojekyll' --exclude='private/' --exclude='README.md' --exclude='deploy_github.sh' --exclude='.probe_aliyun.sh' \
-  "$SRC/" "$DST/"
+MSG="${1:-update public site $(date +%F)}"
 cd "$DST"
-git add -A
-git commit -m "$MSG" || true
+for file in index.html research_overview.json robots.txt sitemap.xml assets/homepage.css assets/public.js assets/image-wheel.png assets/experiment-design.png; do
+  cp "$SRC/$file" "$DST/$file"
+done
+# The public research tree is curated here; never sync the internal auto-tree into Pages.
+git add index.html research_overview.json tree_public.json robots.txt sitemap.xml assets/homepage.css assets/public.js assets/image-wheel.png assets/experiment-design.png
+if ! git diff --cached --quiet; then git commit -m "$MSG"; fi
 git push origin main

@@ -1,21 +1,15 @@
-# Yuang Cao · 曹宇昂 — 个人主页（GitHub Pages）
+# Yuang Cao · 曹宇昂 — academic homepage
 
-公开学术主页：AI × 认知科学 × 生物医学工程。
-部署地址：`https://anmicky.github.io/`
+Live site: https://anmicky.github.io/
 
-本仓库**只包含公开内容**（无私人信息）。私有员工通道（全量科研树/申请面板）托管在阿里云，不在此仓库。
+A bilingual public introduction with a CogSci 2025 publication, research experience, figure excerpts from the paper, contact links and a compact accessible research map.
 
-## 更新流程
+## Update
 
-```bash
-cd ~/personal_work/website-github
-./deploy_github.sh "更新说明"     # 从 ~/personal_work/website 同步公开文件并推送
-```
+The public homepage source is in `~/personal_work/website`. Run `./deploy_github.sh "update description"` to copy the explicit public file list and publish. The internal auto-tree (`website/tree_public.json`), private pages and shared private `assets/main.js` are deliberately not copied. `research_overview.json` is the reviewed public topic list; the repository's `tree_public.json` is a curated compatibility representation.
 
-## 结构
+## Validation
 
-- `index.html` — 公开页（中英双语）
-- `assets/` — 样式/脚本/字体（全本地，无 CDN）
-- `tree_public.json` — 公开科研树数据（脱敏）
-- `paper/` — 论文 PDF（CogSci 2025，来源：本地个人主档案）
-- `.nojekyll` — 禁用 Jekyll 处理
+Preview with `python3 -m http.server 8766 --bind 127.0.0.1`. Check desktop/mobile, both languages, links, figure disclosure and citation copying. Figures are raster excerpts of Figure 1 in the included paper, without AI-generated alterations. No analytics or external font requests.
+
+Last reviewed: 2026-10-04.

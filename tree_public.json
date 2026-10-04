@@ -1,489 +1,55 @@
 {
   "meta": {
-    "title": "Yuang Cao — Research Map",
-    "version": "0.1.0",
-    "updated": "2026-09-11",
-    "note": "Public tree. Only de-identified, publishable content."
+    "title": "Yuang Cao — Research Overview",
+    "updated": "2026-10-04"
   },
   "root": {
     "id": "root",
     "type": "root",
     "label": {
-      "en": "Yuang Cao · Research Map",
-      "zh": "曹宇昂 · 科研地图"
+      "en": "Yuang Cao · Research overview",
+      "zh": "曹宇昂 · 研究概览"
     },
     "summary": {
-      "en": "AI × Cognitive Science × Biomedical Engineering",
-      "zh": "人工智能 × 认知科学 × 生物医学工程"
+      "en": "Cognitive Science & AI",
+      "zh": "认知科学与AI"
     },
     "children": [
       {
-        "id": "line-ai-cog",
+        "id": "topic-0",
         "type": "research_line",
         "label": {
-          "en": "AI × Cognitive Science",
-          "zh": "AI × 认知科学"
+          "en": "Visual working memory",
+          "zh": "视觉工作记忆"
         },
         "summary": {
-          "en": "Using generative AI and representation learning to study human perception, memory and decision-making — and what intelligent systems can learn from them.",
-          "zh": "用生成式 AI 与表征学习研究人类感知、记忆与决策，并思考智能系统如何模拟、偏离或对齐人类认知。"
-        },
-        "children": [
-          {
-            "id": "proj-vwm",
-            "type": "project",
-            "label": {
-              "en": "Dimensions of Vulnerability in Visual Working Memory",
-              "zh": "视觉工作记忆的脆弱性维度"
-            },
-            "summary": {
-              "en": "First-author work (CogSci 2025): controllable naturalistic stimuli show that abstract dimension similarity — not just image similarity — drives memory distortion, and visual dimensions are more fragile than semantic ones.",
-              "zh": "一作工作（CogSci 2025）：用可控自然主义刺激证明，抽象维度相似性本身就足以诱发记忆扭曲，且视觉维度比语义维度更脆弱。"
-            },
-            "status": {
-              "en": "Published · CogSci 2025",
-              "zh": "已接收 · CogSci 2025"
-            },
-            "children": [
-              {
-                "id": "paper-cogsci",
-                "type": "paper",
-                "label": {
-                  "en": "CogSci 2025 paper · first author",
-                  "zh": "CogSci 2025 论文 · 一作"
-                },
-                "summary": {
-                  "en": "Yuang Cao*, Jiachen Zou*, Chen Wei†, Quanying Liu†. Accepted for presentation at the Cognitive Science Society Annual Conference 2025, San Francisco.",
-                  "zh": "Yuang Cao*, Jiachen Zou*, Chen Wei†, Quanying Liu†。Cognitive Science Society 2025 接收，旧金山。"
-                },
-                "links": [
-                  {
-                    "label": "GitHub repo",
-                    "url": "https://github.com/Anmicky/Dimensions-of-Vulnerability-in-Visual-Working-Memory"
-                  },
-                  {
-                    "label": "PDF",
-                    "url": "paper/CogSci2025_Dimensions_of_Vulnerability_in_VWM.pdf"
-                  }
-                ]
-              },
-              {
-                "id": "method-cocog",
-                "type": "method",
-                "label": {
-                  "en": "CoCoG-2 · concept-based controllable generation",
-                  "zh": "CoCoG-2 · 概念可控生成"
-                },
-                "summary": {
-                  "en": "Two-stage generation (p(h|e) → p(x|h)) with training-free guidance; precise dimension editing in CLIP embedding space.",
-                  "zh": "两阶段生成（p(h|e) → p(x|h)）+ 免训练引导；在 CLIP 嵌入空间做精确维度编辑。"
-                }
-              },
-              {
-                "id": "method-wheels",
-                "type": "method",
-                "label": {
-                  "en": "Image Wheels & Dimension Wheels",
-                  "zh": "图像轮与维度轮"
-                },
-                "summary": {
-                  "en": "Stimuli arranged on circular manifolds in concept space — decoupling image similarity from dimension similarity so each can be tested alone.",
-                  "zh": "在概念空间圆形流形上排布的刺激体系——把图像相似性与维度相似性解耦，可单独检验各自贡献。"
-                }
-              },
-              {
-                "id": "exp1",
-                "type": "experiment",
-                "label": {
-                  "en": "Exp. 1 · Image Wheels · N=100",
-                  "zh": "实验一 · 图像轮 · N=100"
-                },
-                "summary": {
-                  "en": "Image similarity drives distortion. Accuracy 0.372 (visual) vs 0.503 (semantic); bias 13.2° vs 10.1°.",
-                  "zh": "图像相似诱发扭曲。视觉准确率 0.372 vs 语义 0.503；偏差 13.2° vs 10.1°。"
-                }
-              },
-              {
-                "id": "exp2",
-                "type": "experiment",
-                "label": {
-                  "en": "Exp. 2 · Dimension Wheels · N=146",
-                  "zh": "实验二 · 维度轮 · N=146"
-                },
-                "summary": {
-                  "en": "Dimension similarity alone still distorts; visual–semantic gap widens (3.8°). Confirms the effect lives in the dimension structure.",
-                  "zh": "仅维度相似仍诱发扭曲，且视觉-语义差距反而更大（3.8°）。确认效应根植于维度结构本身。"
-                }
-              },
-              {
-                "id": "find-1",
-                "type": "finding",
-                "label": {
-                  "en": "Similar dimensions bias memory like similar images",
-                  "zh": "相似维度与相似图像一样诱发记忆扭曲"
-                },
-                "summary": {
-                  "en": "First validation of similarity-induced memory bias with naturalistic real-object stimuli.",
-                  "zh": "首次在自然主义真实物体刺激上验证相似性诱发记忆偏差。"
-                }
-              },
-              {
-                "id": "find-2",
-                "type": "finding",
-                "label": {
-                  "en": "Visual dimensions are more fragile than semantic ones",
-                  "zh": "视觉维度比语义维度更脆弱"
-                },
-                "summary": {
-                  "en": "Consistent across both experiments; supports schema-based semantic representation (Brady & Störmer, 2022).",
-                  "zh": "两个实验一致；支持语义表征受益于图式化深层加工（Brady & Störmer, 2022）。"
-                }
-              }
-            ]
-          },
-          {
-            "id": "proj-emotion",
-            "type": "project",
-            "label": {
-              "en": "Emotion Dimension Discovery · ongoing",
-              "zh": "情绪维度发现 · 进行中"
-            },
-            "summary": {
-              "en": "Lab project: can open-ended emotion descriptions be compressed into a stable low-dimensional structure? LLM word sampling → human validation → SPoSE.",
-              "zh": "实验室项目：开放式情绪描述能否被压缩为稳定低维结构？大模型采词 → 人类验证 → SPoSE 降维。"
-            },
-            "status": {
-              "en": "Ongoing · NCC Lab",
-              "zh": "进行中 · NCC 实验室"
-            },
-            "children": [
-              {
-                "id": "em-pipe",
-                "type": "method",
-                "label": {
-                  "en": "Four-layer pipeline",
-                  "zh": "四层研究链路"
-                },
-                "summary": {
-                  "en": "Word generation → human validation (quality gate) → SPoSE unsupervised dimension discovery → cross-source / cross-culture comparison.",
-                  "zh": "词生成 → 人类验证（质量闸门）→ SPoSE 无监督降维 → 跨来源/跨文化比较。"
-                }
-              },
-              {
-                "id": "em-tools",
-                "type": "method",
-                "label": {
-                  "zh": "qwen3.7 词集 · SPoSE",
-                  "en": "Qwen 3.7 word sets · SPoSE"
-                },
-                "summary": {
-                  "zh": "产词唯一标准 = qwen3.7（全量臂 qwen3.7-plus，对照臂 qwen3.7-flash）；Qwen-VL 系词集已废弃、不作正式输入。旧 1965/2000 片段词集（平均 2.8 词/片段、人类保留率 66.9%、适宜度 4.90）属 QwenVL 时代数据，仅作历史对照。SPoSE 降维在 qwen3.7 词集上推进。",
-                  "en": "The sole word-generation caliber is Qwen 3.7 (full-run arm qwen3.7-plus, comparison arm qwen3.7-flash); Qwen-VL word sets are retired and excluded from formal inputs. The legacy 1,965/2,000-clip set (avg 2.8 words/clip, 66.9% human retention, 4.90 appropriateness) is QwenVL-era data kept for historical reference only. SPoSE dimension discovery proceeds on Qwen 3.7 word sets."
-                },
-                "children": [
-                  {
-                    "id": "em-wordgen-cost",
-                    "type": "method",
-                    "label": {
-                      "zh": "全量产词成本核算 · qwen3.7-plus",
-                      "en": "Full-scale word generation cost estimate · qwen3.7-plus"
-                    },
-                    "summary": {
-                      "zh": "按 qwen3.7-plus 官方单价（输入 ¥2 / 输出 ¥8 每百万 token）与 48,175 段的实测+官方公式复核 token 核算：全量产词低/中/高三档约 ¥32 / ¥55 / ¥106，重试最坏情景 ¥299；相对 ¥1000 预算阈值余量约 18×，够用、无需分批。",
-                      "en": "Using qwen3.7-plus list prices (¥2 input / ¥8 output per million tokens) and token counts measured/re-derived from the official formula for 48,175 clips: low/mid/high totals ≈ ¥32 / ¥55 / ¥106, ¥299 in the retry-worst case; about 18x headroom under the ¥1000 budget, so no forced batching."
-                    },
-                    "status": {
-                      "zh": "已核算 · 2026-09-11 · 可复算",
-                      "en": "Estimated · 2026-09-11 · reproducible"
-                    },
-                    "evidence_refs": [
-                      "https://help.aliyun.com/zh/model-studio/model-pricing (fetched 2026-09-11): qwen3.7-plus, North China 2 (Beijing), 0<Token<=256K -> input ¥2, output ¥8 per million tokens; Batch half price; 1M free tokens",
-                      "https://help.aliyun.com/zh/model-studio/qwen3-7-plus (fetched 2026-09-11): qwen3.7-plus input modalities Image/Text/Video",
-                      "https://help.aliyun.com/zh/model-studio/vision-model (fetched 2026-09-11): video token formula video_token = int(ceil(nframes/2) * h_bar/32 * w_bar/32) + 2; default FPS=2.0; 32x32 pixels per token for the qwen3.7 series",
-                      "https://help.aliyun.com/zh/model-studio/qwen-api-via-dashscope (fetched 2026-09-11): usage.input_tokens / output_tokens / input_tokens_details.video_tokens are returned by the API",
-                      "本机复算（2026-09-11）：官方单价 × 48,175 段实测/官方公式复核 token；明细留存于私有记录"
-                    ]
-                  },
-                  {
-                    "id": "em-spose-scale",
-                    "type": "finding",
-                    "label": {
-                      "zh": "SPoSE 输入规模实测 · 5k+ 成立",
-                      "en": "SPoSE input scale measured · 5k+ confirmed"
-                    },
-                    "summary": {
-                      "zh": "对 120 部电影 48,175 段做全量过滤计数（0 API）：所有段均有非空文本、时长均≥1.6s（故『有字幕文本』与『可抽 3 帧』两项在本语料上恒真、不构成约束）。在『对齐字幕 + 时长≥2s + 可抽 3 帧 + 视频存在』口径下达标 33,484 段 = 5k 目标的 6.70×；最严口径（对齐 + 覆盖≥0.8 + ≥3s）仍有 19,811 段 = 3.96×。片段供给不构成缺口，唯一真正起作用的过滤器是时长下限（到 N≤12.7s 仍能凑满 5k）。",
-                      "en": "Full-corpus filter count over 120 films / 48,175 segments (zero API): every segment has non-empty text and lasts at least 1.6s, so 'has subtitle text' and '3 frames extractable' are both trivially satisfied and constrain nothing. Under 'aligned subtitle + duration >= 2s + 3 frames extractable + video present', 33,484 segments qualify = 6.70x the 5k target; even the strictest reading (aligned + coverage >= 0.8 + >= 3s) leaves 19,811 = 3.96x. Clip supply is not the bottleneck; the only binding filter is the duration floor (5k still holds up to N <= 12.7s)."
-                    },
-                    "status": {
-                      "zh": "已实测 · 2026-09-11 · 可复算",
-                      "en": "Measured · 2026-09-11 · reproducible"
-                    },
-                    "evidence_refs": [
-                      "本机全量重扫 120 部 segments.json，两次独立循环互证（2026-09-11）；明细留存于私有记录"
-                    ]
-                  },
-                  {
-                    "id": "em-wordgen-failmode",
-                    "type": "finding",
-                    "label": {
-                      "zh": "全量产词失败模式 · 短片段 400 与丢弃证据",
-                      "en": "Full-corpus word-gen failure mode: sub-2s HTTP 400 and discarded bodies"
-                    },
-                    "summary": {
-                      "zh": "48,175 段全量产词前的失败门：4 段 HTTP 400 的服务端 body 因脚本只存 str(e) 而丢失（原因不可判）；可比时长的失败段 4/4 为 <2.0s 短片段，而 ≥2.0s 仅 1/225 失败（Fisher p=4.5e-8），全量预计约 1,886 段非随机缺口；现行脚本对失败段只占位、不重试，Exp37 消费路径整段丢弃（build_manifest 29→28），且视频再压 pass2 因同路径 in/out 为 no-op（抽样 32.4% 仍以 >100KB 上传，max 486,784 B）。官方上限超标 0 段。",
-                      "en": "Pre-flight failure gate for the 48,175-clip run: the four HTTP-400 segments have no server body because the scripts keep only str(e); all four duration-comparable failures are sub-2.0s clips versus 1/225 for >=2.0s (Fisher p=4.5e-8), implying ~1,886 non-random gaps corpus-wide; the pipeline only writes an error placeholder and never retries, the Exp37 consumer drops failed segments entirely (build_manifest 29->28), and the 240px re-compression pass is a no-op due to same-path in/out (32.4% of a 105-clip sample still upload >100KB, max 486,784 B). Zero segments exceed official limits."
-                    },
-                    "status": {
-                      "zh": "已证据化 · 服务端具体原因查不到（缺 response body）",
-                      "en": "Evidenced; exact server reason unknown (response body not retained)"
-                    },
-                    "evidence_refs": [
-                      "temp_trash/qwen37_ab_results.json:541,544,794,797,1112,1115",
-                      "temp_trash/qwen37_exp37_results.json:5,8",
-                      "temp_trash/emotion_words_all.json:42",
-                      "scripts/emotion_words_generate.py:147-156",
-                      "scripts/emotion_words_all.py:87-102",
-                      "scripts/gen_word_review_build_20260910.py:38-39,57-65",
-                      "reports/word_review_20260910/build_manifest.json",
-                      "https://help.aliyun.com/zh/model-studio/vision-model/ (fetched 2026-09-11)",
-                      "https://help.aliyun.com/zh/model-studio/qwen-api-via-dashscope (fetched 2026-09-11)",
-                      "本机复算失败分布与片段时长的相关性（2026-09-11）；明细留存于私有记录"
-                    ]
-                  }
-                ]
-              },
-              {
-                "id": "em-layer4-access",
-                "type": "method",
-                "label": {
-                  "zh": "层4 数据获取路径 · 合规链条终检（2026-09-11）",
-                  "en": "Layer-4 data access paths: compliance-chain audit (2026-09-11)"
-                },
-                "summary": {
-                  "zh": "对层4 最接近来源实查『现在零动作→数据可用』的最短合规链条：CMU-MOSEI 零签署、零注册、零费用，官方只发匿名化处理特征（不发原始视频），但其 .csd 官方主机与 Drive/HF 镜像本机全部不可达；IEMOCAP 须由有权约束接收机构的官方人员（+导师）签署 Data Release Form，并禁止再分发数据及派生品，官方未公布处理时延；可即时直取的 RAVDESS/EmoBank 等不满足话语级细粒度效价+结构条件。结论：今天不存在零外部动作可用的层4 设计A 来源，两条最短链的首个动作分别是『打通出网』（执行主体=用户/网络管理员）与『机构签署人签字』（执行主体=导师/PI/院系授权人）。 另发现 Zenodo 存在第三方上传的 CMU-MOSEI .csd/pkl 镜像（10.5281/zenodo.17668236、10.5281/zenodo.17686067，open 且本机可达）：技术可达但许可是上传者自施、原始权利方未授权，IEMOCAP 镜像更违反其禁再分发条款，故不计入合规链。",
-                  "en": "Audits the shortest compliant chain from zero action to usable data for the closest layer-4 sources. CMU-MOSEI needs no signature, registration or fee and officially ships only anonymized processed features (never raw video), but its .csd host and Drive/HF mirrors are unreachable from this machine; IEMOCAP requires an official authorized to bind the receiving institution (plus advisor) to sign the Data Release Form, forbids redistribution of data and derivatives, and publishes no processing latency; instantly downloadable sets such as RAVDESS/EmoBank fail the utterance-level fine-grained valence plus structural conditions. Conclusion: no zero-external-action layer-4 design-A source exists today; the first step of each shortest chain is either network egress (owner: user/network admin) or an institutional signature (owner: advisor/PI or authorized signatory). Zenodo also hosts third-party CMU-MOSEI .csd/pkl mirrors (10.5281/zenodo.17668236, 10.5281/zenodo.17686067) that are open and reachable from this machine: technically downloadable, but the license is self-declared by the uploader with no authority from the rights holder, and an IEMOCAP mirror would breach its no-redistribution clause, so neither counts as a compliant source."
-                },
-                "status": {
-                  "zh": "2026-09-11 终检；无零外部动作可用来源；CMU-MOSEI『许可未证实』收口为『官方无独立数据许可文件』",
-                  "en": "final check 2026-09-11; no zero-external-action source; CMU-MOSEI license question closed as 'no standalone official data license exists'"
-                },
-                "evidence_refs": [
-                  "https://sail.usc.edu/iemocap/Data_Release_Form_IEMOCAP.pdf",
-                  "https://sail.usc.edu/iemocap/iemocap_release.htm",
-                  "https://raw.githubusercontent.com/CMU-MultiComp-Lab/CMU-MultimodalSDK/master/LICENSE.txt",
-                  "https://raw.githubusercontent.com/CMU-MultiComp-Lab/CMU-MultimodalSDK/master/README.md",
-                  "https://github.com/CMU-MultiComp-Lab/CMU-MultimodalSDK/issues/20",
-                  "https://github.com/huggingface/datasets/issues/3285",
-                  "https://zenodo.org/records/1188976",
-                  "https://zenodo.org/api/records/17668236",
-                  "https://zenodo.org/api/records/17686067",
-                  "https://zenodo.org/api/records?q=MOSEI"
-                ]
-              }
-            ]
-          }
-        ]
+          "en": "Perceptual comparison, generated object stimuli and memory distortion.",
+          "zh": "知觉比较、生成的物体刺激与记忆偏差。"
+        }
       },
       {
-        "id": "line-robust",
+        "id": "topic-1",
         "type": "research_line",
         "label": {
-          "en": "Robust, Human-Aligned AI",
-          "zh": "更稳健、更贴近人的 AI"
+          "en": "Emotion descriptions",
+          "zh": "情绪描述"
         },
         "summary": {
-          "en": "Feeding cognitive vulnerability research back into AI system design: robustness, representation bias, human-in-the-loop.",
-          "zh": "把认知脆弱性的研究反哺给 AI 设计：鲁棒性、表征偏差、人机协同。"
-        },
-        "children": [
-          {
-            "id": "rob-1",
-            "type": "direction",
-            "label": {
-              "en": "Representation bias & robustness",
-              "zh": "表征偏差与鲁棒性"
-            },
-            "summary": {
-              "en": "How intelligent systems encode, distort and align with human cognitive boundaries.",
-              "zh": "智能系统如何编码、偏离并对齐人类认知边界。"
-            }
-          },
-          {
-            "id": "rob-2",
-            "type": "direction",
-            "label": {
-              "en": "Human-in-the-loop & alignment",
-              "zh": "人机协同与对齐"
-            },
-            "summary": {
-              "en": "Systems that understand perceptual limits — not just benchmark scores.",
-              "zh": "理解人类感知边界的系统，而不只是追求指标。"
-            }
-          }
-        ]
+          "en": "Open-ended model words, human validation and annotation quality; exploratory work.",
+          "zh": "模型开放产词、人类验证与标注质量；探索中。"
+        }
       },
       {
-        "id": "line-biomed",
+        "id": "topic-2",
         "type": "research_line",
         "label": {
-          "en": "Biomedical & Health Applications",
-          "zh": "生物医学与健康应用"
+          "en": "Research methods",
+          "zh": "研究方法"
         },
         "summary": {
-          "en": "From cognitive mechanisms to clinical assistance and health systems.",
-          "zh": "从认知机制走向临床辅助与健康系统。"
-        },
-        "children": [
-          {
-            "id": "bio-1",
-            "type": "direction",
-            "label": {
-              "en": "Medical imaging & high-dim bio data",
-              "zh": "医学影像与高维生物数据"
-            },
-            "summary": {
-              "en": "Applying AI to medical imaging and biomedical data; trained in intelligent medical engineering.",
-              "zh": "将 AI 方法用于医学影像与生物医学数据；接受智能医学工程系统训练。"
-            }
-          },
-          {
-            "id": "bio-2",
-            "type": "direction",
-            "label": {
-              "en": "Health monitoring & intelligent systems",
-              "zh": "健康监测与智能系统"
-            },
-            "summary": {
-              "en": "Cognitive insights for rehabilitation systems and more natural human-machine collaboration.",
-              "zh": "认知机制启发康复系统与更自然的人机协作。"
-            }
-          }
-        ]
-      },
-      {
-        "id": "skills",
-        "type": "research_line",
-        "label": {
-          "en": "Skills & Methods",
-          "zh": "技能与方法"
-        },
-        "summary": {
-          "en": "Toolbox used across projects.",
-          "zh": "跨项目使用的方法工具箱。"
-        },
-        "children": [
-          {
-            "id": "sk-python",
-            "type": "skill",
-            "label": {
-              "en": "Python · PyTorch",
-              "zh": "Python · PyTorch"
-            },
-            "summary": {
-              "en": "Primary programming stack.",
-              "zh": "主力编程栈。"
-            }
-          },
-          {
-            "id": "sk-genai",
-            "type": "skill",
-            "label": {
-              "en": "Generative AI & latent-space control",
-              "zh": "生成式 AI 与潜空间操控"
-            },
-            "summary": {
-              "en": "Controllable generation, multi-loss optimization, concept-based editing.",
-              "zh": "可控生成、多损失联合优化、概念级编辑。"
-            }
-          },
-          {
-            "id": "sk-exp",
-            "type": "skill",
-            "label": {
-              "en": "Cognitive experimental design",
-              "zh": "认知实验设计"
-            },
-            "summary": {
-              "en": "Online platforms (脑岛): 246 participants, 120 trials each, quality screening.",
-              "zh": "在线平台（脑岛）：246 人 × 120 trials，含质量筛选。"
-            }
-          },
-          {
-            "id": "sk-stats",
-            "type": "skill",
-            "label": {
-              "en": "High-dimensional behavioral analysis",
-              "zh": "高维行为数据分析"
-            },
-            "summary": {
-              "en": "Angular bias scores, dimension taxonomy, statistical comparison.",
-              "zh": "角度偏差计算、维度分类、统计比较。"
-            }
-          },
-          {
-            "id": "sk-comm",
-            "type": "skill",
-            "label": {
-              "en": "Cross-disciplinary research communication",
-              "zh": "跨学科研究沟通"
-            },
-            "summary": {
-              "en": "From a research question to a complete, end-to-end pipeline.",
-              "zh": "从研究问题到完整管线的端到端落地。"
-            }
-          }
-        ]
-      },
-      {
-        "id": "achv",
-        "type": "research_line",
-        "label": {
-          "en": "Selected Achievements",
-          "zh": "代表性成就"
-        },
-        "summary": {
-          "en": "A few numbers from recent work.",
-          "zh": "近期工作的几个数字。"
-        },
-        "children": [
-          {
-            "id": "ac-1",
-            "type": "achievement",
-            "label": {
-              "en": "CogSci 2025 · first author",
-              "zh": "CogSci 2025 · 一作"
-            },
-            "summary": {
-              "en": "Accepted for presentation, San Francisco, Jul 30 – Aug 2, 2025.",
-              "zh": "2025-07-30 ~ 08-02 旧金山接收。"
-            }
-          },
-          {
-            "id": "ac-2",
-            "type": "achievement",
-            "label": {
-              "en": "Two online experiments · N = 246",
-              "zh": "两个在线实验 · N = 246"
-            },
-            "summary": {
-              "en": "29,520 trials on the 脑岛 platform.",
-              "zh": "脑岛平台共 29,520 trials。"
-            }
-          },
-          {
-            "id": "ac-3",
-            "type": "achievement",
-            "label": {
-              "en": "42-dimension taxonomy",
-              "zh": "42 维度分类体系"
-            },
-            "summary": {
-              "en": "Visual / semantic / mixed classification of behavior-based object dimensions.",
-              "zh": "行为对象维度的视觉/语义/混合分类。"
-            }
-          }
-        ]
+          "en": "Python workflows, online behavioral experiments and evaluation of model outputs.",
+          "zh": "Python流程、在线行为实验与模型输出评估。"
+        }
       }
     ]
   }

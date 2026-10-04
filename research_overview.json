@@ -1,0 +1,26 @@
+{
+  "meta": {
+    "title": "Yuang Cao — Research Overview",
+    "updated": "2026-10-04"
+  },
+  "topics": [
+    {
+      "en": "Visual working memory",
+      "zh": "视觉工作记忆",
+      "summary_en": "Perceptual comparison, generated object stimuli and memory distortion.",
+      "summary_zh": "知觉比较、生成的物体刺激与记忆偏差。"
+    },
+    {
+      "en": "Emotion descriptions",
+      "zh": "情绪描述",
+      "summary_en": "Open-ended model words, human validation and annotation quality; exploratory work.",
+      "summary_zh": "模型开放产词、人类验证与标注质量；探索中。"
+    },
+    {
+      "en": "Research methods",
+      "zh": "研究方法",
+      "summary_en": "Python workflows, online behavioral experiments and evaluation of model outputs.",
+      "summary_zh": "Python流程、在线行为实验与模型输出评估。"
+    }
+  ]
+}
