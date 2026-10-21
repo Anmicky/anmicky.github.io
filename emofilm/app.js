@@ -21,7 +21,7 @@ for(const p of [...PAPERS].reverse()){
 }
 const selected=(p,i)=>p.all_items||p.select.includes(i.id);
 function select(id){
- active=id;const p=PAPERS.find(p=>p.id===id);document.getElementById('read-current').hidden=!p;
+ active=id;if(innerWidth<=700)document.getElementById('mobile-overview').open=id==='all';const p=PAPERS.find(p=>p.id===id);document.getElementById('read-current').hidden=!p;
  for(const b of document.querySelectorAll('[data-select]'))b.setAttribute('aria-pressed',String(b.dataset.select===id));
  for(const b of document.querySelectorAll('[data-paper]')){
   b.classList.toggle('active',id===b.dataset.paper);b.classList.toggle('dimmed',id!=='all'&&id!==b.dataset.paper);b.setAttribute('aria-pressed',String(id===b.dataset.paper));
@@ -33,7 +33,15 @@ function select(id){
  }
  for(const el of document.querySelectorAll('[data-group]'))el.classList.toggle('dimmed',!!p&&!ITEMS.some(i=>i.group===el.dataset.group&&selected(p,i)));
  for(const el of document.querySelectorAll('[data-source]')){const yes=!!p&&p.source.includes(el.dataset.source);el.classList.toggle('active',yes);el.classList.toggle('dimmed',!!p&&!yes);}
- renderReading(p);draw();if(history.replaceState)history.replaceState(null,'',id==='all'?location.pathname:'#'+id);
+ renderReading(p);renderMobile(p);draw();if(history.replaceState)history.replaceState(null,'',id==='all'?location.pathname:'#'+id);
+}
+function renderMobile(p){
+ const el=document.getElementById('mobile-reader');
+ if(!p){el.innerHTML='<h2>从一篇研究开始</h2><p class="overview-intro">上方选择论文，依次查看它使用的数据、分析方法与结果。下方可展开全部50项及论文之间的引线。</p>';return;}
+ const groups=order.map(g=>({name:g,items:ITEMS.filter(i=>i.group===g&&selected(p,i))})).filter(g=>g.items.length);
+ const inputs=p.source.filter(id=>id!=='annotations').map(id=>document.querySelector(`[data-source="${id}"]`).innerHTML);
+ const count=groups.reduce((n,g)=>n+g.items.length,0);
+ el.innerHTML=`<div class="study-year">${esc(p.year)} · ${esc(p.status)}</div><h2>${esc(p.label)}</h2><p>${esc(p.question)}</p><article class="mobile-card"><h3>选取了哪些数据</h3><p>${esc(p.selection)}</p>${inputs.map(html=>`<div class="source">${html}</div>`).join('')}<p class="metric">${count?`使用50项中的 ${count} 项；点开分类可查量尺。`:'这项分析不使用50项情绪共识评分。'}</p>${groups.map(g=>`<details class="mobile-selection"><summary>${esc(groupNames[g.name])} · ${g.items.length}项</summary><div class="mobile-items">${g.items.map(i=>`<button data-item="${i.id}" class="${(p.id==='map'||p.id==='appraisal'&&i.system==='Discrete')?'target':''}">${esc(i.cn)}</button>`).join('')}</div></details>`).join('')}</article><article class="mobile-card"><h3>怎样分析</h3><p>${esc(p.analysis)}</p></article><article class="mobile-card"><h3>研究得到了什么</h3><p>${esc(p.result)}</p><p class="metric">${esc(p.metric)}</p><p class="boundary"><b>解读边界：</b>${esc(p.boundary)}</p></article><p><a href="${esc(p.url)}" target="_blank" rel="noopener">原始论文／作者公开稿 ↗</a></p><p class="study-year">核对位置：${esc(p.anchor)}</p>`;
 }
 function renderReading(p){
  const el=document.getElementById('reading');
@@ -41,6 +49,7 @@ function renderReading(p){
  el.innerHTML=`<div class="eyebrow">SELECTED STUDY · ${esc(p.route)}</div><h2>${esc(p.title)}</h2><p class="status">${esc(p.year)} · ${esc(p.status)}</p><p class="question">${esc(p.question)}</p><dl><dt>选取的数据</dt><dd>${esc(p.data)}</dd><dt>分析怎么做</dt><dd>${esc(p.analysis)}</dd><dt>得到的结果</dt><dd>${esc(p.result)}</dd></dl><p class="boundary"><b>解读边界：</b>${esc(p.boundary)}</p><p class="status">核对位置：${esc(p.anchor)}</p><p><a href="${esc(p.url)}" target="_blank" rel="noopener">原始论文／作者公开稿 ↗</a>${p.extra?` · <a href="${esc(p.extra)}" target="_blank" rel="noopener">另核对的公开来源 ↗</a>`:''}</p>`;
 }
 function draw(){
+ if(!document.getElementById('mobile-overview').open)return;
  canvas.style.height=Math.max(1970,sources.offsetHeight+135)+'px';
  const cr=canvas.getBoundingClientRect(),scale=cr.width/canvas.offsetWidth;
  const box=el=>{const r=el.getBoundingClientRect();return {left:(r.left-cr.left)/scale,right:(r.right-cr.left)/scale,top:(r.top-cr.top)/scale,height:r.height/scale,cy:(r.top-cr.top+r.height/2)/scale};};
@@ -74,4 +83,7 @@ document.getElementById('actual').onclick=()=>{canvas.style.zoom='1';draw();};
 function fit(){canvas.style.zoom=Math.min(1,(document.getElementById('viewport').clientWidth-10)/1480);draw();}
 document.getElementById('fit').onclick=fit;
 window.addEventListener('resize',()=>requestAnimationFrame(draw));
-document.fonts.ready.then(()=>{select(PAPERS.some(p=>p.id===location.hash.slice(1))?location.hash.slice(1):'all');if(innerWidth>=900)fit();else draw();});
+document.fonts.ready.then(()=>{select(PAPERS.some(p=>p.id===location.hash.slice(1))?location.hash.slice(1):'all');if(innerWidth<=700){document.getElementById('mobile-overview').open=active==='all';if(active==='all'){select(PAPERS[0].id);document.getElementById('mobile-overview').open=false;}draw();}else if(innerWidth>=900)fit();else draw();});
+
+document.getElementById('mobile-overview').addEventListener('toggle',()=>{if(document.getElementById('mobile-overview').open)requestAnimationFrame(draw);});
+matchMedia('(max-width:700px)').addEventListener('change',event=>{document.getElementById('mobile-overview').open=!event.matches||active==='all';canvas.style.zoom='1';if(!event.matches&&innerWidth>=900)fit();else draw();});
