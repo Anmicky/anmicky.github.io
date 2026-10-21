@@ -61,7 +61,7 @@ function draw(){
  edges.innerHTML=s;
 }
 function showItem(id){
- const i=ITEMS.find(i=>i.id===id);document.getElementById('item-content').innerHTML=`<div class="eyebrow">${esc(groupNames[i.group])} · ${i.id}</div><h2>${esc(i.cn)}</h2><p class="poles">${esc(i.lower_cn)} ↔ ${esc(i.upper_cn)}</p><p>量尺判读：<b>${i.scale.startsWith('B')?'双极':'单极'}${i.scale.includes('*')?'，需保留解释条件':''}</b>。图中低值到高值从左到右；这里的箭头仅表示同一滑杆的两端。</p><p class="raw">补表原始端点：${esc(i.lower_original)} → ${esc(i.upper_original)}</p>${i.note?`<p>${esc(i.note)}</p>`:''}<blockquote>${esc(i.instructions)}</blockquote><p class="raw">扫描组48项片后验证：${i.validation_included?'包含':'未包含'}。该项属于预设测量项目，不是从数据中发现的独立潜在维度。</p><a href="reference.html#${i.id}" target="_blank" rel="noopener">查看逐项核对表 ↗</a>`;document.getElementById('item-dialog').showModal();
+ const i=ITEMS.find(i=>i.id===id);document.getElementById('item-content').innerHTML=`<div class="eyebrow">${esc(groupNames[i.group])} · ${i.id}</div><h2>${esc(i.cn)}</h2><p class="poles">${esc(i.lower_cn)} ${i.scale.startsWith('B')?'↔':'→'} ${esc(i.upper_cn)}</p><p>量尺判读：<b>${i.scale.startsWith('B')?'双极':'单极'}${i.scale.includes('*')?'，需保留解释条件':''}</b>。图中低值到高值从左到右；这里的箭头仅表示同一滑杆的两端。</p><p class="raw">补表原始端点：${esc(i.lower_original)} → ${esc(i.upper_original)}</p>${i.note?`<p>${esc(i.note)}</p>`:''}<blockquote>${esc(i.instructions)}</blockquote><p class="raw">扫描组48项片后验证：${i.validation_included?'包含':'未包含'}。该项属于预设测量项目，不是从数据中发现的独立潜在维度。</p><a href="reference.html#${i.id}" target="_blank" rel="noopener">查看逐项核对表 ↗</a>`;document.getElementById('item-dialog').showModal();
 }
 document.addEventListener('click',e=>{
  const b=e.target.closest('[data-select],[data-paper],[data-item],[data-read]');if(!b)return;
