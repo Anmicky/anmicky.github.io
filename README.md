@@ -1,15 +1,30 @@
 # Yuang Cao · 曹宇昂 — academic homepage
 
-Live site: https://anmicky.github.io/
+**[Visit the website](https://anmicky.github.io/)** · **[Explore the Emo-FilM reading map](https://anmicky.github.io/emofilm/)**
 
-A bilingual public introduction with a CogSci 2025 publication, research experience, figure excerpts from the paper, contact links and a compact accessible research map.
+A bilingual introduction to my research experience in cognitive science and AI, with a published CogSci 2025 paper and interactive, source-linked literature notes.
 
-## Update
+## Explore
 
-The public homepage source is in `~/personal_work/website`. Run `./deploy_github.sh "update description"` to copy the explicit public file list and publish. The internal auto-tree (`website/tree_public.json`), private pages and shared private `assets/main.js` are deliberately not copied. `research_overview.json` is the reviewed public topic list; the repository's `tree_public.json` is a curated compatibility representation.
+| Resource | Contents |
+| --- | --- |
+| [Academic homepage](https://anmicky.github.io/) | Research interests, publication, experience and contact information. |
+| [Emo-FilM interactive map](https://anmicky.github.io/emofilm/) | Fifty retained measurement items, scale endpoints, and the data selections and findings of subsequent studies. |
+| [CogSci 2025 paper](https://anmicky.github.io/paper/CogSci2025_Dimensions_of_Vulnerability_in_VWM.pdf) | *Dimensions of Vulnerability in Visual Working Memory: An AI-Driven Approach to Perceptual Comparison*. |
 
-## Validation
+## Site structure
 
-Preview with `python3 -m http.server 8766 --bind 127.0.0.1`. Check desktop/mobile, both languages, links, figure disclosure and citation copying. Figures are raster excerpts of Figure 1 in the included paper, without AI-generated alterations. No analytics or external font requests.
+- `index.html`, `assets/`: bilingual homepage and local visual assets.
+- `emofilm/`: independent interactive reading map, item atlas and source notes.
+- `paper/`: publication PDF.
+- `research_overview.json`: a curated public overview of research topics.
 
-Last reviewed: 2026-10-04.
+GitHub Pages serves the `main` branch at the repository root. No build framework, login, analytics or external font service is required.
+
+For a local preview, run `python3 -m http.server 8766 --bind 127.0.0.1` in this directory, then open `http://127.0.0.1:8766/`.
+
+## Content and attribution
+
+The CogSci figure excerpts come from the linked paper, without AI-generated changes. The Emo-FilM visualization is a literature interpretation, not a new empirical study; it links to primary sources and explicitly marks scale interpretations, preprint versions and limitations. No experiment code, participant-level dataset or new license for third-party work is implied by hosting the page.
+
+Reviewed 21 October 2026.
