@@ -10,12 +10,14 @@ A bilingual introduction to my research experience in cognitive science and AI, 
 | --- | --- |
 | [Academic homepage](https://anmicky.github.io/) | Research interests, publication, experience and contact information. |
 | [Emo-FilM interactive map](https://anmicky.github.io/emofilm/) | Fifty retained measurement items, scale endpoints, and the data selections and findings of subsequent studies. |
+| [Hong Kong research atlas](https://anmicky.github.io/hk-research/) | Six universities, seven cognition and brain research groups, degree routes, representative work and source-linked application requirements. |
 | [CogSci 2025 paper](https://anmicky.github.io/paper/CogSci2025_Dimensions_of_Vulnerability_in_VWM.pdf) | *Dimensions of Vulnerability in Visual Working Memory: An AI-Driven Approach to Perceptual Comparison*. |
 
 ## Site structure
 
 - `index.html`, `assets/`: bilingual homepage and local visual assets.
 - `emofilm/`: independent interactive reading map, item atlas and source notes.
+- `hk-research/`: public-source university, research-degree and laboratory comparison; evidence coverage and uncertainties are recorded per source.
 - `paper/`: publication PDF.
 - `research_overview.json`: a curated public overview of research topics.
 

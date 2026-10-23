@@ -1,0 +1,1015 @@
+{
+  "title": "香港认知与脑科学 · 研究路径图",
+  "version": "2026-10-23",
+  "scope": "公开资料初筛；6所香港大学、7个实验室。不构成学校完整名单、导师排名或录取预测。",
+  "rankingNote": "QS 2027为大学综合排名；THE Psychology 2026为学科排名。不同年份、榜单与统计单位不可混为实验室名次。其余四校本轮未核同一学科榜，不能解释为未上榜。",
+  "coverage": "本轮阅读官方招生页、教师研究简介、实验室主页与代表作目录；部分论文仅核元数据、摘要或校方报道，未完成系统全文精读。没有开展学生访谈、完整资助审计或毕业去向调查。",
+  "topics": [
+    "行为实验",
+    "注意与记忆",
+    "计算模型",
+    "自然情境",
+    "脑成像",
+    "发展认知",
+    "语言与学习",
+    "睡眠与情绪",
+    "脑网络"
+  ],
+  "sources": {
+    "qs-government": {
+      "id": "qs-government",
+      "title": "香港政府新闻：QS 2027 香港高校排名",
+      "url": "https://www.news.gov.hk/eng/2026/06/20260618/20260618_110710_190.html",
+      "type": "政府发布",
+      "coverage": "全文",
+      "checked": "2026-10-23"
+    },
+    "qs-cityu": {
+      "id": "qs-cityu",
+      "title": "CityUHK：QS 2027 全球第52",
+      "url": "https://www.cityu.edu.hk/media/news/2026/06/18/cityuhk-leaps-to-52nd-globally-in-qs-world-university-rankings",
+      "type": "大学官网",
+      "coverage": "全文/索引交叉核对",
+      "checked": "2026-10-23"
+    },
+    "qs-hkbu": {
+      "id": "qs-hkbu",
+      "title": "QS：Hong Kong Baptist University",
+      "url": "https://www.topuniversities.com/universities/hong-kong-baptist-university",
+      "type": "榜单发布方",
+      "coverage": "排名表",
+      "checked": "2026-10-23"
+    },
+    "the-hku": {
+      "id": "the-hku",
+      "title": "HKU 社会科学学院：THE Psychology 2026",
+      "url": "https://web.socsc.hku.hk/facts-and-figures/",
+      "type": "大学官网",
+      "coverage": "排名信息",
+      "checked": "2026-10-23"
+    },
+    "the-cuhk": {
+      "id": "the-cuhk",
+      "title": "THE：CUHK Psychology 2026",
+      "url": "https://www.timeshighereducation.com/world-university-rankings/chinese-university-hong-kong?site=cn",
+      "type": "榜单发布方",
+      "coverage": "学科排名信息",
+      "checked": "2026-10-23"
+    },
+    "cuhk-degree": {
+      "id": "cuhk-degree",
+      "title": "CUHK：MPhil–PhD in Psychology",
+      "url": "https://www.gs.cuhk.edu.hk/programmes/social-science/mphil-phd-psychology",
+      "type": "研究生院",
+      "coverage": "全文",
+      "checked": "2026-10-23"
+    },
+    "huang-faculty": {
+      "id": "huang-faculty",
+      "title": "CUHK：Liqiang Huang 教师主页",
+      "url": "https://psy.cuhk.edu.hk/en/people/faculty-members/li-qiang-huang.html",
+      "type": "院系官网",
+      "coverage": "研究简介与代表作列表",
+      "checked": "2026-10-23"
+    },
+    "huang-lab": {
+      "id": "huang-lab",
+      "title": "Large-Scale Experiment Laboratory",
+      "url": "https://www.pbs-trinity.org",
+      "type": "实验室官网",
+      "coverage": "由官方教师页链接定位",
+      "checked": "2026-10-23"
+    },
+    "huang-2025": {
+      "id": "huang-2025",
+      "title": "2025：大规模视觉工作记忆实验",
+      "url": "https://doi.org/10.1038/s41467-025-56700-5",
+      "type": "期刊论文",
+      "coverage": "元数据与研究概述；未完成全文精读",
+      "checked": "2026-10-23"
+    },
+    "huang-2023": {
+      "id": "huang-2023",
+      "title": "2023：空间工作记忆机制",
+      "url": "https://doi.org/10.1038/s41562-023-01559-z",
+      "type": "期刊论文",
+      "coverage": "元数据与研究概述；未完成全文精读",
+      "checked": "2026-10-23"
+    },
+    "hku-degree": {
+      "id": "hku-degree",
+      "title": "HKU Psychology：MPhil / PhD 入学要求",
+      "url": "https://psychology.hku.hk/admission-master-of-philosophy-doctor-of-philosophy/",
+      "type": "院系官网",
+      "coverage": "全文",
+      "checked": "2026-10-23"
+    },
+    "hu-home": {
+      "id": "hu-home",
+      "title": "HKU Social & Cognitive Neuroscience Lab",
+      "url": "https://www.psychology.hku.hk/scnlab/",
+      "type": "实验室官网",
+      "coverage": "主页",
+      "checked": "2026-10-23"
+    },
+    "hu-research": {
+      "id": "hu-research",
+      "title": "SCN Lab：Research",
+      "url": "https://www.psychology.hku.hk/scnlab/research.html",
+      "type": "实验室官网",
+      "coverage": "研究线与论文列表",
+      "checked": "2026-10-23"
+    },
+    "hu-recruit": {
+      "id": "hu-recruit",
+      "title": "SCN Lab：Join Us",
+      "url": "https://www.psychology.hku.hk/scnlab/joinus.html",
+      "type": "实验室官网",
+      "coverage": "招生公告",
+      "checked": "2026-10-23"
+    },
+    "hu-2024": {
+      "id": "hu-2024",
+      "title": "2024：睡眠期正性记忆干扰与厌恶记忆",
+      "url": "https://doi.org/10.1073/pnas.2400678121",
+      "type": "期刊论文",
+      "coverage": "元数据与实验室研究概述；未完成全文精读",
+      "checked": "2026-10-23"
+    },
+    "hu-2023": {
+      "id": "hu-2023",
+      "title": "2023：睡眠期间的记忆表征",
+      "url": "https://doi.org/10.1371/journal.pbio.3002399",
+      "type": "期刊论文",
+      "coverage": "元数据与实验室研究概述；未完成全文精读",
+      "checked": "2026-10-23"
+    },
+    "becker-faculty": {
+      "id": "becker-faculty",
+      "title": "HKU：Benjamin Becker 教师主页",
+      "url": "https://psychology.hku.hk/people/bbecker/",
+      "type": "院系官网",
+      "coverage": "研究方向、身份与论文列表",
+      "checked": "2026-10-23"
+    },
+    "becker-lab": {
+      "id": "becker-lab",
+      "title": "MIND & AI Lab",
+      "url": "https://mindai-lab.org",
+      "type": "实验室官网",
+      "coverage": "由官方教师页链接定位；本轮未系统阅读",
+      "checked": "2026-10-23"
+    },
+    "hkust-programmes": {
+      "id": "hkust-programmes",
+      "title": "HKUST SOSC：研究学位介绍",
+      "url": "https://sosc.hkust.edu.hk/teaching_learning/programs_pg",
+      "type": "院系官网",
+      "coverage": "全文",
+      "checked": "2026-10-23"
+    },
+    "hkust-phd": {
+      "id": "hkust-phd",
+      "title": "HKUST：PhD in Social Science",
+      "url": "https://sosc.hkust.edu.hk/teaching_learning/phd_social_science",
+      "type": "院系官网",
+      "coverage": "培养要求",
+      "checked": "2026-10-23"
+    },
+    "hkust-mphil": {
+      "id": "hkust-mphil",
+      "title": "HKUST：MPhil in Social Science",
+      "url": "https://sosc.hkust.edu.hk/teaching_learning/mphil_social_science",
+      "type": "院系官网",
+      "coverage": "全文",
+      "checked": "2026-10-23"
+    },
+    "cheng-faculty": {
+      "id": "cheng-faculty",
+      "title": "HKUST：Chen Cheng 程琛",
+      "url": "https://sosc.hkust.edu.hk/people/chen-cheng",
+      "type": "院系官网",
+      "coverage": "身份与研究简介",
+      "checked": "2026-10-23"
+    },
+    "cheng-profile": {
+      "id": "cheng-profile",
+      "title": "HKUST：程琛学术资料",
+      "url": "https://facultyprofiles.hkust.edu.hk/profiles.php?profile=chen-cheng-chencheng",
+      "type": "大学官网",
+      "coverage": "论文目录索引；本轮未逐篇核验",
+      "checked": "2026-10-23"
+    },
+    "cheng-lab": {
+      "id": "cheng-lab",
+      "title": "HKUST Cognitive Development Lab",
+      "url": "https://chencheng1.weebly.com/",
+      "type": "实验室官网",
+      "coverage": "主页与2026活动信息",
+      "checked": "2026-10-23"
+    },
+    "cheng-project": {
+      "id": "cheng-project",
+      "title": "HKUST Summer Research：项目列表",
+      "url": "https://summercampus.hkust.edu.hk/research-project",
+      "type": "大学官网",
+      "coverage": "项目条目；暑研而非博士招生承诺",
+      "checked": "2026-10-23"
+    },
+    "lu-faculty": {
+      "id": "lu-faculty",
+      "title": "CityUHK：Qihong Lu 教师主页",
+      "url": "https://www.cityu.edu.hk/neuro/profile/qihonglu.htm",
+      "type": "院系官网",
+      "coverage": "搜索索引；直接访问403，未读全文",
+      "checked": "2026-10-23"
+    },
+    "lu-lab": {
+      "id": "lu-lab",
+      "title": "Human & Machine Memory Lab",
+      "url": "https://qlulab.github.io/website/",
+      "type": "实验室官网",
+      "coverage": "全文",
+      "checked": "2026-10-23"
+    },
+    "lu-pubs": {
+      "id": "lu-pubs",
+      "title": "Human & Machine Memory Lab：Publications",
+      "url": "https://qlulab.github.io/website/publications.html",
+      "type": "实验室官网",
+      "coverage": "论文列表",
+      "checked": "2026-10-23"
+    },
+    "lu-recruit": {
+      "id": "lu-recruit",
+      "title": "Human & Machine Memory Lab：Join",
+      "url": "https://qlulab.github.io/website/join.html",
+      "type": "实验室官网",
+      "coverage": "全文及项目链接",
+      "checked": "2026-10-23"
+    },
+    "cityu-degree": {
+      "id": "cityu-degree",
+      "title": "CityUHK Neuroscience：Research Degrees",
+      "url": "https://www.cityu.edu.hk/neuro/edu/rpg.htm",
+      "type": "院系官网",
+      "coverage": "实验室直接链接确认路径；访问403，要求待核",
+      "checked": "2026-10-23"
+    },
+    "cityu-grad": {
+      "id": "cityu-grad",
+      "title": "CityUHK：Research Degree Programmes",
+      "url": "https://www.cityu.edu.hk/pg/research-degree-programmes",
+      "type": "研究生院",
+      "coverage": "由实验室招生页定位；本轮未全文核验",
+      "checked": "2026-10-23"
+    },
+    "lu-2022": {
+      "id": "lu-2022",
+      "title": "2022：何时编码与提取情景记忆",
+      "url": "https://elifesciences.org/articles/74445",
+      "type": "期刊论文",
+      "coverage": "摘要与元数据；未完成全文精读",
+      "checked": "2026-10-23"
+    },
+    "li-faculty": {
+      "id": "li-faculty",
+      "title": "PolyU：Ping Li 学者资料",
+      "url": "https://research.polyu.edu.hk/en/persons/ping-li-2/",
+      "type": "大学官网",
+      "coverage": "身份、研究简介与论文列表",
+      "checked": "2026-10-23"
+    },
+    "polyu-degree": {
+      "id": "polyu-degree",
+      "title": "PolyU：2027 LST PhD / MPhil",
+      "url": "https://www.polyu.edu.hk/study/pg/rpg/2027/lst",
+      "type": "研究生招生官网",
+      "coverage": "全文",
+      "checked": "2026-10-23"
+    },
+    "polyu-research": {
+      "id": "polyu-research",
+      "title": "PolyU：语言模型与脑对齐研究",
+      "url": "https://www.polyu.edu.hk/en/media/media-releases/2024/0527_polyu-research-finds-improving-ai-large-language-models/",
+      "type": "大学新闻",
+      "coverage": "研究报道",
+      "checked": "2026-10-23"
+    },
+    "polyu-centre": {
+      "id": "polyu-centre",
+      "title": "PolyU Research Centre for Language, Cognition, and Neuroscience",
+      "url": "https://www.polyu.edu.hk/rclcn/",
+      "type": "研究中心官网",
+      "coverage": "研究平台简介；不等于PI独占资源",
+      "checked": "2026-10-23"
+    },
+    "zhou-faculty": {
+      "id": "zhou-faculty",
+      "title": "HKBU：Changsong Zhou 学者资料",
+      "url": "https://scholars.hkbu.edu.hk/en/persons/CSZHOU/",
+      "type": "大学官网",
+      "coverage": "身份与招生标注",
+      "checked": "2026-10-23"
+    },
+    "zhou-lab": {
+      "id": "zhou-lab",
+      "title": "HKBU Centre for Nonlinear Studies",
+      "url": "https://cns.hkbu.edu.hk/index.html",
+      "type": "研究中心官网",
+      "coverage": "研究与论文条目",
+      "checked": "2026-10-23"
+    },
+    "zhou-project": {
+      "id": "zhou-project",
+      "title": "HKBU：脑信号、数学模型与自闭特质",
+      "url": "https://research.hkbu.edu.hk/page/detail/483",
+      "type": "大学研究官网",
+      "coverage": "项目报道",
+      "checked": "2026-10-23"
+    },
+    "hkbu-degree": {
+      "id": "hkbu-degree",
+      "title": "HKBU：Physics PhD / MPhil",
+      "url": "https://gs.hkbu.edu.hk/programmes/doctor-of-philosophy-master-of-philosophy-department-of-physics",
+      "type": "研究生院",
+      "coverage": "全文",
+      "checked": "2026-10-23"
+    }
+  },
+  "schools": [
+    {
+      "id": "cuhk",
+      "short": "港中文",
+      "name": "香港中文大学",
+      "en": "The Chinese University of Hong Kong",
+      "code": "CUHK",
+      "rank": 18,
+      "rankDisplay": "18",
+      "rankSource": "qs-government",
+      "subject": {
+        "rank": "63",
+        "label": "THE Psychology 2026",
+        "source": "the-cuhk"
+      },
+      "accent": "teal",
+      "focus": "注意、工作记忆与大规模行为实验",
+      "program": {
+        "title": "MPhil–PhD in Psychology",
+        "dept": "心理学系",
+        "route": "研究型 MPhil / PhD",
+        "training": "课程、研究训练与导师指导的学位论文；需通过相应考核。正式页列最低17学分。",
+        "requirements": "PhD：相关学科本科，通常要求 GPA 3.5/4 或二等一级及以上；MPhil：相关学科本科、GPA 3.0/4。跨学科背景是否被认定为 related field，须个案确认。",
+        "documents": "PhD研究计划至少2,500英文词及职业目标；MPhil研究兴趣约750英文词及职业目标。支持材料与推荐信须按截止要求到齐。",
+        "deadlines": [
+          {
+            "date": "2026-12-01",
+            "label": "2027/28 主轮截止"
+          },
+          {
+            "date": "2027-03-31",
+            "label": "补录截止；取决于剩余名额"
+          }
+        ],
+        "funding": "奖学金与普通研究生资助须单独核实。HKPFS初步申请与校内完整申请不是同一个时点；不能等到补录轮再按主轮奖学金规划。",
+        "source": "cuhk-degree",
+        "gates": [
+          "相关学科学位认定",
+          "PhD GPA/学位等级",
+          "研究计划深度与推荐信到齐"
+        ]
+      },
+      "labs": [
+        {
+          "id": "huang",
+          "name": "Large-Scale Experiment Laboratory",
+          "pi": "Liqiang Huang · 黄力强",
+          "position": "Professor",
+          "tags": [
+            "行为实验",
+            "注意与记忆"
+          ],
+          "methods": [
+            "在线/实验室行为实验",
+            "视觉注意",
+            "工作记忆",
+            "大规模范式比较"
+          ],
+          "question": "注意与工作记忆的机制，能否通过系统改变实验条件得到更完整的解释？",
+          "standing": "长期理论积累，近年转向大规模行为研究",
+          "evidence": "教师页可追溯从 Boolean Map 理论到近年 Nature Human Behaviour、Nature Communications 的工作；说明研究线持续性，不代表实验室官方名次。",
+          "bridge": "适合把问题定义、实验设计、统计分析作为研究主轴；可从行为实验自动化与机制检验切入。",
+          "cost": "需要愿意打磨心理学范式与理论预测；做出工程系统本身通常不足以构成这里的核心贡献。",
+          "projects": [
+            {
+              "title": "系统探索视觉工作记忆机制",
+              "year": 2025,
+              "venue": "Nature Communications",
+              "question": "多个工作记忆理论能否在更广的实验条件下接受同一轮检验？",
+              "method": "大规模行为实验与理论预测比较",
+              "source": "huang-2025",
+              "status": "已发表",
+              "reading": "条目与研究概述；未完成论文全文精读"
+            },
+            {
+              "title": "系统探索空间工作记忆机制",
+              "year": 2023,
+              "venue": "Nature Human Behaviour",
+              "question": "空间记忆中的不同现象如何放在同一机制框架内理解？",
+              "method": "多条件行为测量与模型解释",
+              "source": "huang-2023",
+              "status": "已发表",
+              "reading": "条目与研究概述；未完成论文全文精读"
+            }
+          ],
+          "recruit": {
+            "label": "2027 导师名额待确认",
+            "detail": "本轮核验了在职身份与研究内容；未核得针对2027入学的明确招生名额公告。",
+            "source": "huang-faculty"
+          },
+          "unknown": [
+            "指导频率与学生独立课题空间",
+            "2027博士/硕士具体名额及资助",
+            "跨学科申请的心理学训练要求"
+          ],
+          "sources": [
+            "huang-faculty",
+            "huang-lab",
+            "huang-2025",
+            "huang-2023"
+          ],
+          "timeline": [
+            "2000年代起：视觉注意与 Boolean Map 理论",
+            "2023–2025：工作记忆的大规模行为探索"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hku",
+      "short": "港大",
+      "name": "香港大学",
+      "en": "The University of Hong Kong",
+      "code": "HKU",
+      "rank": 11,
+      "rankDisplay": "11",
+      "rankSource": "qs-government",
+      "subject": {
+        "rank": "62",
+        "label": "THE Psychology 2026",
+        "source": "the-hku"
+      },
+      "accent": "ochre",
+      "focus": "记忆控制、睡眠、情感与人类神经科学",
+      "program": {
+        "title": "MPhil / PhD in Psychology",
+        "dept": "心理学系",
+        "route": "研究型 MPhil / PhD",
+        "training": "一对一科研指导结合方法、统计、科学写作及研究讨论。4年PhD与MPhil的课程数量不同。",
+        "requirements": "院系明确要求：第一学位非心理学者，需五年内的 GRE Psychology Subject Test，最低550分。导师支持不能自行视为豁免。大学层面的学位与英语要求仍须另核。",
+        "documents": "先识别研究领域与潜在导师，再按研究生院要求提交材料。具体研究计划规格、2027各轮截止及3/4年PhD资格本轮尚未逐项核定。",
+        "deadlines": [],
+        "funding": "官网导向研究生院奖学金、学费及资助页面；本轮未核个人可获金额、年限或保证条件。",
+        "source": "hku-degree",
+        "gates": [
+          "非心理学本科：Psychology GRE ≥550",
+          "2027申请轮次与学位资格待核",
+          "导师名额与资助须具体确认"
+        ]
+      },
+      "labs": [
+        {
+          "id": "hu",
+          "name": "Social & Cognitive Neuroscience Lab",
+          "pi": "Xiaoqing Hu",
+          "position": "Associate Professor",
+          "tags": [
+            "行为实验",
+            "注意与记忆",
+            "睡眠与情绪"
+          ],
+          "methods": [
+            "EEG",
+            "行为实验",
+            "在线研究",
+            "睡眠期记忆干预"
+          ],
+          "question": "人能否控制不想要的记忆？睡眠时的记忆再激活能否改变醒后的记忆和情绪？",
+          "standing": "记忆控制与睡眠研究线清楚，招生年份明确",
+          "evidence": "实验室列出 EEG、行为和在线研究，并公开2026–27申请季的2027春/秋研究生招募；近年PNAS及PLOS Biology代表作可查。",
+          "bridge": "适合对记忆机制、可检验干预和人类实验有兴趣的人；计算技能可服务EEG分析与实验流程。",
+          "cost": "睡眠/EEG实验涉及实际被试组织和采集训练；需确认本人承担的数据采集时段，不能从网页推定所有学生都要夜间工作。",
+          "projects": [
+            {
+              "title": "在睡眠中用正性记忆干扰厌恶记忆",
+              "year": 2024,
+              "venue": "PNAS",
+              "question": "唤起正性竞争记忆，能否削弱厌恶记忆？",
+              "method": "睡眠期记忆再激活与醒后行为测量",
+              "source": "hu-2024",
+              "status": "已发表",
+              "reading": "条目与研究概述；未完成论文全文精读"
+            },
+            {
+              "title": "追踪睡眠中的具体记忆表征",
+              "year": 2023,
+              "venue": "PLOS Biology",
+              "question": "睡眠中能否读出单个记忆项目被重新激活的信号？",
+              "method": "睡眠与脑电表征分析",
+              "source": "hu-2023",
+              "status": "已发表",
+              "reading": "条目与研究概述；未完成论文全文精读"
+            }
+          ],
+          "recruit": {
+            "label": "明确提及 2027 春/秋 MPhil / PhD",
+            "detail": "Join Us 页面写明2026–27申请季欢迎申请2027春季或秋季入学；这是公开招募意向，不是录取或资助承诺。",
+            "source": "hu-recruit"
+          },
+          "unknown": [
+            "名额、资助和具体入学学期",
+            "非心理学学位的正式资格",
+            "实验采集安排及共同指导机制"
+          ],
+          "sources": [
+            "hu-home",
+            "hu-research",
+            "hu-recruit",
+            "hu-2024",
+            "hu-2023"
+          ],
+          "timeline": [
+            "持续方向：记忆控制、遗忘与睡眠",
+            "2023–2024：睡眠表征与记忆干预"
+          ]
+        },
+        {
+          "id": "becker",
+          "name": "MIND & AI Lab",
+          "pi": "Benjamin Becker",
+          "position": "Professor",
+          "tags": [
+            "脑成像",
+            "计算模型",
+            "自然情境",
+            "睡眠与情绪"
+          ],
+          "methods": [
+            "fMRI",
+            "神经解码",
+            "计算建模",
+            "实验心理学",
+            "神经调控"
+          ],
+          "question": "人类如何调节情绪并处理社会信息？脑成像与计算模型如何解释人与AI的互动？",
+          "standing": "人类神经科学与AI交叉，近期包含自然情境研究",
+          "evidence": "HKU教师页确认当前教授身份与MIND & AI Lab名称，并列出自然情境情绪调节、情感唤醒和社会脑/AI等近年论文。",
+          "bridge": "适合希望把自然情境任务、脑数据和计算模型连接起来的人；需用具体科学问题说明方法的用途。",
+          "cost": "影像分析、可解释计算模型与实验设计都可能是门槛；不能把“AI”理解为纯粹训练通用模型。",
+          "projects": [
+            {
+              "title": "自然情境中的动态情绪调节",
+              "year": 2026,
+              "venue": "Nature Communications",
+              "question": "自然情境下，不同情绪调节策略如何随时间变化？",
+              "method": "教师页列出的自然情境情绪调节研究；细节需读原文",
+              "source": "becker-faculty",
+              "status": "已发表",
+              "reading": "仅核教师页论文条目，未阅读全文"
+            },
+            {
+              "title": "社会脑与人工智能的交叉",
+              "year": 2025,
+              "venue": "Neuron",
+              "question": "社会神经科学能为理解人与AI互动提供什么框架？",
+              "method": "教师页列出的理论/综述性研究线；不可等同于一个在招博士课题",
+              "source": "becker-faculty",
+              "status": "已发表",
+              "reading": "仅核教师页论文条目，未阅读全文"
+            }
+          ],
+          "recruit": {
+            "label": "2027 具体招募待确认",
+            "detail": "在职及研究线已确认；本轮未核得明确的2027名额公告。",
+            "source": "becker-faculty"
+          },
+          "unknown": [
+            "2027具体导师名额",
+            "学生自主选题与合作项目分配",
+            "近期论文中本组学生实际主导的部分"
+          ],
+          "sources": [
+            "becker-faculty",
+            "becker-lab"
+          ],
+          "timeline": [
+            "近年：社会/情感神经科学与计算方法",
+            "2025–2026：AI交叉与自然情境调节"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hkust",
+      "short": "港科大",
+      "name": "香港科技大学",
+      "en": "The Hong Kong University of Science and Technology",
+      "code": "HKUST",
+      "rank": 33,
+      "rankDisplay": "33",
+      "rankSource": "qs-government",
+      "subject": null,
+      "accent": "teal",
+      "focus": "发展认知、注意与物体/数量表征",
+      "program": {
+        "title": "MPhil / PhD in Social Science",
+        "dept": "社会科学部 · Psychology 研究方向",
+        "route": "研究型社会科学学位；心理学方向",
+        "training": "PhD最低27学分，其中12学分方法课程；MPhil最低15学分，其中9学分方法课程，并完成论文与答辩。方法课程涵盖定量分析、研究设计、计算与因果推断等。",
+        "requirements": "MPhil页面欢迎不同学科，但要求扎实的社会科学基础和有研究潜力的实质性研究计划。2027直接本科申博资格、等级与英语门槛须再核招生目录。",
+        "documents": "需与心理学导师及社会科学部的研究学位路径对应；不是默认申请心理学授课型硕士。",
+        "deadlines": [],
+        "funding": "部官网称研究型学生通常有资助，并涉及TA/RA职责；个人资助额度、持续条件与2027名额须书面确认。",
+        "source": "hkust-programmes",
+        "extraSources": [
+          "hkust-phd",
+          "hkust-mphil"
+        ],
+        "gates": [
+          "学位名称为 Social Science",
+          "社会科学/发展心理训练基础",
+          "2027学位资格、截止与名额待核"
+        ]
+      },
+      "labs": [
+        {
+          "id": "cheng",
+          "name": "Cognitive Development Lab",
+          "pi": "Chen Cheng · 程琛",
+          "position": "Assistant Professor",
+          "tags": [
+            "行为实验",
+            "注意与记忆",
+            "发展认知"
+          ],
+          "methods": [
+            "婴幼儿/儿童行为实验",
+            "眼动与瞳孔测量",
+            "工作记忆任务"
+          ],
+          "question": "婴儿、儿童与成人如何在注意和工作记忆的支持下表征物体、数量，并更新信息？",
+          "standing": "明确的发展认知研究线，2026实验室活动可见",
+          "evidence": "官方教师页列明发展认知方向；实验室主页更新至2026年10月学术活动。论文条目与学校暑研题目提供了具体方法入口，不能据此排名实验室。",
+          "bridge": "适合对基本认知机制及其发展轨迹感兴趣、愿意做儿童实验的人；可从任务编程、眼动数据和模型分析入手。",
+          "cost": "儿童/婴儿研究依赖招募、家长沟通与严格的任务设计；如果只想做成人自然情境或纯ML，主题偏差需要认真考虑。",
+          "projects": [
+            {
+              "title": "工作记忆中的信息更新如何发展",
+              "year": "校方项目页未标年份",
+              "venue": "HKUST 暑研项目",
+              "question": "儿童在什么条件下能更新工作记忆中的信息？",
+              "method": "校方列出的研究项目与实验室训练；不等于2027博士课题承诺",
+              "source": "cheng-project",
+              "status": "暑研项目示例",
+              "reading": "官方项目条目"
+            },
+            {
+              "title": "婴儿的注意与视觉工作记忆",
+              "year": "年份本轮未核",
+              "venue": "教师论文目录",
+              "question": "聚焦注意与13个月婴儿视觉工作记忆表现有什么联系？",
+              "method": "瞳孔测量；论文元数据和全文仍需进一步核验",
+              "source": "cheng-profile",
+              "status": "目录条目",
+              "reading": "教师资料索引，非逐篇精读"
+            }
+          ],
+          "recruit": {
+            "label": "欢迎研究生联系；2027名额待核",
+            "detail": "实验室主页邀请拟申请研究生学位者直接联系PI，但没有承诺2027招生数量。",
+            "source": "cheng-lab"
+          },
+          "unknown": [
+            "儿童研究是否符合长期兴趣",
+            "具体研究生名额与资助",
+            "本科背景及心理学训练如何评估"
+          ],
+          "sources": [
+            "cheng-faculty",
+            "cheng-profile",
+            "cheng-lab",
+            "cheng-project"
+          ],
+          "timeline": [
+            "2019：发展心理学博士（官方履历）",
+            "2026：实验室学术交流与发展认知活动"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cityu",
+      "short": "香港城大",
+      "name": "香港城市大学",
+      "en": "City University of Hong Kong",
+      "code": "CityUHK",
+      "rank": 52,
+      "rankDisplay": "=52",
+      "rankSource": "qs-cityu",
+      "subject": null,
+      "accent": "ochre",
+      "focus": "情景记忆、自然叙事与神经网络模型",
+      "program": {
+        "title": "PhD in Neuroscience",
+        "dept": "神经科学系",
+        "route": "实验室招生页指定 Neuroscience PhD 路径",
+        "training": "实验室强调用神经网络解释记忆机制，再以人类行为或脑成像检验。院系完整课程与资格考规则本轮未读到。",
+        "requirements": "实验室欢迎CS、神经科学、心理学及相关背景的本科/硕士申请人，强调Python、记忆兴趣及相关实验/建模经验。这是实验室偏好，不能替代研究生院正式学位、成绩和英语资格。",
+        "documents": "实验室招生页要求研究兴趣、学术背景、成绩、代码示例/GitHub及推荐人等；正式校内材料和2027截止另核。",
+        "deadlines": [],
+        "funding": "实验室列出HKPFS及校内资助入口。个人是否获得、金额与持续年限没有核实。",
+        "source": "cityu-degree",
+        "extraSources": [
+          "lu-recruit",
+          "cityu-grad"
+        ],
+        "gates": [
+          "院系官网本轮访问403，正式门槛待核",
+          "研究兴趣与Python/建模证据",
+          "2027名额与奖学金时间待核"
+        ]
+      },
+      "labs": [
+        {
+          "id": "lu",
+          "name": "Human & Machine Memory Lab",
+          "pi": "Qihong Lu · 吕其鸿",
+          "position": "Presidential Assistant Professor（官方搜索索引）",
+          "tags": [
+            "计算模型",
+            "自然情境",
+            "注意与记忆",
+            "脑成像"
+          ],
+          "methods": [
+            "神经网络建模",
+            "行为实验",
+            "神经影像",
+            "自然叙事任务"
+          ],
+          "question": "记忆何时被编码、何时被提取？情景记忆如何支持连续叙事中的学习与推断？",
+          "standing": "新组值得跟踪；PI既有记忆建模研究可查",
+          "evidence": "教师官方索引显示2026加入城大；实验室官网与论文目录可直接阅读。既有论文包含在其他机构阶段的工作，不能当作城大新组学生培养记录。",
+          "bridge": "适合把人类记忆理论、Python模型和实验数据放在同一问题中的人；自然叙事与模型对接提供了具体切口。",
+          "cost": "需要理解模型对行为/神经数据给出什么可检验预测；纯粹追求模型性能与这里的机制问题可能错位。",
+          "projects": [
+            {
+              "title": "何时提取、何时编码情景记忆",
+              "year": 2022,
+              "venue": "eLife",
+              "question": "连续事件处理中，大脑何时应读取旧记忆、何时应写入新记忆？",
+              "method": "以神经网络形成可与人类结果对照的机制预测",
+              "source": "lu-2022",
+              "status": "已发表",
+              "reading": "摘要与元数据；不是全文精读"
+            },
+            {
+              "title": "因果叙事事件学习中的情景记忆",
+              "year": 2025,
+              "venue": "bioRxiv",
+              "question": "神经网络怎样借助情景记忆学习事件间的因果关系？",
+              "method": "神经网络与叙事学习；须核查后续正式发表版本",
+              "source": "lu-pubs",
+              "status": "预印本",
+              "reading": "实验室论文目录条目"
+            }
+          ],
+          "recruit": {
+            "label": "公开写明有 PhD / RA / 博后职位",
+            "detail": "Join页面标注有职位并指向Neuroscience PhD；公告未注明申请年度，不能推定2027仍有余位。",
+            "source": "lu-recruit"
+          },
+          "unknown": [
+            "新组2027实际规模、计算资源与共同指导",
+            "指导方式、首届学生训练及毕业路径",
+            "正式院系入学规则；官网403未能全文核实"
+          ],
+          "sources": [
+            "lu-faculty",
+            "lu-lab",
+            "lu-pubs",
+            "lu-recruit",
+            "lu-2022"
+          ],
+          "timeline": [
+            "2022–2025：情景记忆神经网络模型",
+            "2026：加入城大并建立新组（官方索引）"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "polyu",
+      "short": "香港理大",
+      "name": "香港理工大学",
+      "en": "The Hong Kong Polytechnic University",
+      "code": "PolyU",
+      "rank": 50,
+      "rankDisplay": "50",
+      "rankSource": "qs-government",
+      "subject": null,
+      "accent": "teal",
+      "focus": "语言认知、脑对齐与AI辅助学习",
+      "program": {
+        "title": "PhD / MPhil · Language Science and Technology",
+        "dept": "语言科学及科技学系 · 人文学院",
+        "route": "研究型 PhD / MPhil；语言、认知与神经科学方向",
+        "training": "研究方向包含语言认知神经科学、心理语言学、语言技术及AI；需论文研究。具体课程、学位时长与资格考待进一步核验。",
+        "requirements": "2027项目页要求CV、两封学术推荐及使用官方表格的研究计划；学位与英语门槛指向学校统一要求，本轮未逐条核准。项目页面说明优先考虑PhD申请。",
+        "documents": "当前正式名称为Language Science and Technology；PI具体接收学位/系别仍应确认，不能把同学院所有AI项目都自动映射给他。",
+        "deadlines": [
+          {
+            "date": "2027-05-31",
+            "label": "2027年9月入学一般项目截止；不是HKPFS截止"
+          }
+        ],
+        "funding": "奖学金与资助独立竞争；5月底的一般截止不能用于推定HKPFS还有名额。个人资助及学制成本须另算。",
+        "source": "polyu-degree",
+        "gates": [
+          "确定PI实际接收的系别/学位",
+          "语言学习问题是否为兴趣主轴",
+          "统一学位、英语与奖学金门槛待核"
+        ]
+      },
+      "labs": [
+        {
+          "id": "li",
+          "name": "Brain, Language, and Computation Laboratory",
+          "pi": "Ping Li · 李平",
+          "position": "Chair Professor；人文学院院长",
+          "tags": [
+            "计算模型",
+            "脑成像",
+            "语言与学习",
+            "自然情境"
+          ],
+          "methods": [
+            "fMRI",
+            "语言模型",
+            "语言学习实验",
+            "脑—模型表征比较"
+          ],
+          "question": "人如何理解语言并学习？语言模型能否更贴近大脑处理连贯语境的方式？",
+          "standing": "语言认知与计算交叉的长期研究线",
+          "evidence": "学校学者页确认神经语言学/双语研究身份；官方报道连接语言模型的上下文训练与人类fMRI。研究中心提供平台信息，但不能认定所有资源都由该PI独占。",
+          "bridge": "适合对语言理解、学习机制以及脑与模型表征的关系有持续兴趣的人；自然材料分析与计算技能可成为入口。",
+          "cost": "核心问题较偏语言与学习；若兴趣是一般记忆/注意，必须确认是否愿意长期进入语言科学语境。",
+          "projects": [
+            {
+              "title": "让语言模型更贴近人脑的语境处理",
+              "year": 2024,
+              "venue": "Science Advances（校方报道）",
+              "question": "训练语言模型理解句间关系，会怎样影响它与人类脑活动的对应？",
+              "method": "句间预测训练、连贯/非连贯阅读与fMRI比较",
+              "source": "polyu-research",
+              "status": "已发表",
+              "reading": "大学研究报道；未阅读全文"
+            },
+            {
+              "title": "在线教学中的人类与AI指导",
+              "year": 2026,
+              "venue": "Neuron（学校论文目录）",
+              "question": "指导信息的神经对齐与学习收益有什么联系？",
+              "method": "学校列出的教学/学习与神经对齐研究；具体设计待读原文",
+              "source": "li-faculty",
+              "status": "已发表",
+              "reading": "学校论文条目；未阅读全文"
+            }
+          ],
+          "recruit": {
+            "label": "2027 导师名额待确认",
+            "detail": "研究身份与项目路径可核；本轮未核得PI针对2027入学的明确招生公告。",
+            "source": "li-faculty"
+          },
+          "unknown": [
+            "PI实际指导投入与共同指导安排",
+            "具体学位接收路径和资助",
+            "课题是否以语言学习为核心"
+          ],
+          "sources": [
+            "li-faculty",
+            "polyu-research",
+            "polyu-centre"
+          ],
+          "timeline": [
+            "长期方向：语言学习、双语与神经可塑性",
+            "2024–2026：语言模型、脑对齐与AI学习"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hkbu",
+      "short": "香港浸会",
+      "name": "香港浸会大学",
+      "en": "Hong Kong Baptist University",
+      "code": "HKBU",
+      "rank": 216,
+      "rankDisplay": "216",
+      "rankSource": "qs-hkbu",
+      "subject": null,
+      "accent": "ochre",
+      "focus": "复杂脑网络、神经动力学与数学建模",
+      "program": {
+        "title": "PhD / MPhil in Physics",
+        "dept": "物理系 · 非线性研究中心相关研究组",
+        "route": "研究型物理学学位；复杂系统/神经动力学方向",
+        "training": "物理系研究学位覆盖复杂神经动力学、脑网络及统计物理与机器学习等方向；具体课程与数学基础预期需同导师确认。",
+        "requirements": "院系列有理论与计算方向，但个人本科背景、物理/数学准备及英语资格需要按研究生院正式标准逐条核验。不能仅因研究涉及脑科学就视为心理学项目。",
+        "documents": "将研究兴趣写成复杂系统、网络或动力学问题；材料规格与导师招生流程仍需进一步核定。",
+        "deadlines": [
+          {
+            "date": "2026-12-01",
+            "label": "2027年9月入学常规轮截止"
+          },
+          {
+            "date": "2027-04-15",
+            "label": "补录轮截止；取决于剩余名额"
+          }
+        ],
+        "funding": "项目页区分UGC资助与全自费，不能把二者费用混用。资助类别、学生津贴与持续条件需针对offer确认。",
+        "source": "hkbu-degree",
+        "gates": [
+          "实际学位是 Physics",
+          "数学/动力学准备",
+          "UGC资助类别与2027名额"
+        ]
+      },
+      "labs": [
+        {
+          "id": "zhou",
+          "name": "Centre for Nonlinear Studies · Zhou group",
+          "pi": "Changsong Zhou · 周昌松",
+          "position": "Chair Professor of Physics；研究中心负责人",
+          "tags": [
+            "计算模型",
+            "脑成像",
+            "脑网络"
+          ],
+          "methods": [
+            "复杂网络",
+            "神经动力学",
+            "数学模型",
+            "脑信号分析"
+          ],
+          "question": "脑网络如何在分离与整合之间取得平衡，并形成不同认知能力？",
+          "standing": "复杂系统与脑网络是明确专长，不能由综合校名次代替判断",
+          "evidence": "学校学者资料列出复杂系统物理身份和招生标注；中心展示脑网络/认知研究，校方研究报道包含EEG及数学建模合作。",
+          "bridge": "适合愿意以数学、动力学和网络模型为研究主轴的人；脑信号与计算背景可连接到具体机制。",
+          "cost": "理论/数学强度可能高于一般行为心理方向；如果核心兴趣是人类任务设计，需要确认能否拥有相应课题和合作者。",
+          "projects": [
+            {
+              "title": "脑网络的分离、整合与认知能力",
+              "year": "年份本轮未核",
+              "venue": "PNAS（中心官网列示）",
+              "question": "大尺度静息脑网络的平衡如何关联不同认知表现？",
+              "method": "网络结构与功能分析；论文全文及年份需进一步核验",
+              "source": "zhou-lab",
+              "status": "已发表",
+              "reading": "中心主页条目"
+            },
+            {
+              "title": "EEG、自闭特质与数学模型",
+              "year": "年份本轮未核",
+              "venue": "HKBU 研究项目报道",
+              "question": "怎样用脑电与数学模型解释个体认知特征？",
+              "method": "跨团队脑信号分析与模型；不是承诺可加入的2027课题",
+              "source": "zhou-project",
+              "status": "项目报道",
+              "reading": "大学项目报道"
+            }
+          ],
+          "recruit": {
+            "label": "学者页标注 Accepting PhD Students",
+            "detail": "标注未给具体入学年度；2027是否有可用资助名额需要确认。",
+            "source": "zhou-faculty"
+          },
+          "unknown": [
+            "神经认知课题与物理学培养的匹配",
+            "数学训练和导师/合作者分工",
+            "2027资助类别、名额与指导方式"
+          ],
+          "sources": [
+            "zhou-faculty",
+            "zhou-lab",
+            "zhou-project"
+          ],
+          "timeline": [
+            "长期方向：复杂系统与非线性研究",
+            "当前交叉：脑网络、认知能力与神经动力学"
+          ]
+        }
+      ]
+    }
+  ]
+}

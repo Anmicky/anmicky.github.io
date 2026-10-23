@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="从香港大学、研究学位到实验室与代表项目的公开证据图。对照排名、方法、申请门槛与资料缺口。">
+  <meta name="theme-color" content="#1a353d">
+  <title>香港认知与脑科学 · 研究路径图</title>
+  <link rel="icon" type="image/svg+xml" href="icon.svg">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#map">跳到研究路径</a>
+<header class="site-header">
+  <a href="#" class="brand" aria-label="香港研究路径，返回顶部"><span class="brand-mark" aria-hidden="true">港</span><span>研究路径<span class="brand-en">HONG KONG / RESEARCH ATLAS</span></span></a>
+  <nav aria-label="页面导航"><a href="#map">选路径</a><a href="#compare">横向比较</a><a href="#evidence">证据与边界</a><a class="github" href="https://github.com/Anmicky/anmicky.github.io/tree/main/hk-research" target="_blank" rel="noopener noreferrer">GitHub ↗</a></nav>
+</header>
+<main>
+  <section class="hero" aria-labelledby="title">
+    <div class="hero-copy">
+      <p class="eyebrow">COGNITION · COMPUTATION · HUMAN BRAIN</p>
+      <h1 id="title">一所大学里，<br>究竟进哪间实验室？</h1>
+      <p class="intro">沿着学校、学位与研究组，看到真正要做的问题。先辨认研究训练，再判断申请路径。</p>
+      <div class="hero-bottom"><a class="primary-link" href="#map">开始看研究路径 <span aria-hidden="true">↘</span></a><span class="date">资料核查 / 2026.10.23</span></div>
+    </div>
+    <div class="hero-atlas" aria-label="六所大学、七个实验室，按学校、学位、研究组展开">
+      <div class="atlas-top"><span>研究路径索引</span><span class="mono">HK / 01—06</span></div>
+      <div class="atlas-row"><span class="atlas-number">06</span><div>所大学<small>University / 学校环境</small></div></div>
+      <div class="atlas-line" aria-hidden="true"><i></i><span>研究学位 · 培养与申请入口</span><i></i></div>
+      <div class="atlas-row second"><span class="atlas-number">07</span><div>个实验室<small>Lab / 问题与方法</small></div></div>
+      <p class="atlas-caption">学校声誉、学科表现、实验室研究证据，分别判断。</p>
+    </div>
+  </section>
+  <div class="scope-note"><span class="note-mark">i</span><p>这是公开资料初筛。综合与学科排名可核查；实验室用代表研究、方法和招生信息展开，<strong>不编造实验室名次或录取概率</strong>。</p></div>
+
+  <section id="map" class="map-section" aria-labelledby="map-title">
+    <div class="section-heading"><div><p class="eyebrow">01 / FOLLOW THE QUESTION</p><h2 id="map-title">从研究问题出发</h2></div><p>点选学校，展开学位与实验室。<br>主题筛选只覆盖当前收集的研究组。</p></div>
+    <div class="toolbar"><label for="search">搜索学校、导师、方法<input id="search" type="search" placeholder="例如：记忆、EEG、程琛…" autocomplete="off"></label><button id="reset" class="text-button" type="button">重置筛选 ↺</button></div>
+    <div id="topics" class="topic-list" aria-label="研究主题筛选"></div>
+    <div class="results-line"><p id="result-count" role="status" aria-live="polite"></p><span>综合排名 / QS 2027</span></div>
+    <div id="school-list" class="school-list" aria-label="学校选择"></div>
+    <div id="empty" class="empty" hidden><h3>这批资料里还没有匹配的路径</h3><p>换一个关键词或重置筛选。未匹配仅指本页收集范围。</p><button id="empty-reset" class="primary-button" type="button">查看全部研究路径</button></div>
+    <div id="path-view">
+      <div id="path-heading" class="path-heading"></div>
+      <div id="route" class="route">
+        <svg id="connections" aria-hidden="true"></svg>
+        <div class="route-column"><p class="column-label">01 · UNIVERSITY</p><div id="school-node" class="school-node"></div></div>
+        <div class="route-column"><p class="column-label">02 · RESEARCH DEGREE</p><div id="program-node" class="program-node"></div></div>
+        <div class="route-column"><p class="column-label">03 · LABORATORY</p><div id="lab-nodes" class="lab-nodes" aria-label="实验室选择"></div></div>
+      </div>
+      <article id="lab-detail" class="lab-detail" aria-label="实验室详细资料"></article>
+      <details id="program-detail" class="program-detail"><summary><span>实际申请哪个项目？</span><span class="summary-hint">培养、材料与截止时间 <b aria-hidden="true">＋</b></span></summary><div id="program-content"></div></details>
+    </div>
+  </section>
+
+  <section id="compare" class="compare-section" aria-labelledby="compare-title">
+    <div class="section-heading"><div><p class="eyebrow">02 / SIDE BY SIDE</p><h2 id="compare-title">放在一起，差别更清楚</h2></div><p>最多比较三校。勾选仅保存在本机浏览器，<br>不代表最终申请决定。</p></div>
+    <div id="compare-picker" class="compare-picker" aria-label="选择比较学校"></div>
+    <p id="compare-status" class="compare-status" role="status" aria-live="polite"></p>
+    <div id="compare-content"></div>
+    <p class="table-note">THE学科榜仅核到港大与港中文的同口径数据。其余“本轮未核”不代表未上榜。62与63的微小名次差不应替代课题、导师与培养判断。</p>
+  </section>
+
+  <section id="evidence" class="evidence-section" aria-labelledby="evidence-title">
+    <div class="section-heading"><div><p class="eyebrow">03 / READ THE EVIDENCE</p><h2 id="evidence-title">每个判断，都有边界</h2></div><p id="source-count"></p></div>
+    <div class="evidence-grid">
+      <div><span class="evidence-letter">A</span><h3>直接事实</h3><p>学位名称、院系门槛、教师身份和公开招募等，链接到大学或实验室原页。网页未标申请年度时，保留这一限制。</p></div>
+      <div><span class="evidence-letter">C</span><h3>研究路径判断</h3><p>“适合怎样的研究训练”是依据公开课题与方法作的初步推断。它不是导师承诺，也没有推断性格、工作强度或录取概率。</p></div>
+      <div><span class="evidence-letter">?</span><h3>仍需核查</h3><p>2027资助名额、实际指导方式、学生自主性和毕业去向没有系统验证。论文列表不等于全文阅读，PI既有成果也不等于新组培养记录。</p></div>
+    </div>
+    <details class="method-note"><summary>阅读范围与下一步核查</summary><div><p id="coverage-text"></p><p>认知心理学通常以期刊研究为主要证据；计算认知/NeuroAI也出现预印本与会议成果。作者排序与合作规模随子领域而异，本页不据此猜测学生贡献、资金或指导质量。</p><p>进入正式选校前，应逐项确认：①学位与跨学科资格；②2027实际名额和逐年资助条件；③一个可执行的首年研究问题；④通过学生交流核实指导与训练方式。代表作还需阅读全文，核对设计、作者贡献和可复现材料。</p><p>本页只涵盖已收集的6所学校与7个研究组，不是香港所有相关导师的穷尽检索。未命中资料不能用于断言某课题、职位或资助不存在。</p></div></details>
+    <details class="source-directory"><summary>展开全部来源与阅读深度 <span id="source-total"></span></summary><ol id="source-list"></ol></details>
+  </section>
+</main>
+<footer><span>香港认知与脑科学 · 研究路径图</span><div><a href="data.json">公开数据 JSON ↗</a><a href="https://github.com/Anmicky/anmicky.github.io/tree/main/hk-research" target="_blank" rel="noopener noreferrer">源码与修改记录 ↗</a><span>更新至 2026.10.23</span></div></footer>
+<noscript><p class="noscript">此页交互需要JavaScript。可直接查看 <a href="data.json">公开数据</a> 或 <a href="https://github.com/Anmicky/anmicky.github.io/tree/main/hk-research">GitHub资料</a>。</p></noscript>
+</body>
+</html>
