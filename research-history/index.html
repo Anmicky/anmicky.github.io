@@ -1,0 +1,213 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>情绪空间研究讨论与调查历史地图</title><style>
+:root{--paper:#F0EFEB;--ink:#1C1C1A;--mut:#6A6963;--grid:#DEDDD6;--mid:#4A4944;--faint:#C6C5BF}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,"Noto Sans CJK SC","Microsoft YaHei",sans-serif;line-height:1.65}main{max-width:1260px;margin:auto;padding:25px 24px 32px}h1{font-size:25px;margin:0 0 9px;line-height:1.4;letter-spacing:-.02em}h2{font-size:18px;margin:0 0 7px;line-height:1.5}h3{font-size:15px;margin:0 0 7px}p{margin:8px 0}.sub,.small{font-size:12px;color:var(--mut)}.intro{max-width:850px;font-size:14px}.state{border-left:3px solid var(--ink);padding:10px 14px;margin:16px 0;font-size:14px}.controls{display:flex;gap:9px;flex-wrap:wrap;align-items:center;margin:18px 0 12px}label{font-size:12px;color:var(--mid)}select,input,button{font:inherit;color:var(--ink);background:var(--paper);border:1px solid var(--faint);border-radius:9px;min-height:38px;padding:7px 10px;font-size:13px}input{width:195px;max-width:100%}button{cursor:pointer}button:hover,button:focus-visible,select:focus-visible,input:focus-visible{outline:2px solid var(--ink);outline-offset:2px}.tab.active,.chip.active{background:var(--ink);color:var(--paper);border-color:var(--ink)}.layout{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(280px,.8fr);gap:24px;align-items:start}.card{border-radius:24px;padding:22px 0 16px;background:var(--paper)}.detail{position:sticky;top:14px;border-top:2px solid var(--ink)}.badge{display:inline-block;font-size:11px;padding:2px 8px;border:1px solid var(--faint);border-radius:20px;margin-right:5px}.kv{margin:12px 0}.kv strong{font-size:12px;display:block;color:var(--mid)}.kv div{font-size:14px}.quote{font-size:12px;white-space:pre-wrap;overflow-wrap:anywhere;color:var(--mid);border-left:2px solid var(--faint);padding-left:10px;max-height:150px;overflow:auto}.source{font-size:11px;overflow-wrap:anywhere}.src{font-size:10px;letter-spacing:.06em;color:var(--mut);margin-top:12px}.nav{display:flex;gap:7px;margin:14px 0}.note{padding:9px 0;font-size:12px;color:var(--mut)}svg{display:block;width:100%;overflow:visible}svg [role=button]{cursor:pointer}svg [role=button]:focus{outline:none}svg [role=button]:focus .halo{stroke:var(--ink);stroke-width:2}.section{border-top:1px solid var(--grid);margin-top:20px;padding-top:18px}.events{display:grid;gap:0}.row{display:block;text-align:left;border:0;border-radius:0;border-bottom:1px solid var(--grid);padding:11px 0;width:100%;min-height:58px}.row.active{border-left:3px solid var(--ink);padding-left:10px}.row .time{font-size:11px;color:var(--mut)}.row .title{font-size:14px;font-weight:600}.row .caption{font-size:12px;color:var(--mut)}.strip{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:10px}.chip{font-size:11px;min-height:30px}.correction{display:grid;grid-template-columns:155px 1fr;gap:12px;padding:10px 0;border-bottom:1px solid var(--grid);font-size:13px}.correction b{font-weight:600}.correction span{color:var(--mid)}a{color:var(--ink);text-underline-offset:3px;overflow-wrap:anywhere}details{margin:10px 0}summary{cursor:pointer;font-size:13px;font-weight:600}.empty{font-size:14px;padding:25px 0}ol{padding-left:23px;font-size:14px}.reveal{animation:reveal .6s cubic-bezier(.165,.84,.44,1) both}@keyframes reveal{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:none}}@media(max-width:900px){.layout{grid-template-columns:1fr}.detail{position:relative;top:auto}.card{padding-top:13px}main{padding:20px 15px}h1{font-size:22px}.correction{grid-template-columns:115px 1fr}.controls{gap:7px}input{width:150px}}@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;scroll-behavior:auto!important}}@media print{.controls,.nav,.strip{display:none}main{max-width:none}.layout{display:block}.detail{position:static}svg{break-inside:avoid}.events{display:block}.row{break-inside:avoid}.section{break-before:auto}}
+</style></head><body><main>
+<h1>从建空间到问清测量什么</h1><p class="intro">讨论主线、证据与修正放在同一张地图中。点圆点查看对应原话、当轮归档结论与仍未解决的问题。</p>
+<div class="state"><b>当前边界：暂不组织实验。</b>保留原研究目标，先回顾动机、理解现象、评估 AI 的研究机会。既有实验设计仅为备选。</div>
+<div class="small" id="scope"></div><p class="small"><a href="overview.png" target="_blank" rel="noopener">查看静态总览图</a></p>
+<div class="controls"><label>线索 <select id="track"><option value="all">全部线索</option></select></label><label>条目 <select id="kind"><option value="all">全部类型</option><option value="question">提问</option><option value="evidence">已有记录</option><option value="revision">质疑与修正</option><option value="proposal">设想与方案</option><option value="decision">指令与决定</option></select></label><label>搜索 <input id="query" placeholder="例如：原话、低维、遗漏"></label><button id="reset">重置</button><button class="tab active" id="mapMode" aria-pressed="true">主线地图</button><button class="tab" id="listMode" aria-pressed="false">时间列表</button></div>
+<div id="count" class="small" aria-live="polite"></div>
+<div class="layout"><section class="card" id="mapCard"><h2>五条线索的延续与修正</h2><p class="sub">纵向为阶段顺序，间距不代表时长。● 提问／记录／决定　○ 修正／设想；数值为该节点条目数。</p><svg id="lineage" role="img" aria-label="研究讨论主线的时间地图"></svg><div class="src">TREND LINEAGE · MONO · 原始会话与已存来源记录</div><p class="note">连线只表示同一线索的延续，不代表因果。虚线表示中间阶段未收录该线索的节点；文献支线当前保留作参考。</p></section><aside class="card detail" id="detail" aria-live="polite"></aside></div>
+<section class="section" id="listSection"><h2>按时间回看具体条目</h2><p class="small">对话节点的时间是提问或指令发生时刻；“当轮归档结论”可能在之后形成。记录日期与原消息日期分别标注。</p><div id="events" class="events"></div><button id="more">展开全部条目</button></section>
+<section class="section"><h2>六处需要保留的纠正</h2><div id="corrections"></div></section>
+<section class="section"><h2>当前留下的三个问题</h2><ol id="open"></ol></section>
+<section class="section"><details id="sourceBox"><summary>来源与回查范围</summary><p class="small">历史整理核对了本窗口消息与20项本地来源。公开页展示讨论与证据摘要，不包含原始会话文件或私聊逐字记录；微信证据来自此前核验后的摘要，回顾范围不是整个项目全史。</p><div id="sources"></div><p class="small">来源列展示证据类型与读取边界。全部界面数据内嵌，可离线查看；当前决定优先于早先备选方案。</p></details><details><summary>当时讨论涉及的公开文献入口</summary><div id="links"></div></details></section>
+</main><script>/* ═══════════════════════════════════════════════════════════════
+   MONO TOKENS — 风格的唯一正本
+   所有 mono 图表（Chart.js / ECharts / 手写 SVG）共享这一份。
+   任何文件里出现与本文件冲突的颜色、字体、动画参数，以本文件为准。
+   用法：<script src="mono-tokens.js">< /script>，全部挂在 window.MONO 上；
+   也可以直接把本文件内容内联进单文件 HTML（开源分发时推荐内联）。
+   ═══════════════════════════════════════════════════════════════ */
+(function (global) {
+  'use strict';
+
+  /* ── 1 · 色板 ──────────────────────────────────────────────
+     纸灰底 + 炭黑墨。没有彩色。明度即数据：最重要 = 最黑。   */
+  const INK   = '#1C1C1A';   // 墨：主数据、标题、强调
+  const PAPER = '#F0EFEB';   // 纸：页面底色 = 浅卡底色（卡片无边框，靠留白分卡）
+  const MUTED = '#8F8E88';   // 次级文字、副标题
+  const FAINT = '#C6C5BF';   // 来源行、辅助刻度
+  const GRID  = '#DEDDD6';   // 网格线、发丝线
+
+  // 7 级灰阶 ladder：多系列时按重要性从黑到浅分配
+  const L   = ['#1C1C1A', '#4A4944', '#6A6963', '#8F8E88', '#B0AFA9', '#C6C5BF', '#D8D7D1'];
+  // 5 级简版（waffle 等少系列场景）
+  const LAD = ['#1C1C1A', '#4A4944', '#8F8E88', '#B0AFA9', '#D8D7D1'];
+
+  // 暗卡（dark card）专用：底 #1C1C1A，其上的"墨"反转为纸色
+  const DARK = {
+    bg: '#1C1C1A',
+    ink: '#F0EFEB',          // 暗卡上的主数据色
+    muted: '#8F8E88',
+    faint: '#55554F',        // 暗卡来源行
+    grid: '#2E2D29',         // 暗卡网格 / 发丝线
+    gridSoft: '#2A2925',
+    ladder: ['#F0EFEB', '#DCDAD2', '#C9C7BD', '#B3B0A4', '#8F8E88', '#6A6963', '#4A4944'],
+  };
+
+  /* ── 2 · 字体 ────────────────────────────────────────────── */
+  const FONT = {
+    family: 'Inter',
+    // Google Fonts 引入行（放 <head>）：
+    link: 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap',
+    title:    { size: 16.5, weight: 700, spacing: '-.02em' },  // 卡内 h2
+    titleBig: { size: 19,   weight: 700, spacing: '-.02em' },  // 独立大图 h2
+    sub:      { size: 11.5, weight: 400 },                     // 副标题（图例说明写在这里）
+    src:      { size: 9.5,  weight: 500, spacing: '.08em' },   // 来源行，全大写
+    value:    { weight: 800 },                                 // 图内数值一律 800
+    axis:     { size: 9.5,  weight: 600 },                     // 轴标签
+    // SVG 内最小字号下限：半宽卡 6.5px，通栏/大图 5.5px。低于下限改 hover 出。
+    minHalf: 6.5, minWide: 5.5,
+  };
+
+  /* ── 3 · 形状 ────────────────────────────────────────────── */
+  const SHAPE = {
+    cardRadius: 24,          // 卡片圆角
+    cardPad: '28px 28px 20px',
+    barRadius: 99,           // 柱端胶囊圆角（竖柱只圆上端，横柱只圆外端）
+    tooltipRadius: 12,
+  };
+
+  /* ── 4 · 动画性格 ────────────────────────────────────────
+     快进快停，quarticOut / cubicOut，不弹跳（elasticOut 只给波浪入场）。 */
+  const MOTION = {
+    enter: 900,              // 常规入场 ms
+    enterSlow: 1200,         // 大元素 / 关系图
+    easing: 'quarticOut',
+    staggerDot: 12,          // 点阵逐个延迟 ms（8–15 区间）
+    staggerBar: 100,         // 条形逐根延迟 ms（80–130 区间）
+    // CSS 动画类（手写 SVG 用）：pop 缩放入场 / fade 淡入 / draw 描线
+    css: `
+  .pop{transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.2,.7,.3,1.3) both}
+  @keyframes pop{from{transform:scale(0)}to{transform:none}}
+  .fade{animation:fade .9s ease both}
+  @keyframes fade{from{opacity:0}}
+  .draw{stroke-dasharray:1;stroke-dashoffset:1;animation:draw 1s cubic-bezier(.4,0,.2,1) both}
+  @keyframes draw{to{stroke-dashoffset:0}}
+  @media (prefers-reduced-motion:reduce){
+    .pop,.fade{animation:none}
+    .draw{animation:none;stroke-dasharray:none;stroke-dashoffset:0}
+  }`,
+  };
+
+  /* ── 5 · Tooltip ─────────────────────────────────────────
+     浅卡用黑底纸字，暗卡用纸底黑字。ECharts 直接展开这两个对象。 */
+  const tipLight = { backgroundColor: INK, borderWidth: 0, padding: [10, 14],
+    textStyle: { color: PAPER, fontFamily: 'Inter', fontSize: 12 } };
+  const tipDark  = { backgroundColor: PAPER, borderWidth: 0, padding: [10, 14],
+    textStyle: { color: INK, fontFamily: 'Inter', fontSize: 12 } };
+
+  /* ── 6 · 确定性伪随机 ────────────────────────────────────
+     演示数据一律用它，不用 Math.random()——刷新必须长一样，
+     否则截图 / 录屏 / 回归对比全部失效。                       */
+  const rnd = (i, k) => Math.abs(((i * 73856093) ^ (k * 19349663)) % 1000) / 1000;
+
+  /* ── 7 · 几何 ────────────────────────────────────────────── */
+  const D2R = Math.PI / 180;
+  const pol = (cx, cy, r, deg) => [cx + r * Math.cos(deg * D2R), cy + r * Math.sin(deg * D2R)];
+  // 环形扇区 path（cornerRadius 自己在调用处用 ECharts sector 或手动倒角）
+  const sect = (cx, cy, r0, r1, a0, a1) => {
+    const big = a1 - a0 > 180 ? 1 : 0;
+    const [xa, ya] = pol(cx, cy, r1, a0), [xb, yb] = pol(cx, cy, r1, a1);
+    const [xc, yc] = pol(cx, cy, r0, a1), [xd, yd] = pol(cx, cy, r0, a0);
+    return `M${xa} ${ya} A${r1} ${r1} 0 ${big} 1 ${xb} ${yb} L${xc} ${yc} A${r0} ${r0} 0 ${big} 0 ${xd} ${yd} Z`;
+  };
+  // 手绘感圆（editorial 系气泡用）：圆周叠两个慢波 + 噪声，seed 定形
+  const blob = (x, y, r, seed) => {
+    const n = Math.max(14, Math.round(r * 1.6)), pts = [];
+    for (let t = 0; t < n; t++) {
+      const a = t / n * Math.PI * 2;
+      const w = 1 + .055 * Math.sin(a * 2 + seed * 7) + .04 * Math.sin(a * 3 + seed * 13)
+              + (rnd(seed + t, 3) - .5) * .03;
+      pts.push([x + Math.cos(a) * r * w, y + Math.sin(a) * r * w]);
+    }
+    let d = `M${pts[0][0].toFixed(1)} ${pts[0][1].toFixed(1)}`;
+    for (let t = 0; t < n; t++) {
+      const p = pts[t], q = pts[(t + 1) % n];
+      d += ` Q${p[0].toFixed(1)} ${p[1].toFixed(1)} ${((p[0]+q[0])/2).toFixed(1)} ${((p[1]+q[1])/2).toFixed(1)}`;
+    }
+    return d + ' Z';
+  };
+
+  /* ── 8 · SVG 快捷 ────────────────────────────────────────── */
+  const NS = 'http://www.w3.org/2000/svg';
+  const el  = (p, t, a) => { const n = document.createElementNS(NS, t);
+    for (const k in a) n.setAttribute(k, a[k]); p.appendChild(n); return n; };
+  const txt = (p, a, s) => { const n = el(p, 'text', a); n.textContent = s; return n; };
+  const tip = (n, s) => { const t = document.createElementNS(NS, 'title');
+    t.textContent = s; n.appendChild(t); };
+
+  /* ── 9 · 统一 reveal：滚入视野才播，点击重播 ──────────────
+     带 timer 登记（keep），重播前清干净，防动画叠加。          */
+  const timers = {};
+  const keep = (id, t) => { (timers[id] = timers[id] || []).push(t); };
+  const obsReveal = (id, fn) => {
+    const n = document.getElementById(id);
+    const go = () => {
+      (timers[id] || []).forEach(clearInterval); timers[id] = [];
+      if (n.tagName === 'svg' || n.tagName === 'SVG') n.innerHTML = '';
+      fn(n);
+    };
+    const io = new IntersectionObserver(es => {
+      if (es[0].isIntersecting) { go(); io.disconnect(); }
+    }, { threshold: .3 });
+    io.observe(n);
+    n.style.cursor = 'pointer';
+    n.addEventListener('click', go);
+  };
+  // ECharts 版 reveal
+  const eReveal = (id, opt) => obsReveal(id, elDom => {
+    const g = echarts.getInstanceByDom(elDom) || echarts.init(elDom);
+    g.clear(); g.setOption(opt);
+  });
+
+  /* ── 10 · 卡片骨架（生成新图时照抄这个结构） ──────────────
+     <div class="card [dark] [wide]">
+       <h2>结论式标题</h2>
+       <div class="sub">副标题 · 图例说明 · 时间范围</div>
+       <div class="ch" id="xx"></div>  或  <svg id="xx" viewBox="0 0 400 320">
+       <div class="src">图型名 · 系列名 · 数据来源（全大写）</div>
+     </div>                                                        */
+  const CARD_CSS = `
+  :root{--bg:${PAPER};--dark:${DARK.bg};--ink:${INK};--muted:${MUTED};--faint:${FAINT};--grid:${GRID}}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--bg);font-family:'Inter',sans-serif;color:var(--ink);padding:40px;-webkit-font-smoothing:antialiased}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:22px;max-width:1400px;margin:0 auto}
+  .card{background:var(--bg);border-radius:${SHAPE.cardRadius}px;padding:${SHAPE.cardPad}}
+  .card.dark{background:var(--dark);color:${PAPER}}
+  .card.dark .sub{color:${MUTED}}
+  .card.dark .src{color:${DARK.faint}}
+  .card.wide{grid-column:1/-1}
+  h2{font-weight:${FONT.title.weight};font-size:${FONT.title.size}px;letter-spacing:${FONT.title.spacing};margin-bottom:3px}
+  .sub{font-size:${FONT.sub.size}px;color:var(--muted);margin-bottom:14px}
+  .src{font-size:${FONT.src.size}px;color:var(--faint);margin-top:10px;letter-spacing:${FONT.src.spacing};font-weight:${FONT.src.weight}}
+  .ch{height:320px}
+  svg text{font-family:'Inter',sans-serif}` + MOTION.css;
+
+  global.MONO = { INK, PAPER, MUTED, FAINT, GRID, L, LAD, DARK,
+    FONT, SHAPE, MOTION, tipLight, tipDark,
+    rnd, pol, sect, blob, el, txt, tip, obsReveal, eReveal, keep, CARD_CSS };
+})(typeof window !== 'undefined' ? window : globalThis);
+</script><script>
+const DATA={"title": "情绪空间研究讨论与调查历史地图", "scope": "2026年10月17日至24日的研究讨论回顾：33条本窗口消息与8条背景记录，非项目全史。", "time_note": "北京时间。图上各阶段等距，只编码先后，不编码时长。单个节点可汇总同阶段同主线多项记录；线表示讨论延续，不表示因果。", "phases": [["10/17", "背景反证"], ["10/21—23", "师兄要求"], ["10/24 14:28", "空间与人类基准"], ["15:52—16:45", "自由回答内容"], ["17:26—17:55", "原话到词表"], ["18:02—18:14", "清洗与主题"], ["18:18—19:10", "回到原始目标"], ["19:10—19:35", "现有条件核查"], ["19:37—19:57", "自主调查反证"], ["20:19—20:47", "外部审查与方案"], ["20:47起", "暂不组织实验"]], "tracks": [{"name": "研究目标", "terminal": "保留目标", "alive": true}, {"name": "自由表达", "terminal": "保留问题", "alive": true}, {"name": "文献支线", "terminal": "保留参考", "alive": false}, {"name": "证据核查", "terminal": "继续分析", "alive": true}, {"name": "方向边界", "terminal": "暂不实验", "alive": true}], "events": [{"id": "H01", "title": "强简单共现基线已出现", "time": "2026-10-17（报告日期）", "phase": 0, "track": 3, "kind": "evidence", "speaker": "历史本地分析", "question": "低维是否超过简单统计？", "finding": "历史跨影片共标签补全中，直接NPMI优于当时低维表示。", "limit": "这是模型共标签任务，不能替代对人类判断的检验。", "sources": ["prior"], "quote": "", "related": []}, {"id": "H02", "title": "稳定性指标需要区分", "time": "2026-10-21（报告日期）", "phase": 1, "track": 3, "kind": "revision", "speaker": "历史指标审计", "question": "曲线在比较种子，还是独立数据两半？", "finding": "维度最大匹配等指标有选择效应；不同种子重复不能自动称数据分半稳定。", "limit": "不能由此选出心理真实维数。", "sources": ["metric", "request"], "quote": "", "related": []}, {"id": "W0", "title": "组会要求分半与阈值检查", "time": "2026-10-21 14:22:35（微信原消息）", "phase": 1, "track": 0, "kind": "question", "speaker": "合作者", "question": "组会要求分半与阈值检查", "finding": "师兄布置确认split-r、阈值敏感性及最优维数指标。", "limit": "会议中其他人的动态/弹幕任务不自动并入本人的主任务。", "sources": ["senior"], "quote": "", "related": []}, {"id": "W1", "title": "先检验模型词是否被人接受", "time": "2026-10-22 12:25:31（微信原消息）", "phase": 1, "track": 3, "kind": "revision", "speaker": "合作者", "question": "先检验模型词是否被人接受", "finding": "模型/人类词混合盲评保留率，是词语适用性的质量证据。", "limit": "保留率不是视频相似性或心理空间效度。", "sources": ["senior"], "quote": "", "related": []}, {"id": "W5", "title": "不要求人机完全一致", "time": "2026-10-22 17:12:12（微信原消息）", "phase": 1, "track": 0, "kind": "revision", "speaker": "合作者", "question": "不要求人机完全一致", "finding": "师兄明确：解释人机差异同样有价值。", "limit": "这不是已批准把研究改成任何差异分析课题。", "sources": ["senior"], "quote": "", "related": []}, {"id": "W7", "title": "弹幕与视频描述不是同一对象", "time": "2026-10-22 17:14:51（微信原消息）", "phase": 1, "track": 0, "kind": "revision", "speaker": "合作者", "question": "弹幕与视频描述不是同一对象", "finding": "弹幕更接近表达空间，不能直接替代人物情绪描述。", "limit": "这是构念边界，不是弹幕完全无研究价值。", "sources": ["senior"], "quote": "", "related": []}, {"id": "W8", "title": "明确有效人类情绪维度问题", "time": "2026-10-23 20:39:36（微信原消息）", "phase": 1, "track": 0, "kind": "question", "speaker": "合作者", "question": "明确有效人类情绪维度问题", "finding": "大量模型视频开放标注能否发现有效反映人类情绪表征的维度？开放词仅作初步基准。", "limit": "导出写三元组、存档截图写二元组，最终任务版本未调和。", "sources": ["senior"], "quote": "", "related": []}, {"id": "W9", "title": "两项核心验证被明确", "time": "2026-10-23 20:43:17（微信原消息）", "phase": 1, "track": 0, "kind": "question", "speaker": "合作者", "question": "两项核心验证被明确", "finding": "比较模型/人类来源表示对另一批人的预测；检验增加标注数据规模是否有益。", "limit": "这是要验证的主张，尚未被本轮代理结果证明。", "sources": ["senior"], "quote": "", "related": []}, {"id": "T01", "title": "重新进入科研讨论", "time": "2026-10-24T14:28:30.006000+08:00", "phase": 2, "track": 0, "kind": "question", "speaker": "研究者", "question": "继续科研", "finding": "开始回顾表示与人类评价的联系。", "limit": "不是新批准的研究目标。", "sources": ["session"], "quote": "", "related": [], "session_turn": 1, "time_kind": "提问/转贴/指令时刻；关联结论为此轮随后归档结果"}, {"id": "T02", "title": "从标注表走向空间", "time": "2026-10-24T14:30:37.925000+08:00", "phase": 2, "track": 0, "kind": "question", "speaker": "研究者", "question": "标注如何变成情绪表示？", "finding": "先讨论回答、词表、共现及坐标的处理链。", "limit": "能画出坐标不代表已测到人类心理结构。", "sources": ["session"], "quote": "", "related": [], "session_turn": 2, "time_kind": "提问/转贴/指令时刻；关联结论为此轮随后归档结果"}, {"id": "T03", "title": "几百个词怎样压缩", "time": "2026-10-24T14:39:13.812000+08:00", "phase": 2, "track": 0, "kind": "question", "speaker": "研究者", "question": "为什么能压缩成几个维度？", "finding": "讨论低维近似与维度解释。", "limit": "维数与解释需要额外证据。", "sources": ["session"], "quote": "", "related": [], "session_turn": 3, "time_kind": "提问/转贴/指令时刻；关联结论为此轮随后归档结果"}, {"id": "T04", "title": "坐标如何预测相似性", "time": "2026-10-24T14:52:32.729000+08:00", "phase": 2, "track": 0, "kind": "question", "speaker": "研究者", "question": "坐标与人的判断怎样连接？", "finding": "引入表示关系与人类关系的外部比较。", "limit": "词坐标到视频表示的映射本身也待验证。", "sources": ["session"], "quote": "", "related": [], "session_turn": 4, "time_kind": "提问/转贴/指令时刻；关联结论为此轮随后归档结果"}, {"id": "T05", "title": "先查人类能否预测人类", "time": "2026-10-24T14:54:25.582000+08:00", "phase": 2, "track": 3, "kind": "evidence", "speaker": "研究者", "question": "人类基准有多可重复？", "finding": "此轮现有15份记录、29视频重复分半：原词关系均值r=.411；BGE编码关系r=.509。", "limit": "二者测量编码不同，后者更高不证明更真实；1000次分组不是新增样本或心理上限。", "sources": ["session", "split"], "quote": "", "related": [], "session_turn": 5, "time_kind": "提问/转贴/指令时刻；关联结论为此轮随后归档结果"}, {"id": "T06", "title": "异形词与编码选择受到追问", "time": "2026-10-24T15:12:18.102000+08:00", "phase": 2, "track": 1, "kind": "revision", "speaker": "研究者", "question": "不同写法会怎样影响分半？", "finding": "原词保留会分散近义表达，语义编码会引入语言模型先验。", "limit": "不以提高r为理由暗中合并表达。", "sources": ["session", "split"], "quote": "", "related": [], "session_turn": 6, "time_kind": "提问/转贴/指令时刻；关联结论为此轮随后归档结果"}, {"id": "T07", "title": "要求用论文校正解释", "time": "2026-10-24T15:15:00.196000+08:00", "phase": 2, "track": 2, "kind": "question", "speaker": "研究者", "question": "这些方法有没有现实依据？", "finding": "从本地指标解释转向对应任务的文献调查。", "limit": "相关论文不自动证明当前方法有效。", "sources": ["session", "lit"], "quote": "", "related": [], "session_turn": 7, "time_kind": "提问/转贴/指令时刻；关联结论为此轮随后归档结果"}, {"id": "T08", "title": "要求完整原话与反迎合", "time": "2026-10-24T15:29:10.586000+08:00", "phase": 2, "track": 1, "kind": "decision", "speaker": "研究者", "question": "不要丢掉俗语与复杂表达；报告局限。", "finding": "确立原文保留、独立反证及明确局限的工作约束。", "limit": "保留字符串不等于每条意义已无损进入分析。", "sources": ["session", "lit"], "quote": "", "related": [], "session_turn": 8, "time_kind": "提问/转贴/指令时刻；关联结论为此轮随后归档结果"}, {"id": "T09", "title": "先找真正相似的自由生词任务", "time": "2026-10-24T15:52:33.792000+08:00", "phase": 3, "track": 2, "kind": "question", "speaker": "研究者", "question": "别只按情绪空间关键词找论文。", "finding": "比较任务对象、刺激、输出形式和处理方法。", "limit": "人物情绪、观众体验及词概念不能混为一谈。", "sources": ["session", "lit"], "quote": "", "related": [], "session_turn": 9, "time_kind": "提问/转贴/指令时刻；关联结论为此轮随后归档结果"}, {"id": "T10", "title": "读Turkstra的回答内容", "time": "2026-10-24T16:13:06.724000+08:00", "phase": 3, "track": 2, "kind": "evidence", "speaker": "研究者", "question": "自由回答实际会写什么？", "finding": "找到基本情绪以外的认知、社会评价等回答类型。", "limit": "静态人物照片与本项目短视频并不完全相同。", "sources": ["session", "lit"], "quote": "", "related": [], "session_turn": 10, "time_kind": "提问/转贴/指令时刻；关联结论为此轮随后归档结果"}, {"id": "T11", "title": "追问作者如何分类", "time": "2026-10-24T16:18:48.019000+08:00", "phase": 3, "track": 2, "kind": "question", "speaker": "研究者", "question": "研究者怎样从原话得到类别？", "finding": "检查词典/同义词映射及编码复核。", "limit": "人工一致不代表分类体系唯一正确。", "sources": ["session", "lit"], "quote": "", "related": [], "session_turn": 11, "time_kind": "提问/转贴/指令时刻；关联结论为此轮随后归档结果"}, {"id": "T12", "title": "要求展示真实编码例子", "time": "2026-10-24T16:42:25.616000+08:00", "phase": 3, "track": 1, "kind": "revision", "speaker": "研究者", "question": "抽象总结不足以审查分类。", "finding": "从分类名词转向逐例处理链。", "limit": "少数例子不能代表全表错误率。", "sources": ["session", "turk"], "quote": "", "related": [], "session_turn": 12, "time_kind": "提问/转贴/指令时刻；关联结论为此轮随后归档结果"}, {"id": "T13", "title": "质疑编码主观性与俗语损失", "time": "2026-10-24T16:45:56.261000+08:00", "phase": 3, "track": 1, "kind": "revision", "speaker": "研究者", "question": "七上八下等表达会不会被简单归并？", "finding": "主观规则、语境和信息损失成为审计重点。", "limit": "AI分类同样需要验证，不能天然替代人工真值。", "sources": ["session", "turk"], "quote": "", "related": [], "session_turn": 13, "time_kind": "提问/转贴/指令时刻；关联结论为此轮随后归档结果"}, {"id": "T14", "title": "要求取得全部原话与词表", "time": "2026-10-24T17:26:11.178000+08:00", "phase": 4, "track": 2, "kind": "revision", "speaker": "研究者", "question": "研究是否透明到能独立重做？", "finding": "Turkstra全量7400原回答及715/719词表本轮未取得；正文指向向作者索取。", "limit": "未取得不等于数据不存在，也不能据此指控造假。", "sources": ["session", "turk"], "quote": "", "related": [], "session_turn": 14, "time_kind": "提问/转贴/指令时刻；关联结论为此轮随后归档结果"}, {"id": "T15", "title": "读取公开497词与评分", "time": "2026-10-24T17:36:54.353000+08:00", "phase": 4, "track": 2, "kind": "evidence", "speaker": "研究者", "question": "公开评分表究竟统计了什么？", "finding": "取得另一项响应选项研究的497词评分与相关表。", "limit": "它不是Turkstra原始全量自由生词记录。", "sources": ["session", "turk"], "quote": "", "related": [], "session_turn": 15, "time_kind": "提问/转贴/指令时刻；关联结论为此轮随后归档结果"}, {"id": "T16", "title": "追问文献为什么对我们有用", "time": "2026-10-24T17:44:29.358000+08:00", "phase": 4, "track": 0, "kind": "question", "speaker": "研究者", "question": "不能只有介绍，要说明对应关系。", "finding": "将词适用性评分与开放生成来源区分。", "limit": "固定候选评分不能代替完全自由生成。", "sources": ["session", "turk"], "quote": "", "related": [], "session_turn": 16, "time_kind": "提问/转贴/指令时刻；关联结论为此轮随后归档结果"}, {"id": "T17", "title": "追问原话到词表的路径", "time": "2026-10-24T17:51:16.550000+08:00", "phase": 4, "track": 2, "kind": "question", "speaker": "研究者", "question": "清洗前后能否逐条追踪？", "finding": "开始寻找带原始、中间、整理后版本的数据。", "limit": "词表公开不等于转换轨迹公开。", "sources": ["session", "clean"], "quote": "", "related": [], "session_turn": 17, "time_kind": "提问/转贴/指令时刻；关联结论为此轮随后归档结果"}, {"id": "T18", "title": "寻找可追踪完整过程", "time": "2026-10-24T17:55:12.305000+08:00", "phase": 4, "track": 2, "kind": "evidence", "speaker": "研究者", "question": "哪项研究能查看原话和转换？", "finding": "七语言自由联想数据提供了原始/中间/整理层及标识。", "limit": "自由联想不同于描述视频中人物情绪。", "sources": ["session", "clean"], "quote": "", "related": [], "session_turn": 18, "time_kind": "提问/转贴/指令时刻；关联结论为此轮随后归档结果"}, {"id": "T19", "title": "逐项审查清洗是否损失意义", "time": "2026-10-24T18:02:11.495000+08:00", "phase": 5, "track": 2, "kind": "revision", "speaker": "研究者", "question": "哪些只是格式，哪些会改语义？", "finding": "核到短语合并、no turn back拆开、重复death去重等实例。", "limit": "未核作者意图，不能估计全库错误率或把所有清洗都判错。", "sources": ["session", "clean"], "quote": "", "related": [], "session_turn": 19, "time_kind": "提问/转贴/指令时刻；关联结论为此轮随后归档结果"}, {"id": "T20", "title": "提出Agent保义评估支线", "time": "2026-10-24T18:05:25.329000+08:00", "phase": 5, "track": 1, "kind": "proposal", "speaker": "研究者", "question": "保留后如何分析？能否用旧数据检验Agent？", "finding": "形成原始层—规范层—分析层，以及保义/下游效度的评估设想。", "limit": "这是候选工具，不是已经实施或已批准的主课题。", "sources": ["session", "theme"], "quote": "", "related": [], "session_turn": 20, "time_kind": "提问/转贴/指令时刻；关联结论为此轮随后归档结果"}, {"id": "T21", "title": "从词频局限转向主题分布", "time": "2026-10-24T18:10:11.444000+08:00", "phase": 5, "track": 1, "kind": "question", "speaker": "研究者", "question": "丰富表达太稀疏，主题分布是否更可用？", "finding": "将字面频率、表达多样性与主题编码区别。", "limit": "主题稳定可能来自粗粒度合并，不能直接叫心理维度。", "sources": ["session", "theme"], "quote": "", "related": [], "session_turn": 21, "time_kind": "提问/转贴/指令时刻；关联结论为此轮随后归档结果"}, {"id": "T22", "title": "查主题到底怎样统计", "time": "2026-10-24T18:14:31.728000+08:00", "phase": 5, "track": 2, "kind": "evidence", "speaker": "研究者", "question": "是脚本自动得到主题，还是人工编码？", "finding": "Purple子研究用九主题编码，再作列联分布与卡方分析；20%双编码κ=.848。", "limit": "不是全七语数据已发现情绪空间，也不能自动移植中文视频。", "sources": ["session", "theme"], "quote": "", "related": [], "session_turn": 22, "time_kind": "提问/转贴/指令时刻；关联结论为此轮随后归档结果"}, {"id": "T23", "title": "主动检查是否偏题", "time": "2026-10-24T18:18:24.600000+08:00", "phase": 6, "track": 4, "kind": "decision", "speaker": "研究者", "question": "把支线整理好，回到主体。", "finding": "主题编码和Agent保义留作辅助；重新对照师兄原目标。", "limit": "不因文献支线有趣而自动改题。", "sources": ["session", "return"], "quote": "", "related": [], "session_turn": 23, "time_kind": "提问/转贴/指令时刻；关联结论为此轮随后归档结果"}, {"id": "T24", "title": "回到合作者原话", "time": "2026-10-24T19:03:32.352000+08:00", "phase": 6, "track": 0, "kind": "revision", "speaker": "研究者", "question": "合作者到底要研究什么？", "finding": "回读6导出包、237定向去重条目，明确独立人类预测、规模和差异解释。", "limit": "这不是覆盖全部历史的系统回溯，也不是实时微信。", "sources": ["session", "senior"], "quote": "", "related": [], "session_turn": 24, "time_kind": "提问/转贴/指令时刻；关联结论为此轮随后归档结果"}, {"id": "T25", "title": "截图补齐共现与视频配对比较", "time": "2026-10-24T19:08:33.566000+08:00", "phase": 6, "track": 0, "kind": "question", "speaker": "研究者", "question": "合作者还要求哪项比较？", "finding": "新增共现三元组与视频配对三元组的比较要求。", "limit": "图片自身日期未明，时间是本窗口收图时间；配对路线生成细节未完整定义。", "sources": ["session", "extra"], "quote": "", "related": [], "session_turn": 25, "time_kind": "提问/转贴/指令时刻；关联结论为此轮随后归档结果"}, {"id": "T26", "title": "开始检查现有条件", "time": "2026-10-24T19:10:31.775000+08:00", "phase": 7, "track": 3, "kind": "evidence", "speaker": "研究者", "question": "有哪些原始数据、表示与可运行条件？", "finding": "核对人类/模型表及冻结词表；发现覆盖不对称，MER已见29段中的21段。", "limit": "刺激暴露不自动等于人类标签泄漏；低覆盖也不等于人类不能做评价。", "sources": ["session", "ready"], "quote": "", "related": [], "session_turn": 26, "time_kind": "提问/转贴/指令时刻；关联结论为此轮随后归档结果"}, {"id": "T27", "title": "区分我探索的和合作者要求的", "time": "2026-10-24T19:35:10.295000+08:00", "phase": 7, "track": 0, "kind": "revision", "speaker": "研究者", "question": "把自由回答支线与核心验证分开。", "finding": "核心是视频开放标注发现的表示如何与独立人类情绪判断相联系。", "limit": "三项核心验证仍是问题，不是完成事实。", "sources": ["session", "senior", "return"], "quote": "", "related": [], "session_turn": 27, "time_kind": "提问/转贴/指令时刻；关联结论为此轮随后归档结果"}, {"id": "T28", "title": "授权三条支线自主反证", "time": "2026-10-24T19:37:42.237000+08:00", "phase": 8, "track": 3, "kind": "evidence", "speaker": "研究者", "question": "深入调查，并报告自己的缺陷。", "finding": "三子Agent分工数据、文献、反方审查；独立重建目标及重算46行相关。", "limit": "同体系AI复核不等于独立人类同行评议。", "sources": ["session", "auto", "proxy"], "quote": "", "related": [], "session_turn": 28, "time_kind": "提问/转贴/指令时刻；关联结论为此轮随后归档结果"}, {"id": "T29", "title": "第一轮调查暂告一段", "time": "2026-10-24T19:57:19.068000+08:00", "phase": 8, "track": 4, "kind": "decision", "speaker": "研究者", "question": "保留已得证据与局限。", "finding": "报告和来源已归档。", "limit": "不能从简短回应推定批准新实验或改题。", "sources": ["session", "auto"], "quote": "", "related": [], "session_turn": 29, "time_kind": "提问/转贴/指令时刻；关联结论为此轮随后归档结果"}, {"id": "T30", "title": "转贴测量效度与遗漏机制意见", "time": "2026-10-24T20:19:20.221000+08:00", "phase": 9, "track": 4, "kind": "revision", "speaker": "研究者贴入的审稿式意见", "question": "如何区分心理结构与观测/算法制造的结构？", "finding": "核验新增论文，保留效度质疑；纠正词语任务替代视频、代理局限等同泄漏等表述。", "limit": "这是外部意见，不自动等于用户已选定新主线。", "sources": ["session", "review"], "quote": "", "related": [], "session_turn": 30, "time_kind": "提问/转贴/指令时刻；关联结论为此轮随后归档结果"}, {"id": "T31", "title": "转贴要求竞争解释的设计任务", "time": "2026-10-24T20:37:46.880000+08:00", "phase": 9, "track": 4, "kind": "proposal", "speaker": "研究者贴入的审稿式意见", "question": "把主张写成能相互区分的预测。", "finding": "形成外在表现为主的最小设计，比较低维增量、表达预算与歧义解释。", "limit": "32视频/80人只是未执行草案，统计效力与预算尚待验证。", "sources": ["session", "design"], "quote": "", "related": [], "session_turn": 31, "time_kind": "提问/转贴/指令时刻；关联结论为此轮随后归档结果"}, {"id": "T32", "title": "本人明确暂不组织实验", "time": "2026-10-24T20:47:51.091000+08:00", "phase": 10, "track": 4, "kind": "decision", "speaker": "研究者", "question": "当前不想组织实验。", "finding": "不推进招募、问卷、新标注或付费实验调用，方案只作备选。", "limit": "不等于放弃研究；现有证据分析和文献梳理仍可做。", "sources": ["session", "state", "design"], "quote": "", "related": [], "session_turn": 32, "time_kind": "提问/转贴/指令时刻；关联结论为此轮随后归档结果"}, {"id": "T33", "title": "转向动机与历史回顾", "time": "2026-10-24T20:52:32.324000+08:00", "phase": 10, "track": 4, "kind": "decision", "speaker": "研究者", "question": "重新看调查与讨论历史，做成时间地图。", "finding": "先问原始动机、真正想理解的现象、AI提供的研究机会。", "limit": "这三个问题是方向判断，不是已证实的新颖性或改题决定。", "sources": ["session", "state"], "quote": "", "related": [], "session_turn": 33, "time_kind": "提问/转贴/指令时刻；关联结论为此轮随后归档结果"}], "sources": {"session": {"label": "本窗口原始会话日志", "path": "本地核查记录的公开摘要", "scope": "逐条用户消息，UTC转北京时间；转贴意见不自动视为本人决定"}, "senior": {"label": "合作者原话回核", "path": "本地核查记录的公开摘要", "scope": "此前核原HTML后形成的摘录；本轮复读，非实时微信"}, "extra": {"label": "截图补充第三项比较", "path": "本地核查记录的公开摘要", "scope": "消息日期未明；本窗口截图收到时间可核"}, "split": {"label": "人类split r本地结果", "path": "本地核查记录的公开摘要", "scope": "现有15份记录的重复分半；非直接相似任务上限"}, "lit": {"label": "自由回答文献第一轮", "path": "本地核查记录的公开摘要", "scope": "定向阅读，不是系统综述"}, "turk": {"label": "Turkstra透明性核查", "path": "本地核查记录的公开摘要", "scope": "未取得全量原话；公开497词来自另一研究"}, "clean": {"label": "七语言清洗实例审查", "path": "本地核查记录的公开摘要", "scope": "选取实例，不是全表错误率"}, "theme": {"label": "下游主题分析与Agent设想", "path": "本地核查记录的公开摘要", "scope": "Purple子研究九主题；非整七语情绪空间"}, "return": {"label": "回到主问题的记录", "path": "本地核查记录的公开摘要", "scope": "文献支线与原科学目标分开"}, "ready": {"label": "三项验证的条件检查", "path": "本地核查记录的公开摘要", "scope": "数据/表示/来源检查；不是新心理效度验证"}, "auto": {"label": "自主调查汇总", "path": "本地核查记录的公开摘要", "scope": "三子Agent与本地诊断；没有新招募或训练"}, "proxy": {"label": "29视频代理诊断全结果", "path": "本地核查记录的公开摘要", "scope": "词汇派生目标、冻结表示与平均投影，不是直接心理相似真值"}, "audit": {"label": "小样本人类基线核查", "path": "本地核查记录的公开摘要", "scope": "原共现规则敏感性，非公平训练完成的人类空间"}, "negative": {"label": "负词抽样机制核查", "path": "本地核查记录的公开摘要", "scope": "同视频其他回答支持负词，不是真实语义假负率"}, "review": {"label": "外部意见核验与纠正", "path": "本地核查记录的公开摘要", "scope": "采纳审查点，不自动改题；未知建模还需识别假设"}, "design": {"label": "最小辨别实验设计草案", "path": "本地核查记录的公开摘要", "scope": "仅建议，未招募，统计效力未证实；现已暂停推进"}, "prior": {"label": "10月17日历史反证结果", "path": "本地核查记录的公开摘要", "scope": "跨影片模型共标签补全；不是人类心理目标"}, "metric": {"label": "10月21日指标审计", "path": "本地核查记录的公开摘要", "scope": "指标选择及阈值诊断；非维数或心理效度结论"}, "request": {"label": "10月22日请求回核", "path": "本地核查记录的公开摘要", "scope": "数据分半与同数据不同种子重复必须区分"}, "state": {"label": "当前状态及用户决定", "path": "本地核查记录的公开摘要", "scope": "仅以此次读取快照解释当前边界"}}, "now": "暂不组织实验；保留原目标，先做动机回顾、已有证据与理论判断。", "open_questions": ["师兄建空间最初优先追求预测、潜在维度，还是可解释关系？原话支持方法论目标，但三者优先级仍需区分。", "同视频不同词：心理理解差异与表达习惯分别贡献多少？现有记录不能唯一识别。", "AI提供的是规模、表达覆盖还是发现人机分歧的机会？不可替代性与新颖性尚未证明。"], "corrections": [["497词评分", "不是Turkstra完整自由回答", "评分数据与生成数据的来源分开。"], ["语义主题", "不是心理潜在维度", "九主题来自编码体系，回答的是表达内容分布。"], ["分半r较高", "不等于更真实或人类上限", "编码选择与群体/刺激抽样会改变数值。"], ["低维未赢代理基线", "不等于研究方向被否定", "结论限当前表示、映射和目标。"], ["未提及≠否定", "不等于遗漏已被证明为主因", "仍需识别适用性与表达选择。"], ["已有最小实验方案", "不等于已批准执行", "用户明确暂不组织实验，当前以此为准。"]], "reading_links": [["Turkstra研究", "https://doi.org/10.1017/BrImp.2016.29"], ["497词响应选项研究", "https://doi.org/10.1017/langcog.2022.24"], ["可追踪七语言联想数据", "https://osf.io/xzcbg/"], ["Purple主题子研究", "https://doi.org/10.1002/col.22908"], ["语言生成特征与人类相似性", "https://arxiv.org/html/2202.03753v2"], ["视频社会判断2026新版", "https://arxiv.org/html/2510.01502v2"]]};
+const LABEL={question:'提问',evidence:'已有记录',revision:'质疑与修正',proposal:'设想与方案',decision:'指令与决定'};
+const state={track:'all',kind:'all',query:'',mode:'map',selected:'T32',all:false};
+const $=id=>document.getElementById(id);
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const shortTime=s=>s.includes('T')?s.replace('T',' ').replace(/\.\d+\+08:00/,'').replace('+08:00',''):s;
+function visible(){return DATA.events.filter(e=>(state.track==='all'||e.track===+state.track)&&(state.kind==='all'||e.kind===state.kind)&&(!state.query||[e.title,e.question,e.finding,e.limit,e.quote,e.speaker].join(' ').toLowerCase().includes(state.query.toLowerCase())))}
+function chronological(es){return es.slice().sort((a,b)=>a.time.localeCompare(b.time)||a.id.localeCompare(b.id))}
+function el(s,t,a={},text){const n=document.createElementNS('http://www.w3.org/2000/svg',t);for(const[k,v]of Object.entries(a))n.setAttribute(k,v);if(text!==undefined)n.textContent=text;s.appendChild(n);return n}
+function txt(s,a,t){return el(s,'text',a,t)}
+// L11 Trend Lineage: preserve vertical time guides, track columns, event circles,
+// dormant dashed segments and terminal dots. y encodes ordinal phase, not duration.
+function draw(es){const s=$('lineage');s.replaceChildren();const W=Math.max(310,Math.floor(s.parentElement.clientWidth));const H=DATA.phases.length*68+120;const Y0=0,yY=p=>78+(p-Y0)*68,colX=c=>105+(W-120)*(c+.5)/5;s.setAttribute('viewBox',`0 0 ${W} ${H}`);s.style.height=H+'px';const trackOn=c=>state.track==='all'||+state.track===c;
+ for(let p=0;p<DATA.phases.length;p++){el(s,'line',{x1:100,y1:yY(p),x2:W-8,y2:yY(p),stroke:MONO.GRID,'stroke-width':.8});txt(s,{x:3,y:yY(p)-6,'font-size':11,'font-weight':600,fill:MONO.INK},DATA.phases[p][0]);const title=DATA.phases[p][1];for(let k=0;k<Math.ceil(title.length/8);k++)txt(s,{x:3,y:yY(p)+10+k*13,'font-size':10.5,fill:'#6A6963'},title.slice(k*8,k*8+8))}
+ DATA.tracks.forEach((tr,c)=>{const x=colX(c);txt(s,{x,y:28,'font-size':11,'font-weight':600,fill:trackOn(c)?MONO.INK:MONO.FAINT,'text-anchor':'middle'},tr.name);const buckets=DATA.phases.map((_,p)=>es.filter(e=>e.track===c&&e.phase===p)).filter(b=>b.length);let last=null;for(let k=0;k<buckets.length;k++){const b=buckets[k],p=b[0].phase;if(last!==null)el(s,'line',{x1:x,y1:yY(last)+11,x2:x,y2:yY(p)-11,stroke:'#B0AFA9','stroke-width':1,'stroke-dasharray':p-last>1?'2 4':'none'});last=p;const hollow=b.some(e=>['revision','proposal'].includes(e.kind));const selected=b.some(e=>e.id===state.selected);const g=el(s,'g',{role:'button',tabindex:'0','aria-label':`${tr.name} ${DATA.phases[p].join(' ')} ${b.length}条：${b.map(e=>e.title).join('；')}`});el(g,'circle',{cx:x,cy:yY(p),r:16,fill:MONO.PAPER,stroke:selected?MONO.INK:'none','stroke-width':1.7,class:'halo'});el(g,'circle',{cx:x,cy:yY(p),r:9,fill:hollow?MONO.PAPER:MONO.INK,stroke:MONO.INK,'stroke-width':1.4});if(b.length>1)txt(g,{x,y:yY(p)+3.5,'font-size':10,'font-weight':800,'text-anchor':'middle',fill:hollow?MONO.INK:MONO.PAPER},b.length);el(g,'title',{},b.map(e=>`${shortTime(e.time)} ${e.title}`).join('\n'));const choose=()=>{state.selected=(b.find(e=>e.id!==state.selected)||b[0]).id;render();if(innerWidth<900)$('detail').scrollIntoView({block:'nearest',behavior:matchMedia('(prefers-reduced-motion:reduce)').matches?'auto':'smooth'})};g.addEventListener('click',choose);g.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();choose()}})}
+ if(last!==null){el(s,'line',{x1:x,y1:yY(last)+17,x2:x,y2:H-27,stroke:'#B0AFA9','stroke-width':1,'stroke-dasharray':tr.alive?'none':'2 4'});el(s,'circle',{cx:x,cy:H-24,r:tr.alive?3:1.6,fill:tr.alive?MONO.INK:MONO.FAINT})}txt(s,{x,y:H-6,'font-size':10,'font-weight':600,'text-anchor':'middle',fill:trackOn(c)?'#4A4944':MONO.FAINT},tr.terminal)})}
+function select(id){state.selected=id;render();if(innerWidth<900)$('detail').scrollIntoView({block:'nearest'})}
+function renderDetail(e,es){const d=$('detail');if(!e){d.innerHTML='<h2>没有匹配条目</h2><p>可以重置筛选，或换一个关键词。</p>';return}const idx=es.findIndex(x=>x.id===e.id);const src=e.sources.map(k=>DATA.sources[k]).filter(Boolean);d.innerHTML=`<div class="small">${esc(shortTime(e.time))}</div><h2>${esc(e.title)}</h2><div><span class="badge">${esc(DATA.tracks[e.track].name)}</span><span class="badge">${esc(LABEL[e.kind])}</span></div><p class="small">${esc(e.speaker)}${e.session_turn?' · 本窗口第'+e.session_turn+'条用户消息':''}</p><div class="kv"><strong>当时在问什么</strong><div>${esc(e.question)}</div></div><div class="kv"><strong>当轮归档结论或讨论推进</strong><div>${esc(e.finding)}</div></div><div class="kv"><strong>目前仍要保留的边界</strong><div>${esc(e.limit)}</div></div>${e.quote?'<details><summary>查看原话或转贴节选</summary><div class="quote">'+esc(e.quote)+(e.quote.length>=350?'\n〔仅节选，非全文〕':'')+'</div></details>':''}<details><summary>该条证据来自哪里</summary>${src.map(x=>'<div class="source"><b>'+esc(x.label)+'</b><br>'+esc(x.path)+'<br>'+esc(x.scope)+'</div>').join('<br>')}</details><div class="nav"><button id="prev" ${idx<=0?'disabled':''}>上一条</button><button id="next" ${idx>=es.length-1?'disabled':''}>下一条</button></div><p class="small">同阶段同线索可能有多条记录；再次点击圆点会切换，也可用下方列表定位。</p>`;$('prev').onclick=()=>idx>0&&select(es[idx-1].id);$('next').onclick=()=>idx<es.length-1&&select(es[idx+1].id)}
+function render(){const es=chronological(visible());if(!es.some(e=>e.id===state.selected))state.selected=es.at(-1)?.id||null;$('count').textContent=`显示 ${es.length} / ${DATA.events.length} 条记录 · 33条本窗口消息 + 8条背景记录`;$('mapCard').hidden=state.mode==='list';$('mapMode').classList.toggle('active',state.mode==='map');$('listMode').classList.toggle('active',state.mode==='list');$('mapMode').setAttribute('aria-pressed',state.mode==='map');$('listMode').setAttribute('aria-pressed',state.mode==='list');if(state.mode==='map')draw(es);renderDetail(es.find(e=>e.id===state.selected),es);const list=state.all||state.mode==='list'?es:es.slice(-10);$('events').innerHTML=list.length?list.map(e=>`<button class="row ${e.id===state.selected?'active':''}" data-id="${e.id}"><div class="time">${esc(shortTime(e.time))} · ${esc(e.speaker)} · ${esc(LABEL[e.kind])}</div><div class="title">${esc(e.title)}</div><div class="caption">${esc(e.question)}</div></button>`).join(''):'<div class="empty">没有符合筛选的条目。重置后可看全部。</div>';for(const b of $('events').querySelectorAll('[data-id]'))b.onclick=()=>select(b.dataset.id);$('more').hidden=state.all||state.mode==='list'||es.length<=10;$('more').textContent=`展开全部 ${es.length} 条记录`}
+$('scope').textContent=DATA.scope+' 时间均为北京时间。';DATA.tracks.forEach((t,i)=>{const o=document.createElement('option');o.value=i;o.textContent=t.name;$('track').appendChild(o)});$('track').onchange=e=>{state.track=e.target.value;render()};$('kind').onchange=e=>{state.kind=e.target.value;render()};$('query').oninput=e=>{state.query=e.target.value.trim();render()};$('reset').onclick=()=>{Object.assign(state,{track:'all',kind:'all',query:'',all:false});$('track').value='all';$('kind').value='all';$('query').value='';render()};$('more').onclick=()=>{state.all=true;render()};$('mapMode').onclick=()=>{state.mode='map';render()};$('listMode').onclick=()=>{state.mode='list';render()};$('corrections').innerHTML=DATA.corrections.map(r=>`<div class="correction"><b>${esc(r[0])}</b><div><b>${esc(r[1])}</b><br><span>${esc(r[2])}</span></div></div>`).join('');$('open').innerHTML=DATA.open_questions.map(q=>'<li>'+esc(q)+'</li>').join('');$('sources').innerHTML=Object.values(DATA.sources).map(s=>'<p class="source"><b>'+esc(s.label)+'</b><br>'+esc(s.path)+'<br>'+esc(s.scope)+'</p>').join('');$('links').innerHTML=DATA.reading_links.map(([t,u])=>'<p class="small"><a target="_blank" rel="noopener noreferrer" href="'+esc(u)+'">'+esc(t)+'</a></p>').join('');let rt;addEventListener('resize',()=>{clearTimeout(rt);rt=setTimeout(()=>state.mode==='map'&&draw(visible()),120)});render();
+window.__HISTORY_READY__={events:DATA.events.length,users:33,sources:Object.keys(DATA.sources).length};
+</script></body></html>
