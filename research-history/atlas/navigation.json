@@ -1,0 +1,140 @@
+{
+  "note": "科学问题导航；连线为编辑归纳，非真实年代或学术继承。",
+  "branches": [
+    {
+      "id": "emotion",
+      "title": "情绪是什么？",
+      "brief": "理论、类别与连续维度",
+      "question": "情绪概念的类别、维度和测量边界如何相容？",
+      "papers": [
+        "russell",
+        "cowen",
+        "critique"
+      ],
+      "datasets": [],
+      "limits": [
+        "环形结构不是维度数量的最终答案。",
+        "区分外在表现、内在状态推断和观看者被诱发的体验。"
+      ]
+    },
+    {
+      "id": "language",
+      "title": "语言表达了什么？",
+      "brief": "词汇、语境与自由描述",
+      "question": "词汇选择与语言统计在什么条件下反映概念关系？",
+      "papers": [
+        "word2vec",
+        "bert",
+        "textsim"
+      ],
+      "datasets": [
+        "meld",
+        "m3ed",
+        "mosei"
+      ],
+      "limits": [
+        "字幕不等于自由描述；未提及不等于明确否定。",
+        "目前未确认这些资源同时公开原话到词表的完整链路。"
+      ]
+    },
+    {
+      "id": "video",
+      "title": "怎样理解视频中的人？",
+      "brief": "外在表现、情境与对话",
+      "question": "自由情绪描述学到的关系，能否预测独立的人类视频人物情绪判断？",
+      "papers": [
+        "duemotion",
+        "textsim",
+        "cowen"
+      ],
+      "datasets": [
+        "dfew",
+        "affwild2",
+        "meld",
+        "mosei",
+        "m3ed",
+        "emotic"
+      ],
+      "limits": [
+        "六项均为候选参照，尚未确认可直接用作独立相似性效标。",
+        "三元组数据线索：AI情绪项目页；公开原始判断与视频对应关系仍须核查。",
+        "比较词频、直接共现、低维共现与预训练语义表示时，需要同一目标与覆盖范围。"
+      ]
+    },
+    {
+      "id": "geometry",
+      "title": "相似性如何成为空间？",
+      "brief": "心理距离、压缩与维度",
+      "question": "低维几何相对直接统计，保留了什么、丢失了什么？",
+      "papers": [
+        "mds",
+        "spose",
+        "rsa",
+        "duemotion"
+      ],
+      "datasets": [],
+      "limits": [
+        "低维化本身不是增量效度证据；区分可解释性、压缩效率与预测价值。",
+        "共现、词语近义与人物情绪相似不能相互替代。"
+      ]
+    },
+    {
+      "id": "ai",
+      "title": "AI能测到人类心理吗？",
+      "brief": "语义模型与多模态判断",
+      "question": "模型与人类的一致，来自哪些信息，在哪些条件下失效？",
+      "papers": [
+        "six",
+        "objects",
+        "duemotion",
+        "bert"
+      ],
+      "datasets": [],
+      "limits": [
+        "六种感官判断不直接证明人物情绪构念。",
+        "AI生成的判断不能自动充当独立人类证据。"
+      ]
+    },
+    {
+      "id": "validation",
+      "title": "我们到底测量了什么？",
+      "brief": "数据、效度与可重复性",
+      "question": "标签的单位和构念，是否与研究问题一致？",
+      "papers": [
+        "critique",
+        "rsa",
+        "spose"
+      ],
+      "datasets": [
+        "dfew",
+        "affwild2",
+        "meld",
+        "mosei",
+        "m3ed",
+        "emotic"
+      ],
+      "limits": [
+        "资源规模、任务标签与独立性必须分别核查。",
+        "本轮只核官方介绍和摘要，未下载全库，也未证明目标数据不存在。"
+      ]
+    },
+    {
+      "id": "brain",
+      "title": "行为与脑表征如何对应？",
+      "brief": "神经证据与个体差异",
+      "question": "模型对脑活动的预测，能够支持多强的心理解释？",
+      "papers": [
+        "faced",
+        "multiEEG",
+        "daest",
+        "emofilm",
+        "lidsn"
+      ],
+      "datasets": [],
+      "limits": [
+        "被诱发的情绪体验、人物情绪判断不是同一构念。",
+        "神经预测相关不能单独证明心理或因果机制。"
+      ]
+    }
+  ]
+}

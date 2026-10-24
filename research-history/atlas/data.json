@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-24",
-  "scope_note": "这是情绪表征／人类相似性／AI与神经测量交叉领域的结构样稿，所选论文不是系统综述，也不是整个情绪科学。公开资料核查截至2026-10-24。",
+  "updated_at": "2026-10-25",
+  "scope_note": "1952—2026精选线索，非完整领域史；原65项目事件保留。",
   "classification_note": "主题为本地图的整理标签，不是公认的学科分类；一条记录只存一次，可带多个主题。",
   "topics": [
     {
@@ -182,6 +182,381 @@
       {
         "id": "work:lidsn",
         "title": "LI-DSN: A Layer-wise Interactive Dual-Stream Network for EEG Decoding",
+        "kind": "paper"
+      },
+      {
+        "id": "project:emotion_representation",
+        "title": "我们的研究：65节点的局部历史",
+        "kind": "project"
+      },
+      {
+        "id": "project:emotion_representation",
+        "title": "最早可核目标：开放描述发现维度",
+        "kind": "project"
+      },
+      {
+        "id": "project:emotion_representation",
+        "title": "5秒切窗与上下文怎样处理",
+        "kind": "project"
+      },
+      {
+        "id": "project:emotion_representation",
+        "title": "一度聚焦观众诱发情绪与角色差异",
+        "kind": "correction"
+      },
+      {
+        "id": "project:emotion_representation",
+        "title": "滚动上下文与分层记忆成为候选路线",
+        "kind": "project"
+      },
+      {
+        "id": "project:emotion_representation",
+        "title": "模板化输出触发开放描述讨论",
+        "kind": "meeting"
+      },
+      {
+        "id": "project:emotion_representation",
+        "title": "很早就提出需要真人校准",
+        "kind": "meeting"
+      },
+      {
+        "id": "project:emotion_representation",
+        "title": "弹幕分布与上下文是平行问题",
+        "kind": "meeting"
+      },
+      {
+        "id": "project:emotion_representation",
+        "title": "短暂把真人情绪相关度定为首要判据",
+        "kind": "project"
+      },
+      {
+        "id": "project:emotion_representation",
+        "title": "时滞、混合状态与时序作为改进候选",
+        "kind": "project"
+      },
+      {
+        "id": "project:emotion_representation",
+        "title": "明确转向影片内可观察情绪表达",
+        "kind": "correction"
+      },
+      {
+        "id": "project:emotion_representation",
+        "title": "旧viewer路线保留工具，不继续定义主目标",
+        "kind": "project"
+      },
+      {
+        "id": "project:emotion_representation",
+        "title": "三模型11/11/13维与语义锚点被整理",
+        "kind": "project"
+      },
+      {
+        "id": "project:emotion_representation",
+        "title": "5月阶段汇报提纲：结构、场景与文化",
+        "kind": "material"
+      },
+      {
+        "id": "project:emotion_representation",
+        "title": "复现包使参数、数据和扫描过程可追踪",
+        "kind": "project"
+      },
+      {
+        "id": "project:emotion_representation",
+        "title": "人类增删验证成为具体任务",
+        "kind": "project"
+      },
+      {
+        "id": "project:emotion_representation",
+        "title": "明确可以复用已有候选词，先小规模试跑",
+        "kind": "project"
+      },
+      {
+        "id": "project:emotion_representation",
+        "title": "“情绪词”是否需要包含心理状态受到讨论",
+        "kind": "project"
+      },
+      {
+        "id": "project:emotion_representation",
+        "title": "早期人类实验执行困难被后续回顾记录",
+        "kind": "project"
+      },
+      {
+        "id": "project:emotion_representation",
+        "title": "词层高保留率引出交互与判据疑问",
+        "kind": "correction"
+      },
+      {
+        "id": "project:emotion_representation",
+        "title": "旧路线回顾仍沿用观众情绪口径",
+        "kind": "correction"
+      },
+      {
+        "id": "project:emotion_representation",
+        "title": "平台约束让大规模规划收缩为可行协议",
+        "kind": "correction"
+      },
+      {
+        "id": "project:emotion_representation",
+        "title": "协议v2记录强制判断、理由、适宜度与信心",
+        "kind": "project"
+      },
+      {
+        "id": "project:emotion_representation",
+        "title": "自由生成成为独立的人类数据资产",
+        "kind": "dataset"
+      },
+      {
+        "id": "project:emotion_representation",
+        "title": "混合盲评区分主动表达与候选认可",
+        "kind": "dataset"
+      },
+      {
+        "id": "project:emotion_representation",
+        "title": "120部影片字幕和切片成为工程重心",
+        "kind": "project"
+      },
+      {
+        "id": "project:emotion_representation",
+        "title": "扩大人类验证与替代性论证被提出",
+        "kind": "project"
+      },
+      {
+        "id": "project:emotion_representation",
+        "title": "人工抽查暴露切片质量问题",
+        "kind": "correction"
+      },
+      {
+        "id": "project:emotion_representation",
+        "title": "单说话人主导与多说话人审核被规范",
+        "kind": "project"
+      },
+      {
+        "id": "project:emotion_representation",
+        "title": "人机词比较与模型预试继续推进",
+        "kind": "project"
+      },
+      {
+        "id": "project:emotion_representation",
+        "title": "全量生词后置，先完成切片与人工审核",
+        "kind": "project"
+      },
+      {
+        "id": "project:emotion_representation",
+        "title": "小词表结构不稳，替代分解成为诊断候选",
+        "kind": "correction"
+      },
+      {
+        "id": "project:emotion_representation",
+        "title": "人审与机器审计对照，重新审视质检闭环",
+        "kind": "correction"
+      },
+      {
+        "id": "project:emotion_representation",
+        "title": "已有29段不能校准所有筛片标准",
+        "kind": "correction"
+      },
+      {
+        "id": "project:emotion_representation",
+        "title": "有声人类与部分无声生产条件被区分",
+        "kind": "correction"
+      },
+      {
+        "id": "project:emotion_representation",
+        "title": "语料交付与长段缺陷并存",
+        "kind": "correction"
+      },
+      {
+        "id": "project:emotion_representation",
+        "title": "完整视频核查替代截断抽帧语义判断",
+        "kind": "project"
+      },
+      {
+        "id": "project:emotion_representation",
+        "title": "合作者追问本质突破与文章组织",
+        "kind": "project"
+      },
+      {
+        "id": "project:emotion_representation",
+        "title": "重新明确沿MLLM标注思路继续",
+        "kind": "project"
+      },
+      {
+        "id": "project:emotion_representation",
+        "title": "重启调查：词有信号不等于人类空间已验证",
+        "kind": "correction"
+      },
+      {
+        "id": "project:emotion_representation",
+        "title": "回核七月原包，修正人类实验数量和身份",
+        "kind": "project"
+      },
+      {
+        "id": "project:emotion_representation",
+        "title": "词认可不能替代关系空间效度",
+        "kind": "correction"
+      },
+      {
+        "id": "project:emotion_representation",
+        "title": "重复模型预试：工作选择不等于冠军",
+        "kind": "project"
+      },
+      {
+        "id": "project:emotion_representation",
+        "title": "重新组织大规模电影与MER标注生产",
+        "kind": "project"
+      },
+      {
+        "id": "project:emotion_representation",
+        "title": "原法参数相同，输入条件仍未等同",
+        "kind": "correction"
+      },
+      {
+        "id": "project:emotion_representation",
+        "title": "峰值可随筛边与负池参数移动",
+        "kind": "project"
+      },
+      {
+        "id": "project:emotion_representation",
+        "title": "冻结输入、保留绝对与相对频率两口径",
+        "kind": "project"
+      },
+      {
+        "id": "project:emotion_representation",
+        "title": "组会：这是模型空间，还是人类空间？",
+        "kind": "meeting"
+      },
+      {
+        "id": "project:emotion_representation",
+        "title": "组会旁支：情绪动态与神经数据",
+        "kind": "meeting"
+      },
+      {
+        "id": "project:emotion_representation",
+        "title": "强共现基线对低维提出直接挑战",
+        "kind": "project"
+      },
+      {
+        "id": "project:emotion_representation",
+        "title": "共现无法唯一识别语义、人物和时间关系",
+        "kind": "correction"
+      },
+      {
+        "id": "project:emotion_representation",
+        "title": "同日聊天追补：分半、阈值与选维证据",
+        "kind": "project"
+      },
+      {
+        "id": "project:emotion_representation",
+        "title": "组会读文献：标签适用与连续评分分阶段",
+        "kind": "meeting"
+      },
+      {
+        "id": "project:emotion_representation",
+        "title": "组会核方法：分半什么？参数有多敏感？",
+        "kind": "meeting"
+      },
+      {
+        "id": "project:emotion_representation",
+        "title": "组会提出：先写开放描述，再提取情绪词",
+        "kind": "meeting"
+      },
+      {
+        "id": "project:emotion_representation",
+        "title": "人机差异解释也被承认为研究价值",
+        "kind": "correction"
+      },
+      {
+        "id": "project:emotion_representation",
+        "title": "外部讨论：隐空间须与人类表征对齐",
+        "kind": "meeting"
+      },
+      {
+        "id": "project:emotion_representation",
+        "title": "外部讨论旁支：动态与弹幕传播",
+        "kind": "meeting"
+      },
+      {
+        "id": "project:emotion_representation",
+        "title": "独立人类预测与标注规模被列为核心验证",
+        "kind": "project"
+      },
+      {
+        "id": "project:emotion_representation",
+        "title": "人类split r引出原词与语义编码之争",
+        "kind": "project"
+      },
+      {
+        "id": "project:emotion_representation",
+        "title": "自由回答文献追到原话、词表与主题",
+        "kind": "correction"
+      },
+      {
+        "id": "project:emotion_representation",
+        "title": "截图补齐共现法与视频配对法比较",
+        "kind": "project"
+      },
+      {
+        "id": "project:emotion_representation",
+        "title": "条件核查与自主调查收紧现有主张",
+        "kind": "correction"
+      },
+      {
+        "id": "project:emotion_representation",
+        "title": "遗漏与歧义成为竞争解释，而非既定创新",
+        "kind": "project"
+      },
+      {
+        "id": "project:emotion_representation",
+        "title": "本人暂不组织新实验，先回到动机",
+        "kind": "project"
+      },
+      {
+        "id": "project:emotion_representation",
+        "title": "地图范围纠正为整个研究历程",
+        "kind": "project"
+      },
+      {
+        "id": "work:dfew",
+        "title": "DFEW · 动态面部表情",
+        "kind": "dataset"
+      },
+      {
+        "id": "work:affwild2",
+        "title": "Aff-Wild2 · 连续情绪与面部行为",
+        "kind": "dataset"
+      },
+      {
+        "id": "work:meld",
+        "title": "MELD · 多方对话情绪",
+        "kind": "dataset"
+      },
+      {
+        "id": "work:mosei",
+        "title": "CMU-MOSEI · 多模态语言",
+        "kind": "dataset"
+      },
+      {
+        "id": "work:m3ed",
+        "title": "M3ED · 中文情绪对话",
+        "kind": "dataset"
+      },
+      {
+        "id": "work:emotic",
+        "title": "EMOTIC · 情境中的人物",
+        "kind": "dataset"
+      },
+      {
+        "id": "work:mds",
+        "title": "多维尺度分析 · 方法源头",
+        "kind": "paper"
+      },
+      {
+        "id": "work:word2vec",
+        "title": "连续词向量 · 语言统计",
+        "kind": "paper"
+      },
+      {
+        "id": "work:bert",
+        "title": "上下文语言表示 · BERT",
         "kind": "paper"
       }
     ],
@@ -4315,6 +4690,443 @@
       },
       "date_note": "本轮反馈",
       "work_id": "project:emotion_representation"
+    },
+    {
+      "id": "dfew",
+      "date": "2020",
+      "lane": 0,
+      "title": "DFEW · 动态面部表情",
+      "brief": "16,372段影视片段；七类表情及分布标注。",
+      "why": "可查看复杂拍摄条件下的表情标签分歧。每段独立标注10次。",
+      "limit": "七类标签分布不是人类视频相似性；总库与常用评测子集需区分。",
+      "url": "https://dfew-dataset.github.io/",
+      "status": "候选数据资源",
+      "people": [],
+      "full": "可查看复杂拍摄条件下的表情标签分歧。每段独立标注10次。",
+      "grade": "官方介绍／原论文摘要与题录；未检查全部数据标注文件",
+      "origin": "field",
+      "lanes": {
+        "field": 0,
+        "project": 0,
+        "branch": 0
+      },
+      "visibility": "public_summary",
+      "checked_at": "2026-10-25",
+      "topics": [
+        "video",
+        "validation"
+      ],
+      "primary_topic": "video",
+      "type": "dataset",
+      "source_ids": [
+        "public:dfew"
+      ],
+      "dates": {
+        "event_at": null,
+        "published_at": "2020",
+        "preprint_at": null,
+        "document_at": null,
+        "archived_at": null,
+        "announcement_at": null,
+        "observed_at": "2026-10-25"
+      },
+      "axis_date": {
+        "value": "2020",
+        "precision": "year",
+        "basis": "publication",
+        "label": "发表／公开日期"
+      },
+      "date_note": "发表／公开日期",
+      "work_id": "work:dfew"
+    },
+    {
+      "id": "affwild2",
+      "date": "2019",
+      "lane": 0,
+      "title": "Aff-Wild2 · 连续情绪与面部行为",
+      "brief": "逐帧效价、唤醒度、基本表情与动作单元；标签覆盖的子集不同。",
+      "why": "可联系语言关系与连续维度、面部行为；官方页面描述564段视频的一个版本。",
+      "limit": "不同版本和任务子集规模有差别；不是每段都有所有任务标注。获取须按官方申请流程核对。",
+      "url": "https://ibug.doc.ic.ac.uk/resources/aff-wild2/",
+      "status": "候选数据资源",
+      "people": [],
+      "full": "可联系语言关系与连续维度、面部行为；官方页面描述564段视频的一个版本。",
+      "grade": "官方介绍／原论文摘要与题录；未检查全部数据标注文件",
+      "origin": "field",
+      "lanes": {
+        "field": 0,
+        "project": 0,
+        "branch": 0
+      },
+      "visibility": "public_summary",
+      "checked_at": "2026-10-25",
+      "topics": [
+        "video",
+        "validation",
+        "emotion"
+      ],
+      "primary_topic": "video",
+      "type": "dataset",
+      "source_ids": [
+        "public:affwild2"
+      ],
+      "dates": {
+        "event_at": null,
+        "published_at": null,
+        "preprint_at": "2019",
+        "document_at": null,
+        "archived_at": null,
+        "announcement_at": null,
+        "observed_at": "2026-10-25"
+      },
+      "axis_date": {
+        "value": "2019",
+        "precision": "year",
+        "basis": "preprint",
+        "label": "预印本年份"
+      },
+      "date_note": "预印本年份",
+      "work_id": "work:affwild2"
+    },
+    {
+      "id": "meld",
+      "date": "2019-07",
+      "lane": 0,
+      "title": "MELD · 多方对话情绪",
+      "brief": "《老友记》约1.3万条话语、1,433段对话；文本、声音、视觉。",
+      "why": "适合检查上下文与人物话语情绪的关系。",
+      "limit": "字幕/转写不是观察者自由情绪描述；话语情绪标签不能直接当作视频心理距离。",
+      "url": "https://aclanthology.org/P19-1050/",
+      "status": "候选数据资源",
+      "people": [],
+      "full": "适合检查上下文与人物话语情绪的关系。",
+      "grade": "官方介绍／原论文摘要与题录；未检查全部数据标注文件",
+      "origin": "field",
+      "lanes": {
+        "field": 0,
+        "project": 0,
+        "branch": 0
+      },
+      "visibility": "public_summary",
+      "checked_at": "2026-10-25",
+      "topics": [
+        "video",
+        "language",
+        "validation"
+      ],
+      "primary_topic": "video",
+      "type": "dataset",
+      "source_ids": [
+        "public:meld"
+      ],
+      "dates": {
+        "event_at": null,
+        "published_at": "2019-07",
+        "preprint_at": null,
+        "document_at": null,
+        "archived_at": null,
+        "announcement_at": null,
+        "observed_at": "2026-10-25"
+      },
+      "axis_date": {
+        "value": "2019-07",
+        "precision": "month",
+        "basis": "publication",
+        "label": "发表／公开日期"
+      },
+      "date_note": "发表／公开日期",
+      "work_id": "work:meld"
+    },
+    {
+      "id": "mosei",
+      "date": "2018-07",
+      "lane": 0,
+      "title": "CMU-MOSEI · 多模态语言",
+      "brief": "超过2.3万句级片段；以网络视频语言表达为材料。",
+      "why": "可考察语言、声音与视觉的联合情感/情绪信息。",
+      "limit": "句级意见或独白与影视人物判断任务有差异；标注版本和使用权限须另核。",
+      "url": "https://aclanthology.org/P18-1208/",
+      "status": "候选数据资源",
+      "people": [],
+      "full": "可考察语言、声音与视觉的联合情感/情绪信息。",
+      "grade": "官方介绍／原论文摘要与题录；未检查全部数据标注文件",
+      "origin": "field",
+      "lanes": {
+        "field": 0,
+        "project": 0,
+        "branch": 0
+      },
+      "visibility": "public_summary",
+      "checked_at": "2026-10-25",
+      "topics": [
+        "language",
+        "video",
+        "validation"
+      ],
+      "primary_topic": "language",
+      "type": "dataset",
+      "source_ids": [
+        "public:mosei"
+      ],
+      "dates": {
+        "event_at": null,
+        "published_at": "2018-07",
+        "preprint_at": null,
+        "document_at": null,
+        "archived_at": null,
+        "announcement_at": null,
+        "observed_at": "2026-10-25"
+      },
+      "axis_date": {
+        "value": "2018-07",
+        "precision": "month",
+        "basis": "publication",
+        "label": "发表／公开日期"
+      },
+      "date_note": "发表／公开日期",
+      "work_id": "work:mosei"
+    },
+    {
+      "id": "m3ed",
+      "date": "2022-05",
+      "lane": 0,
+      "title": "M3ED · 中文情绪对话",
+      "brief": "56部电视剧、990段双人对话、24,449条话语；七类情绪。",
+      "why": "提供中文、场景与多模态对话的参照。",
+      "limit": "话语级类别不是独立的情绪相似性判断；标题中的多标签不能自动解释为完整共现关系。",
+      "url": "https://aclanthology.org/2022.acl-long.391/",
+      "status": "候选数据资源",
+      "people": [],
+      "full": "提供中文、场景与多模态对话的参照。",
+      "grade": "官方介绍／原论文摘要与题录；未检查全部数据标注文件",
+      "origin": "field",
+      "lanes": {
+        "field": 0,
+        "project": 0,
+        "branch": 0
+      },
+      "visibility": "public_summary",
+      "checked_at": "2026-10-25",
+      "topics": [
+        "video",
+        "language",
+        "validation"
+      ],
+      "primary_topic": "video",
+      "type": "dataset",
+      "source_ids": [
+        "public:m3ed"
+      ],
+      "dates": {
+        "event_at": null,
+        "published_at": "2022-05",
+        "preprint_at": null,
+        "document_at": null,
+        "archived_at": null,
+        "announcement_at": null,
+        "observed_at": "2026-10-25"
+      },
+      "axis_date": {
+        "value": "2022-05",
+        "precision": "month",
+        "basis": "publication",
+        "label": "发表／公开日期"
+      },
+      "date_note": "发表／公开日期",
+      "work_id": "work:m3ed"
+    },
+    {
+      "id": "emotic",
+      "date": "2017",
+      "lane": 0,
+      "title": "EMOTIC · 情境中的人物",
+      "brief": "静态人物图像；26类情绪及效价、唤醒度、支配感。",
+      "why": "适合分析人物周围情境与外在情绪印象。",
+      "limit": "静态图像不能替代视频动态；早期与后续版本规模不同。外在印象不能证明真实内在状态。",
+      "url": "https://openaccess.thecvf.com/content_cvpr_2017_workshops/w41/html/Lapedriza_EMOTIC_Emotions_in_CVPR_2017_paper.html",
+      "status": "候选数据资源",
+      "people": [],
+      "full": "适合分析人物周围情境与外在情绪印象。",
+      "grade": "官方介绍／原论文摘要与题录；未检查全部数据标注文件",
+      "origin": "field",
+      "lanes": {
+        "field": 0,
+        "project": 0,
+        "branch": 0
+      },
+      "visibility": "public_summary",
+      "checked_at": "2026-10-25",
+      "topics": [
+        "video",
+        "emotion",
+        "validation"
+      ],
+      "primary_topic": "video",
+      "type": "dataset",
+      "source_ids": [
+        "public:emotic"
+      ],
+      "dates": {
+        "event_at": null,
+        "published_at": "2017",
+        "preprint_at": null,
+        "document_at": null,
+        "archived_at": null,
+        "announcement_at": null,
+        "observed_at": "2026-10-25"
+      },
+      "axis_date": {
+        "value": "2017",
+        "precision": "year",
+        "basis": "publication",
+        "label": "发表／公开日期"
+      },
+      "date_note": "发表／公开日期",
+      "work_id": "work:emotic"
+    },
+    {
+      "id": "mds",
+      "date": "1952",
+      "lane": 0,
+      "title": "多维尺度分析 · 方法源头",
+      "brief": "Torgerson：Multidimensional Scaling: I. Theory and Method。",
+      "why": "相似性与几何表示的早期方法参照。",
+      "limit": "本轮只核机构题录与年份，未重读全文；不是对情绪维数的实证结论。",
+      "url": "https://www.ets.org/research/policy_research_reports/publications/article/1952/ibra.html",
+      "status": "方法参照",
+      "people": [],
+      "full": "相似性与几何表示的早期方法参照。",
+      "grade": "机构题录",
+      "origin": "field",
+      "lanes": {
+        "field": 0,
+        "project": 0,
+        "branch": 0
+      },
+      "visibility": "public_summary",
+      "checked_at": "2026-10-25",
+      "topics": [
+        "validation",
+        "emotion"
+      ],
+      "primary_topic": "validation",
+      "type": "paper",
+      "source_ids": [
+        "public:mds"
+      ],
+      "dates": {
+        "event_at": null,
+        "published_at": "1952",
+        "preprint_at": null,
+        "document_at": null,
+        "archived_at": null,
+        "announcement_at": null,
+        "observed_at": "2026-10-25"
+      },
+      "axis_date": {
+        "value": "1952",
+        "precision": "year",
+        "basis": "publication",
+        "label": "发表／公开日期"
+      },
+      "date_note": "发表／公开日期",
+      "work_id": "work:mds"
+    },
+    {
+      "id": "word2vec",
+      "date": "2013-01-16",
+      "lane": 0,
+      "title": "连续词向量 · 语言统计",
+      "brief": "从大规模语料学习连续词向量，以词语相似任务评价。",
+      "why": "给从共现统计到语义向量提供方法参照。",
+      "limit": "词语相似任务不能直接验证人物情绪心理结构。",
+      "url": "https://arxiv.org/abs/1301.3781",
+      "status": "方法参照",
+      "people": [],
+      "full": "给从共现统计到语义向量提供方法参照。",
+      "grade": "原论文摘要与题录",
+      "origin": "field",
+      "lanes": {
+        "field": 0,
+        "project": 0,
+        "branch": 0
+      },
+      "visibility": "public_summary",
+      "checked_at": "2026-10-25",
+      "topics": [
+        "language",
+        "ai"
+      ],
+      "primary_topic": "language",
+      "type": "paper",
+      "source_ids": [
+        "public:word2vec"
+      ],
+      "dates": {
+        "event_at": null,
+        "published_at": null,
+        "preprint_at": "2013-01-16",
+        "document_at": null,
+        "archived_at": null,
+        "announcement_at": null,
+        "observed_at": "2026-10-25"
+      },
+      "axis_date": {
+        "value": "2013-01-16",
+        "precision": "day",
+        "basis": "preprint",
+        "label": "发表／公开日期"
+      },
+      "date_note": "发表／公开日期",
+      "work_id": "work:word2vec"
+    },
+    {
+      "id": "bert",
+      "date": "2019-06",
+      "lane": 0,
+      "title": "上下文语言表示 · BERT",
+      "brief": "通过双向上下文预训练语言表示。",
+      "why": "说明词义可随上下文变化，补充固定词表表示的局限。",
+      "limit": "本轮核读2019年会议摘要与题录；不把会议日期写成预印本首次出现。",
+      "url": "https://aclanthology.org/N19-1423/",
+      "status": "方法参照",
+      "people": [],
+      "full": "说明词义可随上下文变化，补充固定词表表示的局限。",
+      "grade": "原论文摘要与题录",
+      "origin": "field",
+      "lanes": {
+        "field": 0,
+        "project": 0,
+        "branch": 0
+      },
+      "visibility": "public_summary",
+      "checked_at": "2026-10-25",
+      "topics": [
+        "language",
+        "ai"
+      ],
+      "primary_topic": "language",
+      "type": "paper",
+      "source_ids": [
+        "public:bert"
+      ],
+      "dates": {
+        "event_at": null,
+        "published_at": "2019-06",
+        "preprint_at": null,
+        "document_at": null,
+        "archived_at": null,
+        "announcement_at": null,
+        "observed_at": "2026-10-25"
+      },
+      "axis_date": {
+        "value": "2019-06",
+        "precision": "month",
+        "basis": "publication",
+        "label": "发表／公开日期"
+      },
+      "date_note": "发表／公开日期",
+      "work_id": "work:bert"
     }
   ],
   "sources": {
@@ -4573,6 +5385,52 @@
     "history:state": {
       "label": "当前边界",
       "reading_level": "本人暂不组织实验，历史愿景不自动变成待执行scope。"
+    },
+    "public:dfew": {
+      "label": "DFEW · 动态面部表情",
+      "url": "https://dfew-dataset.github.io/",
+      "reading_level": "官方介绍／原论文摘要与题录；未检查全部数据标注文件"
+    },
+    "public:affwild2": {
+      "label": "Aff-Wild2 · 连续情绪与面部行为",
+      "url": "https://ibug.doc.ic.ac.uk/resources/aff-wild2/",
+      "reading_level": "官方介绍／原论文摘要与题录；未检查全部数据标注文件",
+      "date_source": "https://arxiv.org/abs/1910.04855"
+    },
+    "public:meld": {
+      "label": "MELD · 多方对话情绪",
+      "url": "https://aclanthology.org/P19-1050/",
+      "reading_level": "官方介绍／原论文摘要与题录；未检查全部数据标注文件"
+    },
+    "public:mosei": {
+      "label": "CMU-MOSEI · 多模态语言",
+      "url": "https://aclanthology.org/P18-1208/",
+      "reading_level": "官方介绍／原论文摘要与题录；未检查全部数据标注文件"
+    },
+    "public:m3ed": {
+      "label": "M3ED · 中文情绪对话",
+      "url": "https://aclanthology.org/2022.acl-long.391/",
+      "reading_level": "官方介绍／原论文摘要与题录；未检查全部数据标注文件"
+    },
+    "public:emotic": {
+      "label": "EMOTIC · 情境中的人物",
+      "url": "https://openaccess.thecvf.com/content_cvpr_2017_workshops/w41/html/Lapedriza_EMOTIC_Emotions_in_CVPR_2017_paper.html",
+      "reading_level": "官方介绍／原论文摘要与题录；未检查全部数据标注文件"
+    },
+    "public:mds": {
+      "label": "多维尺度分析 · 方法源头",
+      "url": "https://www.ets.org/research/policy_research_reports/publications/article/1952/ibra.html",
+      "reading_level": "机构题录"
+    },
+    "public:word2vec": {
+      "label": "连续词向量 · 语言统计",
+      "url": "https://arxiv.org/abs/1301.3781",
+      "reading_level": "原论文摘要与题录"
+    },
+    "public:bert": {
+      "label": "上下文语言表示 · BERT",
+      "url": "https://aclanthology.org/N19-1423/",
+      "reading_level": "原论文摘要与题录"
     }
   },
   "relations": [
@@ -4664,7 +5522,16 @@
       "duemotion",
       "lidsn",
       "duupdate",
-      "ours"
+      "ours",
+      "dfew",
+      "affwild2",
+      "meld",
+      "mosei",
+      "m3ed",
+      "emotic",
+      "mds",
+      "word2vec",
+      "bert"
     ],
     "project": [
       "F01",
@@ -4760,7 +5627,16 @@
       "M21B",
       "M22A",
       "F54",
-      "F57"
+      "F57",
+      "dfew",
+      "affwild2",
+      "meld",
+      "mosei",
+      "m3ed",
+      "emotic",
+      "mds",
+      "word2vec",
+      "bert"
     ]
   },
   "layout": {
@@ -4793,8 +5669,8 @@
   },
   "constraints": {
     "new_experiments": false,
-    "new_literature_search": false,
+    "new_literature_search": "仅六项候选数据资源与三个方法锚点的有界核查",
     "private_chat_published": false,
-    "focus": "支持核心研究问题收敛，不扩展论文采集范围"
+    "focus": "科学问题导航与有界候选资源核查；不启动新实验"
   }
 }
