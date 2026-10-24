@@ -1,0 +1,808 @@
+{
+  "name": "多起点树状网络",
+  "node_width": 218,
+  "field_positions": {
+    "russell": [
+      40,
+      50
+    ],
+    "cowen": [
+      305,
+      60
+    ],
+    "critique": [
+      565,
+      15
+    ],
+    "spose": [
+      40,
+      225
+    ],
+    "textsim": [
+      40,
+      405
+    ],
+    "six": [
+      335,
+      400
+    ],
+    "objects": [
+      565,
+      245
+    ],
+    "rsa": [
+      40,
+      585
+    ],
+    "multiEEG": [
+      345,
+      585
+    ],
+    "faced": [
+      130,
+      755
+    ],
+    "daest": [
+      450,
+      755
+    ],
+    "emofilm": [
+      665,
+      565
+    ],
+    "duemotion": [
+      820,
+      205
+    ],
+    "lidsn": [
+      825,
+      745
+    ],
+    "duupdate": [
+      1085,
+      65
+    ],
+    "ours": [
+      1085,
+      405
+    ]
+  },
+  "field_extent": [
+    1345,
+    910
+  ],
+  "root_notes": {
+    "russell": "情绪概念与结构",
+    "spose": "行为判断与维度",
+    "textsim": "语言与心理预测",
+    "rsa": "神经表征比较",
+    "faced": "情绪数据与动态",
+    "objects": "模型概念结构",
+    "emofilm": "自然情境数据"
+  },
+  "visual_edges": [
+    {
+      "from": "russell",
+      "to": "cowen",
+      "label": "情绪结构问题的主题承接",
+      "type": "theme_connection",
+      "evidence": "editorial",
+      "causal": false
+    },
+    {
+      "from": "cowen",
+      "to": "duemotion",
+      "label": "视频与情绪结构的主题对照",
+      "type": "theme_connection",
+      "evidence": "editorial",
+      "causal": false
+    },
+    {
+      "from": "textsim",
+      "to": "six",
+      "label": "语言预测人类判断的主题承接",
+      "type": "theme_connection",
+      "evidence": "editorial",
+      "causal": false
+    },
+    {
+      "from": "six",
+      "to": "duemotion",
+      "label": "AI心理判断的主题对照",
+      "type": "theme_connection",
+      "evidence": "editorial",
+      "causal": false
+    },
+    {
+      "from": "objects",
+      "to": "duemotion",
+      "label": "同作者概念几何工作的主题对照",
+      "type": "theme_connection",
+      "evidence": "editorial",
+      "causal": false
+    },
+    {
+      "from": "rsa",
+      "to": "multiEEG",
+      "label": "RSA与多元情绪神经表征的主题联系",
+      "type": "theme_connection",
+      "evidence": "editorial",
+      "causal": false
+    },
+    {
+      "from": "faced",
+      "to": "daest",
+      "label": "情绪EEG数据与动态建模的主题联系",
+      "type": "theme_connection",
+      "evidence": "editorial",
+      "causal": false
+    },
+    {
+      "from": "daest",
+      "to": "lidsn",
+      "label": "共同作者的EEG建模路线，不表示算法继承",
+      "type": "theme_connection",
+      "evidence": "editorial",
+      "causal": false
+    },
+    {
+      "from": "emofilm",
+      "to": "ours",
+      "label": "组会讨论过的数据参照，不表示已用于训练",
+      "type": "theme_connection",
+      "evidence": "editorial",
+      "causal": false
+    }
+  ],
+  "project_edges": [
+    {
+      "from": "F03",
+      "to": "F07",
+      "type": "theme_continuity",
+      "why": "同一主题的历史承接，本轮归纳，非因果",
+      "evidence": "editorial",
+      "label": "同一主题的历史承接，本轮归纳，非因果",
+      "causal": false
+    },
+    {
+      "from": "F07",
+      "to": "F08",
+      "type": "theme_continuity",
+      "why": "同一主题的历史承接，本轮归纳，非因果",
+      "evidence": "editorial",
+      "label": "同一主题的历史承接，本轮归纳，非因果",
+      "causal": false
+    },
+    {
+      "from": "F07",
+      "to": "F10",
+      "type": "theme_continuity",
+      "why": "同一主题的历史承接，本轮归纳，非因果",
+      "evidence": "editorial",
+      "label": "同一主题的历史承接，本轮归纳，非因果",
+      "causal": false
+    },
+    {
+      "from": "F10",
+      "to": "F13",
+      "type": "theme_continuity",
+      "why": "同一主题的历史承接，本轮归纳，非因果",
+      "evidence": "editorial",
+      "label": "同一主题的历史承接，本轮归纳，非因果",
+      "causal": false
+    },
+    {
+      "from": "F13",
+      "to": "F20",
+      "type": "theme_continuity",
+      "why": "同一主题的历史承接，本轮归纳，非因果",
+      "evidence": "editorial",
+      "label": "同一主题的历史承接，本轮归纳，非因果",
+      "causal": false
+    },
+    {
+      "from": "F20",
+      "to": "F37",
+      "type": "theme_continuity",
+      "why": "同一主题的历史承接，本轮归纳，非因果",
+      "evidence": "editorial",
+      "label": "同一主题的历史承接，本轮归纳，非因果",
+      "causal": false
+    },
+    {
+      "from": "F37",
+      "to": "F50",
+      "type": "theme_continuity",
+      "why": "同一主题的历史承接，本轮归纳，非因果",
+      "evidence": "editorial",
+      "label": "同一主题的历史承接，本轮归纳，非因果",
+      "causal": false
+    },
+    {
+      "from": "F50",
+      "to": "F58",
+      "type": "theme_continuity",
+      "why": "同一主题的历史承接，本轮归纳，非因果",
+      "evidence": "editorial",
+      "label": "同一主题的历史承接，本轮归纳，非因果",
+      "causal": false
+    },
+    {
+      "from": "F04",
+      "to": "F05",
+      "type": "theme_continuity",
+      "why": "同一主题的历史承接，本轮归纳，非因果",
+      "evidence": "editorial",
+      "label": "同一主题的历史承接，本轮归纳，非因果",
+      "causal": false
+    },
+    {
+      "from": "F05",
+      "to": "F09",
+      "type": "theme_continuity",
+      "why": "同一主题的历史承接，本轮归纳，非因果",
+      "evidence": "editorial",
+      "label": "同一主题的历史承接，本轮归纳，非因果",
+      "causal": false
+    },
+    {
+      "from": "F05",
+      "to": "F11",
+      "type": "theme_continuity",
+      "why": "同一主题的历史承接，本轮归纳，非因果",
+      "evidence": "editorial",
+      "label": "同一主题的历史承接，本轮归纳，非因果",
+      "causal": false
+    },
+    {
+      "from": "F11",
+      "to": "F29",
+      "type": "theme_continuity",
+      "why": "同一主题的历史承接，本轮归纳，非因果",
+      "evidence": "editorial",
+      "label": "同一主题的历史承接，本轮归纳，非因果",
+      "causal": false
+    },
+    {
+      "from": "F29",
+      "to": "F34",
+      "type": "theme_continuity",
+      "why": "同一主题的历史承接，本轮归纳，非因果",
+      "evidence": "editorial",
+      "label": "同一主题的历史承接，本轮归纳，非因果",
+      "causal": false
+    },
+    {
+      "from": "F34",
+      "to": "F42",
+      "type": "theme_continuity",
+      "why": "同一主题的历史承接，本轮归纳，非因果",
+      "evidence": "editorial",
+      "label": "同一主题的历史承接，本轮归纳，非因果",
+      "causal": false
+    },
+    {
+      "from": "F34",
+      "to": "F43",
+      "type": "theme_continuity",
+      "why": "同一主题的历史承接，本轮归纳，非因果",
+      "evidence": "editorial",
+      "label": "同一主题的历史承接，本轮归纳，非因果",
+      "causal": false
+    },
+    {
+      "from": "F43",
+      "to": "M21C",
+      "type": "theme_continuity",
+      "why": "同一主题的历史承接，本轮归纳，非因果",
+      "evidence": "editorial",
+      "label": "同一主题的历史承接，本轮归纳，非因果",
+      "causal": false
+    },
+    {
+      "from": "F06",
+      "to": "F15",
+      "type": "theme_continuity",
+      "why": "同一主题的历史承接，本轮归纳，非因果",
+      "evidence": "editorial",
+      "label": "同一主题的历史承接，本轮归纳，非因果",
+      "causal": false
+    },
+    {
+      "from": "F06",
+      "to": "F16",
+      "type": "theme_continuity",
+      "why": "同一主题的历史承接，本轮归纳，非因果",
+      "evidence": "editorial",
+      "label": "同一主题的历史承接，本轮归纳，非因果",
+      "causal": false
+    },
+    {
+      "from": "F06",
+      "to": "F17",
+      "type": "theme_continuity",
+      "why": "同一主题的历史承接，本轮归纳，非因果",
+      "evidence": "editorial",
+      "label": "同一主题的历史承接，本轮归纳，非因果",
+      "causal": false
+    },
+    {
+      "from": "F17",
+      "to": "F18",
+      "type": "theme_continuity",
+      "why": "同一主题的历史承接，本轮归纳，非因果",
+      "evidence": "editorial",
+      "label": "同一主题的历史承接，本轮归纳，非因果",
+      "causal": false
+    },
+    {
+      "from": "F17",
+      "to": "F19",
+      "type": "theme_continuity",
+      "why": "同一主题的历史承接，本轮归纳，非因果",
+      "evidence": "editorial",
+      "label": "同一主题的历史承接，本轮归纳，非因果",
+      "causal": false
+    },
+    {
+      "from": "F17",
+      "to": "F21",
+      "type": "theme_continuity",
+      "why": "同一主题的历史承接，本轮归纳，非因果",
+      "evidence": "editorial",
+      "label": "同一主题的历史承接，本轮归纳，非因果",
+      "causal": false
+    },
+    {
+      "from": "F17",
+      "to": "F22",
+      "type": "theme_continuity",
+      "why": "同一主题的历史承接，本轮归纳，非因果",
+      "evidence": "editorial",
+      "label": "同一主题的历史承接，本轮归纳，非因果",
+      "causal": false
+    },
+    {
+      "from": "F22",
+      "to": "F23",
+      "type": "theme_continuity",
+      "why": "同一主题的历史承接，本轮归纳，非因果",
+      "evidence": "editorial",
+      "label": "同一主题的历史承接，本轮归纳，非因果",
+      "causal": false
+    },
+    {
+      "from": "F22",
+      "to": "F24",
+      "type": "theme_continuity",
+      "why": "同一主题的历史承接，本轮归纳，非因果",
+      "evidence": "editorial",
+      "label": "同一主题的历史承接，本轮归纳，非因果",
+      "causal": false
+    },
+    {
+      "from": "F24",
+      "to": "F26",
+      "type": "theme_continuity",
+      "why": "同一主题的历史承接，本轮归纳，非因果",
+      "evidence": "editorial",
+      "label": "同一主题的历史承接，本轮归纳，非因果",
+      "causal": false
+    },
+    {
+      "from": "F26",
+      "to": "F33",
+      "type": "theme_continuity",
+      "why": "同一主题的历史承接，本轮归纳，非因果",
+      "evidence": "editorial",
+      "label": "同一主题的历史承接，本轮归纳，非因果",
+      "causal": false
+    },
+    {
+      "from": "F33",
+      "to": "F40",
+      "type": "theme_continuity",
+      "why": "同一主题的历史承接，本轮归纳，非因果",
+      "evidence": "editorial",
+      "label": "同一主题的历史承接，本轮归纳，非因果",
+      "causal": false
+    },
+    {
+      "from": "F40",
+      "to": "M21A",
+      "type": "theme_continuity",
+      "why": "同一主题的历史承接，本轮归纳，非因果",
+      "evidence": "editorial",
+      "label": "同一主题的历史承接，本轮归纳，非因果",
+      "causal": false
+    },
+    {
+      "from": "M21A",
+      "to": "F52",
+      "type": "theme_continuity",
+      "why": "同一主题的历史承接，本轮归纳，非因果",
+      "evidence": "editorial",
+      "label": "同一主题的历史承接，本轮归纳，非因果",
+      "causal": false
+    },
+    {
+      "from": "M21A",
+      "to": "F53",
+      "type": "theme_continuity",
+      "why": "同一主题的历史承接，本轮归纳，非因果",
+      "evidence": "editorial",
+      "label": "同一主题的历史承接，本轮归纳，非因果",
+      "causal": false
+    },
+    {
+      "from": "F02",
+      "to": "F25",
+      "type": "theme_continuity",
+      "why": "同一主题的历史承接，本轮归纳，非因果",
+      "evidence": "editorial",
+      "label": "同一主题的历史承接，本轮归纳，非因果",
+      "causal": false
+    },
+    {
+      "from": "F02",
+      "to": "F27",
+      "type": "theme_continuity",
+      "why": "同一主题的历史承接，本轮归纳，非因果",
+      "evidence": "editorial",
+      "label": "同一主题的历史承接，本轮归纳，非因果",
+      "causal": false
+    },
+    {
+      "from": "F02",
+      "to": "F28",
+      "type": "theme_continuity",
+      "why": "同一主题的历史承接，本轮归纳，非因果",
+      "evidence": "editorial",
+      "label": "同一主题的历史承接，本轮归纳，非因果",
+      "causal": false
+    },
+    {
+      "from": "F28",
+      "to": "F32",
+      "type": "theme_continuity",
+      "why": "同一主题的历史承接，本轮归纳，非因果",
+      "evidence": "editorial",
+      "label": "同一主题的历史承接，本轮归纳，非因果",
+      "causal": false
+    },
+    {
+      "from": "F28",
+      "to": "F35",
+      "type": "theme_continuity",
+      "why": "同一主题的历史承接，本轮归纳，非因果",
+      "evidence": "editorial",
+      "label": "同一主题的历史承接，本轮归纳，非因果",
+      "causal": false
+    },
+    {
+      "from": "F28",
+      "to": "F36",
+      "type": "theme_continuity",
+      "why": "同一主题的历史承接，本轮归纳，非因果",
+      "evidence": "editorial",
+      "label": "同一主题的历史承接，本轮归纳，非因果",
+      "causal": false
+    },
+    {
+      "from": "F14",
+      "to": "F31",
+      "type": "theme_continuity",
+      "why": "同一主题的历史承接，本轮归纳，非因果",
+      "evidence": "editorial",
+      "label": "同一主题的历史承接，本轮归纳，非因果",
+      "causal": false
+    },
+    {
+      "from": "F31",
+      "to": "F44",
+      "type": "theme_continuity",
+      "why": "同一主题的历史承接，本轮归纳，非因果",
+      "evidence": "editorial",
+      "label": "同一主题的历史承接，本轮归纳，非因果",
+      "causal": false
+    },
+    {
+      "from": "F31",
+      "to": "F45",
+      "type": "theme_continuity",
+      "why": "同一主题的历史承接，本轮归纳，非因果",
+      "evidence": "editorial",
+      "label": "同一主题的历史承接，本轮归纳，非因果",
+      "causal": false
+    },
+    {
+      "from": "F31",
+      "to": "F46",
+      "type": "theme_continuity",
+      "why": "同一主题的历史承接，本轮归纳，非因果",
+      "evidence": "editorial",
+      "label": "同一主题的历史承接，本轮归纳，非因果",
+      "causal": false
+    },
+    {
+      "from": "F31",
+      "to": "F47",
+      "type": "theme_continuity",
+      "why": "同一主题的历史承接，本轮归纳，非因果",
+      "evidence": "editorial",
+      "label": "同一主题的历史承接，本轮归纳，非因果",
+      "causal": false
+    },
+    {
+      "from": "F47",
+      "to": "F49",
+      "type": "theme_continuity",
+      "why": "同一主题的历史承接，本轮归纳，非因果",
+      "evidence": "editorial",
+      "label": "同一主题的历史承接，本轮归纳，非因果",
+      "causal": false
+    },
+    {
+      "from": "F47",
+      "to": "M21B",
+      "type": "theme_continuity",
+      "why": "同一主题的历史承接，本轮归纳，非因果",
+      "evidence": "editorial",
+      "label": "同一主题的历史承接，本轮归纳，非因果",
+      "causal": false
+    },
+    {
+      "from": "M21B",
+      "to": "F55",
+      "type": "theme_continuity",
+      "why": "同一主题的历史承接，本轮归纳，非因果",
+      "evidence": "editorial",
+      "label": "同一主题的历史承接，本轮归纳，非因果",
+      "causal": false
+    },
+    {
+      "from": "F30",
+      "to": "F38",
+      "type": "theme_continuity",
+      "why": "同一主题的历史承接，本轮归纳，非因果",
+      "evidence": "editorial",
+      "label": "同一主题的历史承接，本轮归纳，非因果",
+      "causal": false
+    },
+    {
+      "from": "F38",
+      "to": "F39",
+      "type": "theme_continuity",
+      "why": "同一主题的历史承接，本轮归纳，非因果",
+      "evidence": "editorial",
+      "label": "同一主题的历史承接，本轮归纳，非因果",
+      "causal": false
+    },
+    {
+      "from": "F38",
+      "to": "F41",
+      "type": "theme_continuity",
+      "why": "同一主题的历史承接，本轮归纳，非因果",
+      "evidence": "editorial",
+      "label": "同一主题的历史承接，本轮归纳，非因果",
+      "causal": false
+    },
+    {
+      "from": "F41",
+      "to": "M15A",
+      "type": "theme_continuity",
+      "why": "同一主题的历史承接，本轮归纳，非因果",
+      "evidence": "editorial",
+      "label": "同一主题的历史承接，本轮归纳，非因果",
+      "causal": false
+    },
+    {
+      "from": "F41",
+      "to": "F48",
+      "type": "theme_continuity",
+      "why": "同一主题的历史承接，本轮归纳，非因果",
+      "evidence": "editorial",
+      "label": "同一主题的历史承接，本轮归纳，非因果",
+      "causal": false
+    },
+    {
+      "from": "F48",
+      "to": "M22A",
+      "type": "theme_continuity",
+      "why": "同一主题的历史承接，本轮归纳，非因果",
+      "evidence": "editorial",
+      "label": "同一主题的历史承接，本轮归纳，非因果",
+      "causal": false
+    },
+    {
+      "from": "F48",
+      "to": "F51",
+      "type": "theme_continuity",
+      "why": "同一主题的历史承接，本轮归纳，非因果",
+      "evidence": "editorial",
+      "label": "同一主题的历史承接，本轮归纳，非因果",
+      "causal": false
+    },
+    {
+      "from": "F51",
+      "to": "F54",
+      "type": "theme_continuity",
+      "why": "同一主题的历史承接，本轮归纳，非因果",
+      "evidence": "editorial",
+      "label": "同一主题的历史承接，本轮归纳，非因果",
+      "causal": false
+    },
+    {
+      "from": "F51",
+      "to": "F56",
+      "type": "theme_continuity",
+      "why": "同一主题的历史承接，本轮归纳，非因果",
+      "evidence": "editorial",
+      "label": "同一主题的历史承接，本轮归纳，非因果",
+      "causal": false
+    },
+    {
+      "from": "F51",
+      "to": "F57",
+      "type": "theme_continuity",
+      "why": "同一主题的历史承接，本轮归纳，非因果",
+      "evidence": "editorial",
+      "label": "同一主题的历史承接，本轮归纳，非因果",
+      "causal": false
+    },
+    {
+      "from": "M15B",
+      "to": "M22B",
+      "type": "theme_continuity",
+      "why": "同一主题的历史承接，本轮归纳，非因果",
+      "evidence": "editorial",
+      "label": "同一主题的历史承接，本轮归纳，非因果",
+      "causal": false
+    },
+    {
+      "from": "F01",
+      "to": "F05",
+      "type": "theme_continuity",
+      "why": "开放描述路线；主题关联，不表示因果或已完成",
+      "evidence": "editorial",
+      "label": "开放描述路线；主题关联，不表示因果或已完成",
+      "causal": false
+    },
+    {
+      "from": "F01",
+      "to": "F06",
+      "type": "theme_continuity",
+      "why": "人类校准问题；主题关联，不表示因果或已完成",
+      "evidence": "editorial",
+      "label": "人类校准问题；主题关联，不表示因果或已完成",
+      "causal": false
+    },
+    {
+      "from": "F01",
+      "to": "F12",
+      "type": "theme_continuity",
+      "why": "词结构路线；主题关联，不表示因果或已完成",
+      "evidence": "editorial",
+      "label": "词结构路线；主题关联，不表示因果或已完成",
+      "causal": false
+    },
+    {
+      "from": "F10",
+      "to": "F15",
+      "type": "theme_continuity",
+      "why": "人物表达与人审路线；主题关联，不表示因果或已完成",
+      "evidence": "editorial",
+      "label": "人物表达与人审路线；主题关联，不表示因果或已完成",
+      "causal": false
+    },
+    {
+      "from": "M15A",
+      "to": "M21A",
+      "type": "theme_continuity",
+      "why": "人类验证讨论延续；主题关联，不表示因果或已完成",
+      "evidence": "editorial",
+      "label": "人类验证讨论延续；主题关联，不表示因果或已完成",
+      "causal": false
+    },
+    {
+      "from": "M15A",
+      "to": "M21B",
+      "type": "theme_continuity",
+      "why": "结构与方法检验；主题关联，不表示因果或已完成",
+      "evidence": "editorial",
+      "label": "结构与方法检验；主题关联，不表示因果或已完成",
+      "causal": false
+    },
+    {
+      "from": "M15A",
+      "to": "M22A",
+      "type": "theme_continuity",
+      "why": "人类表征对齐问题；主题关联，不表示因果或已完成",
+      "evidence": "editorial",
+      "label": "人类表征对齐问题；主题关联，不表示因果或已完成",
+      "causal": false
+    },
+    {
+      "from": "F51",
+      "to": "F52",
+      "type": "theme_continuity",
+      "why": "独立人类预测与原词处理；主题关联，不表示因果或已完成",
+      "evidence": "editorial",
+      "label": "独立人类预测与原词处理；主题关联，不表示因果或已完成",
+      "causal": false
+    }
+  ],
+  "project_tracks": {
+    "F01": 0,
+    "F02": 3,
+    "F03": 0,
+    "F04": 1,
+    "F05": 1,
+    "F06": 2,
+    "F07": 0,
+    "F08": 0,
+    "F09": 1,
+    "F10": 0,
+    "F11": 1,
+    "F12": 4,
+    "F13": 0,
+    "F14": 4,
+    "F15": 2,
+    "F16": 2,
+    "F17": 2,
+    "F18": 2,
+    "F19": 2,
+    "F20": 0,
+    "F21": 2,
+    "F22": 2,
+    "F23": 2,
+    "F24": 2,
+    "F25": 3,
+    "F26": 2,
+    "F27": 3,
+    "F28": 3,
+    "F29": 1,
+    "F30": 5,
+    "F31": 4,
+    "F32": 3,
+    "F33": 2,
+    "F34": 1,
+    "F35": 3,
+    "F36": 3,
+    "F37": 0,
+    "F38": 5,
+    "F39": 5,
+    "F40": 2,
+    "F41": 5,
+    "F42": 1,
+    "F43": 1,
+    "F44": 4,
+    "F45": 4,
+    "F46": 4,
+    "M15A": 5,
+    "M15B": 6,
+    "F47": 4,
+    "F48": 5,
+    "F49": 4,
+    "M21A": 2,
+    "M21B": 4,
+    "M21C": 1,
+    "F50": 0,
+    "M22A": 5,
+    "M22B": 6,
+    "F51": 5,
+    "F52": 2,
+    "F53": 2,
+    "F54": 5,
+    "F55": 4,
+    "F56": 5,
+    "F57": 5,
+    "F58": 0
+  },
+  "notes": [
+    "所有新增虚线属于展示层的主题归纳，不写入已核学术传承事实",
+    "没有强制母节点；未核联系可保持独立",
+    "标题与简介常显，无卡片底板、表格或泳道",
+    "横向按路线承接排布，日期标在节点上，位置不编码精确时间或时长"
+  ]
+}
