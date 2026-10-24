@@ -5389,7 +5389,10 @@
     "public:dfew": {
       "label": "DFEW · 动态面部表情",
       "url": "https://dfew-dataset.github.io/",
-      "reading_level": "官方介绍／原论文摘要与题录；未检查全部数据标注文件"
+      "reading_level": "官方介绍／原论文摘要与题录；未检查全部数据标注文件",
+      "additional_urls": [
+        "https://arxiv.org/abs/2008.05924"
+      ]
     },
     "public:affwild2": {
       "label": "Aff-Wild2 · 连续情绪与面部行为",
@@ -5405,7 +5408,10 @@
     "public:mosei": {
       "label": "CMU-MOSEI · 多模态语言",
       "url": "https://aclanthology.org/P18-1208/",
-      "reading_level": "官方介绍／原论文摘要与题录；未检查全部数据标注文件"
+      "reading_level": "官方介绍／原论文摘要与题录；未检查全部数据标注文件",
+      "additional_urls": [
+        "https://multicomp.cs.cmu.edu/resources/cmu-mosei-dataset/"
+      ]
     },
     "public:m3ed": {
       "label": "M3ED · 中文情绪对话",
